@@ -77,6 +77,7 @@ class AdvertController extends BasePrivatController
     {
         Advert::create([
             'user_id' =>  Auth::user()->getAuthIdentifier(),
+            'show_advert' => (boolean)$request->input('show_advert'),
             'title' => $request->input('title'),
             'text' => $request->input('text'),
         ]);
@@ -126,6 +127,7 @@ class AdvertController extends BasePrivatController
             ->where('id',$id)->get()->first();
 
         if(!is_null($advert)){
+            $advert->show_advert = (boolean)$request->input('show_advert');
             $advert->title = $request->input('title');
             $advert->text = $request->input('text');
             $advert->save();

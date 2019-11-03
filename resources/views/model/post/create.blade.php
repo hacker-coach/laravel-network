@@ -13,6 +13,7 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('postStore') }}" >
                             @csrf
+                            @include('form.checkbox', ['title' =>__('Artikel anzeigen'),'name'=>'show_post','value'=>$post->show_post])
                             @include('form.text', ['name' =>'title','title'=>__('Title'),'value'=>$post->title,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$post->text,'required'=>''])
 

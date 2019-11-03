@@ -80,6 +80,7 @@ class PostController extends BasePrivatController
     {
         Post::create([
             'user_id' =>  Auth::user()->getAuthIdentifier(),
+            'show_post' => (boolean)$request->input('show_post'),
             'title' => $request->input('title'),
             'text' => $request->input('text'),
         ]);
@@ -129,6 +130,7 @@ class PostController extends BasePrivatController
             ->where('id',$id)->get()->first();
 
         if(!is_null($post)){
+            $post->show_post = (boolean)$request->input('show_post');
             $post->title = $request->input('title');
             $post->text = $request->input('text');
             $post->save();

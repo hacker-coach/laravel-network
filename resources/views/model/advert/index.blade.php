@@ -14,6 +14,7 @@
                     <thead>
                     <tr>
                         <th scope="col">ID</th>
+                        <th scope="col">Anzeigen</th>
                         <th scope="col">Title</th>
                         <th scope="col">Edit</th>
                     </tr>
@@ -22,6 +23,13 @@
                     @foreach ($adverts as $advert)
                         <tr>
                             <td>{{ $advert->id}}</td>
+                            <td>
+                                @if ($advert->show_advert==true)
+                                    ja
+                                @else
+                                    nein
+                                @endif
+                            </td>
                             <td>{{ $advert->title }}</td>
                             <td>
                                 <a class="btn btn-primary" href="{{ route('advertShow', $advert->id) }}" >
