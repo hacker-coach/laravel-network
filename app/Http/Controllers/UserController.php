@@ -26,14 +26,24 @@ class UserController extends BasePrivatController
             'xing' => 'url|max:500|nullable',
             'www' => 'url|max:500|nullable',
             'image'     =>  'image|mimes:jpeg,png,jpg,gif|max:1024|dimensions:ratio=1/1',
+        ]);
+    }
 
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @param  array  $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    protected function validatorTalent(array $data)
+    {
+        return Validator::make($data, [
             'talent_anecdote_1' => 'string|max:2500|nullable',
             'talent_anecdote_2' => 'string|max:2500|nullable',
             'talent_anecdote_3' => 'string|max:2500|nullable',
             'talent_special' => 'string|max:2500|nullable',
         ]);
     }
-
     /**
      * SET the specified resource in model.
      *
@@ -52,11 +62,6 @@ class UserController extends BasePrivatController
         $user->xing = $request->input('xing');
         $user->linkedin = $request->input('linkedin');
         $user->www = $request->input('www');
-
-        $user->talent_anecdote_1 = $request->input('talent_anecdote_1');
-        $user->talent_anecdote_2 = $request->input('talent_anecdote_2');
-        $user->talent_anecdote_3 = $request->input('talent_anecdote_3');
-        $user->talent_special = $request->input('talent_special');
     }
 
     /**
@@ -110,6 +115,38 @@ class UserController extends BasePrivatController
         $user = Auth::user();
         $this->upload($user,$request,'uploads-user','image');
         $this->setRequestToModel($request,$user);
+        $user->save();
+        return redirect()->route('userProfil');
+    }
+
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function editTalent()
+    {
+        $user = Auth::user();
+        return view('model.user.edittalent', [
+            'user' => $user
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function updateTalent(Request $request)
+    {
+        $this->validatorTalent($request->all())->validate();
+        $user = Auth::user();
+        $user->talent_anecdote_1 = $request->input('talent_anecdote_1');
+        $user->talent_anecdote_2 = $request->input('talent_anecdote_2');
+        $user->talent_anecdote_3 = $request->input('talent_anecdote_3');
+        $user->talent_special = $request->input('talent_special');
         $user->save();
         return redirect()->route('userProfil');
     }

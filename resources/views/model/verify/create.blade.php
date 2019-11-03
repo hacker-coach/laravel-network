@@ -15,7 +15,7 @@
                             @csrf
                             <input type="hidden" name="user_id" value="{{$verify->user_id}}">
 
-                            @include('form.textarea', ['name' =>'text','title'=>__('text'),'value'=>$verify->text,'required'=>''])
+                            @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$verify->text,'required'=>''])
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">

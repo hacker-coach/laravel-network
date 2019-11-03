@@ -27,11 +27,6 @@
                             @include('form.text', ['title' =>__('Linkedin'),'name'=>'linkedin','value'=>$user->linkedin,'required'=>''])
                             @include('form.text', ['title' =>__('www'),'name'=>'www','value'=>$user->www,'required'=>''])
 
-                            @include('form.textarea', ['name' =>'talent_anecdote_1','title'=>__('1. Anekdote'),'value'=>$user->talent_anecdote_1,'required'=>''])
-                            @include('form.textarea', ['name' =>'talent_anecdote_2','title'=>__('2. Anekdote'),'value'=>$user->talent_anecdote_2,'required'=>''])
-                            @include('form.textarea', ['name' =>'talent_anecdote_3','title'=>__('3. Anekdote'),'value'=>$user->talent_anecdote_3,'required'=>''])
-
-                            @include('form.textarea', ['name' =>'talent_special','title'=>'Spezialbegabung','value'=>$user->talent_special,'required'=>''])
 
 
                             <div class="form-group row mb-0">

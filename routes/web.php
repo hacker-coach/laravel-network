@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/register/company', 'Auth\RegisterController@showRegistrationCompanyForm')->name('registerCompany');
 // USER
 Route::get('/user/edit', 'UserController@edit')->name('userEdit');
+Route::get('/user/edit/talent', 'UserController@editTalent')->name('userEditTalent');
+Route::post('/user/update/talent', 'UserController@updateTalent')->name('userUpdateTalent');
 Route::post('/user/update', 'UserController@update')->name('userUpdate');
 Route::get('/user/show/{user_id}', 'UserController@show')->name('userShow');
 Route::get('/user/profil', 'UserController@profil')->name('userProfil');
