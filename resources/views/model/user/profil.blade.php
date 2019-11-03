@@ -19,8 +19,9 @@
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row">
             <div class="col-md-3">
+                <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
                 @include('snippet.card')
-                <br><a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a>
+
             </div>
             <div class="col-md-9">
                 <a href="{{ route('userEditTalent') }}"><span  class="red-edit">{{ __('Talent bearbeiten') }}</span></a>

@@ -171,7 +171,7 @@ class VerifyController extends BasePrivatController
             $verify->text = $request->input('text');
             $verify->save();
         }
-        return redirect()->route('welcome');
+        return redirect()->route('home');
     }
     /**
      * Update the specified resource in storage.
@@ -187,7 +187,8 @@ class VerifyController extends BasePrivatController
             ->get()->first();
 
         if(!is_null($verify)){
-            $verify->text = $request->input('text');
+            $verify->show_verify = (boolean)$request->input('show_verify');
+            $verify->answer_of_user = $request->input('answer_of_user');
             $verify->save();
         }
         return redirect()->route('userProfil');
