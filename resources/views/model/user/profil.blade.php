@@ -18,6 +18,15 @@
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row">
+            <div class="col-md-12">
+                @if ($user->is_activ_profil!=true)
+                    <div class="alert alert-warning" role="alert">
+                        Ihr Profil muss noch freigeschaltet werden!
+                    </div>
+                @endif
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-3">
                 <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
                 @include('snippet.card')
