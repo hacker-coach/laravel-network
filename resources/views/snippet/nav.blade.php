@@ -22,7 +22,7 @@
 
                 @else
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Alle Problemlöser') }}</strong></a>
+                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Alle Member') }}</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('userProfil') }}">{{ __('Profil') }}</a>
