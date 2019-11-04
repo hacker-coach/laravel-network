@@ -18,10 +18,9 @@ class CreateVerifiesTable extends Migration
             $table->timestamps();
 
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->unsignedBigInteger('user_id_from')->nullable();
-            $table->foreign('user_id_from')->references('id')->on('users');
 
             $table->boolean('show_verify')->default(false);
             $table->boolean('show_know')->default(false);

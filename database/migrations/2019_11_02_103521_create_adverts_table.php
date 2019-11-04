@@ -18,7 +18,7 @@ class CreateAdvertsTable extends Migration
             $table->timestamps();
 
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->boolean('show_advert')->default(false);
             $table->boolean('show_advert_on_www')->default(false);
