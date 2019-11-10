@@ -2,6 +2,8 @@
 
 # Hinweis: Dieses Projekt ist noch nicht fertig und zudem eine praktische schnelle Lösung für ein Mini-Portal
 
+---
+
 # Konzept - Mitglieder Portal
 
 ## Mitglied werden
@@ -25,5 +27,3 @@ Firmen können 3 kostenlose Job-Anzeigen schalten. Gegen Bezahlung kann ein Prob
 publiziert werden. Die Mitglieder werden darüber informiert.
 Gegen Bezahlung kann eine Firma die Job-Anzeigen außerhalb des Mitglieder-Bereiches sichtbar machen.
 
-
- 
