@@ -1,5 +1,4 @@
-<div class="form-group row">
-    <div class="col-md-6 offset-md-4">
+<div class="form-group">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="{{ $name }}" id="{{ $name }}" {{ $value ? 'checked' : '' }}>
 
@@ -7,5 +6,4 @@
                 {{ $title }}
             </label>
         </div>
-    </div>
 </div>

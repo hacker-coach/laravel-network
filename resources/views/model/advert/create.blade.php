@@ -17,12 +17,10 @@
                             @include('form.text', ['name' =>'title','title'=>__('Title'),'value'=>$advert->title,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$advert->text,'required'=>''])
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                            <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
-                                </div>
                             </div>
                         </form>
                     </div>

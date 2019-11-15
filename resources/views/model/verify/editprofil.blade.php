@@ -20,15 +20,13 @@
 
                             @include('form.textarea', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                            <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
                                     <a class="btn btn-danger float-right" href="{{ route('verifyDeleteProfil',$verify->user_id_from) }}" >
                                         {{ __('löschen') }}
                                     </a>
-                                </div>
                             </div>
                         </form>
                     </div>

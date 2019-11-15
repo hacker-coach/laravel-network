@@ -23,8 +23,7 @@
 
                             @include('form.info', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                            <div class="form-group">
                                     @if ($verify->show_verify==true)
                                         <a class="btn btn-primary" href="{{ route('home') }}" >
                                             {{ __('schließen') }}
@@ -37,7 +36,6 @@
                                     <a class="btn btn-danger float-right" href="{{ route('verifyDelete',$verify->user_id) }}" >
                                         {{ __('löschen') }}
                                     </a>
-                                </div>
                             </div>
                         </form>
                     </div>

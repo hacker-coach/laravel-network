@@ -17,15 +17,13 @@
                             @include('form.text', ['name' =>'title','title'=>__('Title'),'value'=>$post->title,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$post->text,'required'=>''])
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                            <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
                                     <a class="btn btn-danger float-right" href="{{ route('postDelete',$post->id) }}" >
                                         {{ __('löschen') }}
                                     </a>
-                                </div>
                             </div>
                         </form>
                     </div>
