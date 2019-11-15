@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Post;
 
 class PostController extends BasePrivatController
@@ -98,10 +99,14 @@ class PostController extends BasePrivatController
         $post = Post::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
         return view('model.post.show', [
-            'post' => $post
+            'post' => $post,
+            'text' => $this->parseContent($post)
         ]);
     }
 
+    private function parseContent($post){
+           return Markdown::convertToHtml($post->text);
+    }
     /**
      * Show the form for editing the specified resource.
      *
