@@ -1,6 +1,6 @@
-# Entwicklungszeit: 2 Tage (2-3.11)
+## Entwicklungszeit: 2 Tage (2-3.11)
 
-# Hinweis: Dieses Projekt ist noch nicht fertig und zudem eine praktische schnelle Lösung für ein Mini-Portal
+### Hinweis: Dieses Projekt ist noch nicht fertig und zudem eine praktische schnelle Lösung für ein Mini-Portal
 
 ---
 
