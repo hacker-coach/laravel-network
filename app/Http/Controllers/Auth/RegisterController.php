@@ -76,12 +76,16 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        Mail::to('log@problemsolvernetwork.org')->send(new LogMail());
-        return User::create([
+
+        $user = User::create([
             'name' => $data['name'],
             'is_company' => (boolean)$data['is_company'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        Mail::to('log@problemsolvernetwork.org')->send(new LogMail($user,'RegisterController::create'));
+
+        return $user;
     }
 }

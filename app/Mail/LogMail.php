@@ -6,19 +6,32 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use App\User;
 
 class LogMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    /**
+     * The User instance.
+     *
+     * @var User
+     */
+    public $user;
+    /**
+     * The logMessage instance.
+     *
+     * @var logMessage
+     */
+    public $logMessage = '';
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user, string $logMessage)
     {
-        //
+        $this->user = $user;
+        $this->logMessage = $logMessage;
     }
 
     /**
@@ -28,7 +41,9 @@ class LogMail extends Mailable
      */
     public function build()
     {
-    return $this->view('mail.log')
-                ->text('mail.log_plain');
+        return $this->text('mail.log')
+                    ->with([
+                        'logMessage' => (string)$this->logMessage
+                    ]);
     }
 }
