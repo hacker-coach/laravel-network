@@ -35,6 +35,7 @@ class CreateVerifiesTable extends Migration
             $table->longText('answer_of_user')->nullable();
 
             $table->boolean('contact_real_friend_or_online')->default(false);
+            $table->boolean('has_super_special_talent')->default(false);
 
             $table->boolean('know_from_mensa')->default(false);
             $table->boolean('know_from_tns')->default(false);
@@ -42,7 +43,7 @@ class CreateVerifiesTable extends Migration
             $table->boolean('know_from_cbc')->default(false);
             $table->boolean('know_from_iq_club')->default(false);
 
-            $table->boolean('has_super_special_talent')->default(false);
+
 
             $table->boolean('has_extrem_iq')->default(false);
             $table->boolean('has_super_extrem_iq')->default(false);

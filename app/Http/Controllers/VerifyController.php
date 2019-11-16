@@ -29,28 +29,9 @@ class VerifyController extends BasePrivatController
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Verify  $verify
      */
-    protected function setRequestToModel(Request $request,Verify $verify)
+    protected function setRequestToModelCheckBoxHas(Request $request,Verify $verify)
     {
-        $verify->show_verify = (boolean)$request->input('show_verify');
-        $verify->show_know = (boolean)$request->input('show_know');
-        $verify->show_has = (boolean)$request->input('show_has');
-        $verify->show_message = (boolean)$request->input('show_message');
-        $verify->show_answer = (boolean)$request->input('show_answer');
-
-        $verify->check_of_super_ps = (boolean)$request->input('check_of_super_ps');
-        $verify->message_check_of_super_ps = $request->input('message_check_of_super_ps');
-
-        $verify->text = $request->input('text');
-        $verify->answer_of_user = $request->input('answer_of_user');
-
         $verify->contact_real_friend_or_online = (boolean)$request->input('contact_real_friend_or_online');
-
-        $verify->know_from_mensa = (boolean)$request->input('know_from_mensa');
-        $verify->know_from_tns = (boolean)$request->input('know_from_tns');
-        $verify->know_from_mhn = (boolean)$request->input('know_from_mhn');
-        $verify->know_from_cbc = (boolean)$request->input('know_from_cbc');
-        $verify->know_from_iq_club = (boolean)$request->input('know_from_iq_club');
-
         $verify->has_super_special_talent = (boolean)$request->input('has_super_special_talent');
 
         $verify->has_extrem_iq = (boolean)$request->input('has_extrem_iq');
@@ -79,6 +60,56 @@ class VerifyController extends BasePrivatController
 
         $verify->has_extrem_imagine = (boolean)$request->input('has_extrem_imagine');
         $verify->has_super_extrem_imagine = (boolean)$request->input('has_super_extrem_imagine');
+    }
+    /**
+     * SET the specified resource in model.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Verify  $verify
+     */
+    protected function setRequestToModelCheckBoxKnow(Request $request,Verify $verify)
+    {
+        $verify->know_from_mensa = (boolean)$request->input('know_from_mensa');
+        $verify->know_from_tns = (boolean)$request->input('know_from_tns');
+        $verify->know_from_mhn = (boolean)$request->input('know_from_mhn');
+        $verify->know_from_cbc = (boolean)$request->input('know_from_cbc');
+        $verify->know_from_iq_club = (boolean)$request->input('know_from_iq_club');
+    }
+    /**
+     * SET the specified resource in model.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Verify  $verify
+     */
+    protected function setRequestToModelCheckBoxShow(Request $request,Verify $verify)
+    {
+        $verify->show_verify = (boolean)$request->input('show_verify');
+        $verify->show_know = (boolean)$request->input('show_know');
+        $verify->show_has = (boolean)$request->input('show_has');
+        $verify->show_message = (boolean)$request->input('show_message');
+        $verify->show_answer = (boolean)$request->input('show_answer');
+    }
+    /**
+     * SET the specified resource in model.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Verify  $verify
+     */
+    protected function setRequestToModelSuperPs(Request $request,Verify $verify)
+    {
+        $verify->check_of_super_ps = (boolean)$request->input('check_of_super_ps');
+        $verify->message_check_of_super_ps = $request->input('message_check_of_super_ps');
+    }
+    /**
+     * SET the specified resource in model.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Verify  $verify
+     */
+    protected function setRequestToModel(Request $request,Verify $verify)
+    {
+        $verify->text = $request->input('text');
+        $verify->answer_of_user = $request->input('answer_of_user');
     }
 
     /**
@@ -130,11 +161,13 @@ class VerifyController extends BasePrivatController
             ->where('user_id_from',Auth::user()->getAuthIdentifier())
             ->get()->first();
         if(is_null($verify)){
-            Verify::create([
-                'user_id_from' => Auth::user()->getAuthIdentifier(),
-                'user_id' => (int)$request->input('user_id'),
-                'text' => $request->input('text'),
-            ]);
+            $verify = new Verify();
+            $verify = $verify->create();
+            $verify->text = $request->input('text');
+            $verify->user_id_from = Auth::user()->getAuthIdentifier();
+            $verify->user_id = (int)$request->input('user_id');
+            $this->setRequestToModelCheckBoxHas($request,$verify);
+            $verify->save();
         }
         return redirect()->route('home');
     }
@@ -168,6 +201,7 @@ class VerifyController extends BasePrivatController
             ->get()->first();
 
         if(!is_null($verify)){
+            $this->setRequestToModelCheckBoxHas($request,$verify);
             $verify->text = $request->input('text');
             $verify->save();
         }
