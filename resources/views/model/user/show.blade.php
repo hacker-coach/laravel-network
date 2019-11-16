@@ -22,11 +22,13 @@
                 @include('snippet.card')
             </div>
             <div class="col-md-9">
+            @if ($user->is_company === 0)
                 @include('snippet.talent')<br>
                 @include('snippet.verify')<br>
                 @include('snippet.post')<br>
+            @else
                 @include('snippet.advert')<br>
-
+            @endif
             </div>
         </div>
     </div>

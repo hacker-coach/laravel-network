@@ -33,15 +33,17 @@
 
             </div>
             <div class="col-md-9">
+            @if ($user->is_company === 0)
                 <a href="{{ route('userEditTalent') }}"><span  class="red-edit">{{ __('Talent bearbeiten') }}</span></a>
                 @include('snippet.talent')
                 <br><a href="{{ route('verifyIndex') }}"><span  class="red-edit">{{ __('Referenzen bearbeiten') }}</span></a>
                 @include('snippet.verify')
                 <br><a href="{{ route('postIndex') }}"><span  class="red-edit"> {{ __('Artikel bearbeiten') }}</span></a>
                 @include('snippet.post')
+            @else
                 <br><a href="{{ route('advertIndex') }}"><span  class="red-edit">{{ __('Anzeigen bearbeiten') }}</span></a>
                 @include('snippet.advert')
-
+            @endif
             </div>
         </div>
     </div>
