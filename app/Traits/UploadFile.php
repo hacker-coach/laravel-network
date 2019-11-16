@@ -9,7 +9,7 @@ trait UploadFile
 {
     public function uploadStore(UploadedFile $uploadedFile, $folder = null, $disk = 'public', $filename = null)
     {
-        $name = !is_null($filename) ? $filename : str_random(25);
+        $name = !is_null($filename) ? $filename : time(str_random(25));
         $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
         return $file;
     }
@@ -23,7 +23,7 @@ trait UploadFile
     {
         if ($request->has($dataName)) {
             $image = $request->file($dataName);
-            $name = time();
+            $name = $dataName.'_'.time();
             $folder='/'.$model->id .'/';
             $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
             $this->uploadDelete($model->$dataName,$disk);

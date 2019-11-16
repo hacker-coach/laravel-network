@@ -135,6 +135,9 @@ class PostController extends BasePrivatController
             $post->show_post = (boolean)$request->input('show_post');
             $post->title = $request->input('title');
             $post->text = $request->input('text');
+            $this->upload($post,$request,'uploads-post','image1');
+            $this->upload($post,$request,'uploads-post','image2');
+            $this->upload($post,$request,'uploads-post','image3');
             $post->save();
         }
         return redirect()->route('postIndex');

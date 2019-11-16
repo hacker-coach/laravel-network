@@ -14,6 +14,9 @@
                         <form method="POST" action="{{ route('postUpdate',$post->id) }}" enctype="multipart/form-data">
                             @csrf
                             @include('form.checkbox', ['title' =>__('Artikel anzeigen'),'name'=>'show_post','value'=>$post->show_post])
+                            @include('form.upload', ['title' =>__('[1] - Image'),'name'=>'image1'])
+                            @include('form.upload', ['title' =>__('[2] - Image'),'name'=>'image2'])
+                            @include('form.upload', ['title' =>__('[3] - Image'),'name'=>'image3'])
                             @include('form.text', ['name' =>'title','title'=>__('Title'),'value'=>$post->title,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$post->text,'required'=>''])
 
