@@ -44,6 +44,10 @@
                         @endforeach
                         </tbody>
                     </table>
+                @else
+                                    <div class="alert alert-warning" role="alert">
+                                        Keine Artikel vorhanden!
+                                    </div>
                 @endif
             </div>
         </div>

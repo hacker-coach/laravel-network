@@ -38,6 +38,10 @@
                         @endforeach
                         </tbody>
                     </table>
+                @else
+                            <div class="alert alert-warning" role="alert">
+                                Keine Referenzen vorhanden!
+                            </div>
                 @endif
             </div>
         </div>
