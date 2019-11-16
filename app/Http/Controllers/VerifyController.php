@@ -84,7 +84,7 @@ class VerifyController extends BasePrivatController
     protected function setRequestToModelCheckBoxShow(Request $request,Verify $verify)
     {
         $verify->show_verify = (boolean)$request->input('show_verify');
-        $verify->show_know = (boolean)$request->input('show_know');
+        #$verify->show_know = (boolean)$request->input('show_know');
         $verify->show_has = (boolean)$request->input('show_has');
         $verify->show_message = (boolean)$request->input('show_message');
         $verify->show_answer = (boolean)$request->input('show_answer');
@@ -221,7 +221,7 @@ class VerifyController extends BasePrivatController
             ->get()->first();
 
         if(!is_null($verify)){
-            $verify->show_verify = (boolean)$request->input('show_verify');
+            $this->setRequestToModelCheckBoxShow($request,$verify);
             $verify->answer_of_user = $request->input('answer_of_user');
             $verify->save();
         }
