@@ -35,11 +35,12 @@ class AdvertController extends BasePrivatController
     {
         $advert->show_advert = (boolean)$request->input('show_advert');
         $advert->show_advert_on_www = (boolean)$request->input('show_advert_on_www');
-
         $advert->title = $request->input('title');
         $advert->teaser = $request->input('teaser');
         $advert->text = $request->input('text');
         $advert->link = $request->input('link');
+        $this->upload($advert,$request,'uploads-advert','image');
+        $advert->save();
     }
     /**
      * Display a listing of the resource.
@@ -80,11 +81,7 @@ class AdvertController extends BasePrivatController
 
         if(!is_null($advert)){
             $advert->user_id = Auth::user()->getAuthIdentifier();
-            $advert->show_advert = (boolean)$request->input('show_advert');
-            $advert->title = $request->input('title');
-            $advert->text = $request->input('text');
-            $this->upload($advert,$request,'uploads-advert','image');
-            $advert->save();
+            $this->setRequestToModel($request,$advert);
         }
 
 
@@ -134,11 +131,7 @@ class AdvertController extends BasePrivatController
             ->where('id',$id)->get()->first();
 
         if(!is_null($advert)){
-            $advert->show_advert = (boolean)$request->input('show_advert');
-            $advert->title = $request->input('title');
-            $advert->text = $request->input('text');
-            $this->upload($advert,$request,'uploads-advert','image');
-            $advert->save();
+            $this->setRequestToModel($request,$advert);
         }
         return redirect()->route('advertIndex');
     }
