@@ -29,8 +29,11 @@
         <div class="row">
             <div class="col-md-3">
                 <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
+                @if ($user->is_company === 0)
                 @include('snippet.card')
-
+                @else
+                @include('snippet.cardcompany')
+                @endif
             </div>
             <div class="col-md-9">
             @if ($user->is_company === 0)
