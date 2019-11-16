@@ -75,12 +75,19 @@ class AdvertController extends BasePrivatController
      */
     public function store(Request $request)
     {
-        Advert::create([
-            'user_id' =>  Auth::user()->getAuthIdentifier(),
-            'show_advert' => (boolean)$request->input('show_advert'),
-            'title' => $request->input('title'),
-            'text' => $request->input('text'),
-        ]);
+        $advert = new Advert();
+        $advert = $advert->create();
+
+        if(!is_null($advert)){
+            $advert->user_id = Auth::user()->getAuthIdentifier();
+            $advert->show_advert = (boolean)$request->input('show_advert');
+            $advert->title = $request->input('title');
+            $advert->text = $request->input('text');
+            $this->upload($advert,$request,'uploads-advert','image');
+            $advert->save();
+        }
+
+
         return redirect()->route('advertIndex');
     }
 
@@ -130,6 +137,7 @@ class AdvertController extends BasePrivatController
             $advert->show_advert = (boolean)$request->input('show_advert');
             $advert->title = $request->input('title');
             $advert->text = $request->input('text');
+            $this->upload($advert,$request,'uploads-advert','image');
             $advert->save();
         }
         return redirect()->route('advertIndex');
