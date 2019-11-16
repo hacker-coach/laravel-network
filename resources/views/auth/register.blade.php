@@ -17,7 +17,23 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('PS-Name*') }}</label>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-6">
+                                <label>
+                                    [Firmen]<br>
+                                    <input type="radio" name="is_company" id="is_company" value="1" checked/>
+                                     Experten suchen im Mitglieder-Bereich und kostenlose Anzeigen schalten
+                                </label>
+                                <label>
+                                    [Mitglieder]<br>
+                                    <input type="radio" name="is_company" id="is_company" value="0" />
+                                     Problemlöser werden und Herausforderungen finden
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -65,7 +81,6 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-                        <input type="hidden" name="is_company" value="0">
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -73,17 +88,7 @@
                                 </button><br> <br>
                             </div>
                         </div>
-                        <div class="form-group row xmb-0">
 
-                            <div class="col-md-6 offset-md-4">
-                                <a xclass="btn btn-link" href="{{ route('registerCompany') }}">
-                                    {{ __('m.register_company') }}
-                                </a>
-                            </div>
-                            <div class="col-md-6 offset-md-4"><br>
-                                * PS-Name: "problem solver" - Sie wollen Problemlöser werden und sind keine Firma und suchen nicht nach Problemlösern.
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>

@@ -76,7 +76,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-
         $user = User::create([
             'name' => $data['name'],
             'is_company' => (boolean)$data['is_company'],
