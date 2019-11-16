@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/', 'Controller@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/register/company', 'Auth\RegisterController@showRegistrationCompanyForm')->name('registerCompany');
+Route::get('/company', 'CompanyController@index')->name('company');
 // USER
 Route::get('/user/edit', 'UserController@edit')->name('userEdit');
 Route::get('/user/edit/talent', 'UserController@editTalent')->name('userEditTalent');

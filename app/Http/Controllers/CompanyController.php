@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-class HomeController extends BasePrivatController
+class CompanyController extends BasePrivatController
 {
     /**
      * Create a new controller instance.
@@ -27,9 +27,9 @@ class HomeController extends BasePrivatController
         $users = DB::table('users')
             ->where('show_profil', 1)
             ->where('is_activ_profil', 1)
-            ->where('is_company', 0)
+            ->where('is_company', 1)
             ->get();
-        return view('home', [
+        return view('company', [
             'users' => $users,
             'isList' => true
         ]);

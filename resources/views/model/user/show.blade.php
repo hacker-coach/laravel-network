@@ -19,7 +19,11 @@
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row">
             <div class="col-md-3">
-                @include('snippet.card')
+                @if ($user->is_company === 0)
+                    @include('snippet.card')
+                @else
+                    @include('snippet.cardcompany')
+                @endif
             </div>
             <div class="col-md-9">
             @if ($user->is_company === 0)
