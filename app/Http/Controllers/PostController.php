@@ -79,12 +79,20 @@ class PostController extends BasePrivatController
      */
     public function store(Request $request)
     {
-        Post::create([
-            'user_id' =>  Auth::user()->getAuthIdentifier(),
-            'show_post' => (boolean)$request->input('show_post'),
-            'title' => $request->input('title'),
-            'text' => $request->input('text'),
-        ]);
+        $post = new Post();
+        $post = $post->create();
+
+        if(!is_null($post)){
+            $post->user_id = Auth::user()->getAuthIdentifier();
+            $post->show_post = (boolean)$request->input('show_post');
+            $post->title = $request->input('title');
+            $post->text = $request->input('text');
+            $this->upload($post,$request,'uploads-post','image1');
+            $this->upload($post,$request,'uploads-post','image2');
+            $this->upload($post,$request,'uploads-post','image3');
+            $post->save();
+        }
+
         return redirect()->route('postIndex');
     }
 
