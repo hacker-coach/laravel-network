@@ -15,6 +15,9 @@
                             @csrf
                             <input type="hidden" name="user_id" value="{{$verify->user_id}}">
 
+                            @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$verify->text,'required'=>''])
+
+
 @include('form.2checkbox', [
 'title1' =>__('contact_real_friend_or_online'),'name1'=>'contact_real_friend_or_online','value1'=>$verify->contact_real_friend_or_online,
 'title2' =>__('has_super_special_talent'),'name2'=>'has_super_special_talent','value2'=>$verify->has_super_special_talent
@@ -56,7 +59,6 @@
 'title2' =>__('has_super_extrem_imagine'),'name2'=>'has_super_extrem_imagine','value2'=>$verify->has_super_extrem_imagine
 ])
 
-                            @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$verify->text,'required'=>''])
 
                             <div class="form-group">
                                     <button type="submit" class="btn btn-primary">

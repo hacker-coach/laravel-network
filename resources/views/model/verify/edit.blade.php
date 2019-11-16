@@ -15,6 +15,17 @@
                             @csrf
                             <input type="hidden" name="user_id" value="{{$verify->user_id}}">
 
+
+
+                            @if ($verify->show_verify==true)
+                                @include('form.info', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
+                            @else
+                                @include('form.textarea', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
+                            @endif
+
+
+                            @include('form.info', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
+
 @include('form.2checkbox', [
 'title1' =>__('contact_real_friend_or_online'),'name1'=>'contact_real_friend_or_online','value1'=>$verify->contact_real_friend_or_online,
 'title2' =>__('has_super_special_talent'),'name2'=>'has_super_special_talent','value2'=>$verify->has_super_special_talent
@@ -55,15 +66,6 @@
 'title1' =>__('has_extrem_imagine'),'name1'=>'has_extrem_imagine','value1'=>$verify->has_extrem_imagine,
 'title2' =>__('has_super_extrem_imagine'),'name2'=>'has_super_extrem_imagine','value2'=>$verify->has_super_extrem_imagine
 ])
-
-                            @if ($verify->show_verify==true)
-                                @include('form.info', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
-                            @else
-                                @include('form.textarea', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
-                            @endif
-
-
-                            @include('form.info', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
 
                             <div class="form-group">
                                     @if ($verify->show_verify==true)
