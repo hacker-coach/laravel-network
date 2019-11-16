@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarMain">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/" style="font-weight: 370;">member network</a>
+        <a class="navbar-brand js-scroll-trigger" href="/" style="font-weight: 370;">problem solver network</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
