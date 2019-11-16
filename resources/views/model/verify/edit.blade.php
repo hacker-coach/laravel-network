@@ -15,7 +15,7 @@
                             @csrf
                             <input type="hidden" name="user_id" value="{{$verify->user_id}}">
 
-
+                            @include('form.info', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
 
                             @if ($verify->show_verify==true)
                                 @include('form.info', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
@@ -24,7 +24,7 @@
                             @endif
 
 
-                            @include('form.info', ['name' =>'answer_of_user','title'=>__('Antwort'),'value'=>$verify->answer_of_user,'required'=>''])
+
 
 @include('form.2checkbox', [
 'title1' =>__('contact_real_friend_or_online'),'name1'=>'contact_real_friend_or_online','value1'=>$verify->contact_real_friend_or_online,
