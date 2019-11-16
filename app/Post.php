@@ -32,6 +32,10 @@ class Post extends Model
         return $this->parseContent($this->text);
     }
 
+    public function getMarkdownLinks(){
+        return $this->parseContent($this->links);
+    }
+
     private function parseContent($text){
            return Markdown::convertToHtml($text);
     }

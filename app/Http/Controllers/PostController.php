@@ -37,13 +37,16 @@ class PostController extends BasePrivatController
      */
     protected function setRequestToModel(Request $request,Post $post)
     {
-        $post->show_post = (boolean)$request->input('show_post');
-        $post->show_post_on_www = (boolean)$request->input('show_post_on_www');
-
-        $post->title = $request->input('title');
-        $post->teaser = $request->input('teaser');
-        $post->text = $request->input('text');
-        $post->links = $request->input('links');
+            $post->show_post = (boolean)$request->input('show_post');
+            $post->show_post_on_www = (boolean)$request->input('show_post_on_www');
+            $post->title = $request->input('title');
+            $post->text = $request->input('text');
+            $post->teaser = $request->input('teaser');
+            $post->links = $request->input('links');
+            $this->upload($post,$request,'uploads-post','image1');
+            $this->upload($post,$request,'uploads-post','image2');
+            $this->upload($post,$request,'uploads-post','image3');
+            $post->save();
     }
     /**
      * Display a listing of the resource.
@@ -84,13 +87,7 @@ class PostController extends BasePrivatController
 
         if(!is_null($post)){
             $post->user_id = Auth::user()->getAuthIdentifier();
-            $post->show_post = (boolean)$request->input('show_post');
-            $post->title = $request->input('title');
-            $post->text = $request->input('text');
-            $this->upload($post,$request,'uploads-post','image1');
-            $this->upload($post,$request,'uploads-post','image2');
-            $this->upload($post,$request,'uploads-post','image3');
-            $post->save();
+            $this->setRequestToModel($request,$post);
         }
 
         return redirect()->route('postIndex');
@@ -140,13 +137,7 @@ class PostController extends BasePrivatController
             ->where('id',$id)->get()->first();
 
         if(!is_null($post)){
-            $post->show_post = (boolean)$request->input('show_post');
-            $post->title = $request->input('title');
-            $post->text = $request->input('text');
-            $this->upload($post,$request,'uploads-post','image1');
-            $this->upload($post,$request,'uploads-post','image2');
-            $this->upload($post,$request,'uploads-post','image3');
-            $post->save();
+            $this->setRequestToModel($request,$post);
         }
         return redirect()->route('postIndex');
     }
