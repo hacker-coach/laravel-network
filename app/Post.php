@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use GrahamCampbell\Markdown\Facades\Markdown;
 
 class Post extends Model
 {
@@ -27,6 +28,13 @@ class Post extends Model
 
     ];
 
+    public function getMarkdownText(){
+        return $this->parseContent($this->text);
+    }
+
+    private function parseContent($text){
+           return Markdown::convertToHtml($text);
+    }
     /**
      * The attributes that should be cast to native types.
      *

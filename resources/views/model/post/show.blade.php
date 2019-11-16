@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h3 class="black-box">{{$post->title}}</h3>
                 <p class="lead mb-0">
-                    {!! $text !!}
+                    {!! $post->getMarkdownText() !!}
                 </p>
             </div>
         </div>
