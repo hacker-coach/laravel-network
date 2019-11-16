@@ -38,7 +38,24 @@ class Post extends Model
     }
 
     private function parseContent($text){
-           return Markdown::convertToHtml($text);
+        $text =  Markdown::convertToHtml($text);
+        $text = str_replace('[[1]]',$this->getImageHtml($this->image1,$this->image1title,''),$text);
+        $text = str_replace('[[2]]',$this->getImageHtml($this->image2,$this->image2title,''),$text);
+        $text = str_replace('[[3]]',$this->getImageHtml($this->image3,$this->image3title,''),$text);
+        return $text;
+    }
+
+    private function getImageHtml($image,$text,$float){
+        $html = '
+        <div class="card" style="width: 18rem;###float###">
+          <img class="card-img-top" src="/uploads/post###image###" alt="###text###">
+          <div class="card-body"><p class="card-text">###text###</p></div>
+        </div>
+        ';
+        $html = str_replace('###float###',$float,$html);
+        $html = str_replace('###image###',$image,$html);
+        $html = str_replace('###text###',$text,$html);
+        return $html;
     }
     /**
      * The attributes that should be cast to native types.
