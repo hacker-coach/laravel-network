@@ -14,7 +14,14 @@
                         <form method="POST" action="{{ route('verifyUpdateProfil') }}">
                             @csrf
                             <input type="hidden" name="user_id_from" value="{{$verify->user_id_from}}">
-                            @include('form.checkbox', ['title' =>__('Referenz anzeigen'),'name'=>'show_verify','value'=>$verify->show_verify])
+ @include('form.2checkbox', [
+ 'title1' =>__('Referenz anzeigen'),'name1'=>'show_verify','value1'=>$verify->show_verify,
+ 'title2' =>__('Referenz-Checks anzeigen'),'name2'=>'show_has','value2'=>$verify->show_has
+ ])
+ @include('form.2checkbox', [
+ 'title1' =>__('Referenz Nachricht'),'name1'=>'show_message','value1'=>$verify->show_message,
+ 'title2' =>__('Referenz Antwort'),'name2'=>'show_answer','value2'=>$verify->show_answer
+ ])
 
                             @include('form.info', ['name' =>'text','title'=>__('Referenz-Text'),'value'=>$verify->text,'required'=>''])
 
