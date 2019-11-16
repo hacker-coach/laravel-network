@@ -27,6 +27,9 @@ class PostController extends BasePrivatController
             'image1'     =>  'image|mimes:jpeg,png,jpg,gif|max:1024',
             'image2'     =>  'image|mimes:jpeg,png,jpg,gif|max:1024',
             'image3'     =>  'image|mimes:jpeg,png,jpg,gif|max:1024',
+            'image1title' => 'string|max:150|nullable',
+            'image2title' => 'string|max:150|nullable',
+            'image3title' => 'string|max:150|nullable',
         ]);
     }
     /**
@@ -46,6 +49,9 @@ class PostController extends BasePrivatController
             $this->upload($post,$request,'uploads-post','image1');
             $this->upload($post,$request,'uploads-post','image2');
             $this->upload($post,$request,'uploads-post','image3');
+            $post->image1title = $request->input('image1title');
+            $post->image2title = $request->input('image2title');
+            $post->image3title = $request->input('image3title');
             $post->save();
     }
     /**

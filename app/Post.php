@@ -16,6 +16,7 @@ class Post extends Model
         'user_id',
         'show_post', 'show_post_on_www',
         'image1', 'image2','image3',
+        'image1title', 'image2title','image3title',
         'teaser', 'title','text', 'links',
     ];
 
