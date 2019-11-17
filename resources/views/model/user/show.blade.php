@@ -5,24 +5,26 @@
 
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-        <div class="row">
-            <div class="col-md-3">
+         @if(Auth::user()->is_activ_profil)
+            <div class="row">
+                <div class="col-md-3">
+                    @if ($user->is_company === 0)
+                        @include('snippet.card')
+                    @else
+                        @include('snippet.cardcompany')
+                    @endif
+                </div>
+                <div class="col-md-9">
                 @if ($user->is_company === 0)
-                    @include('snippet.card')
+                    @include('snippet.talent')<br>
+                    @include('snippet.verify')<br>
+                    @include('snippet.post')<br>
                 @else
-                    @include('snippet.cardcompany')
+                    @include('snippet.advert')<br>
                 @endif
+                </div>
             </div>
-            <div class="col-md-9">
-            @if ($user->is_company === 0)
-                @include('snippet.talent')<br>
-                @include('snippet.verify')<br>
-                @include('snippet.post')<br>
-            @else
-                @include('snippet.advert')<br>
-            @endif
-            </div>
-        </div>
+        @endif
     </div>
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row">

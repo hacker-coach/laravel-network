@@ -30,8 +30,10 @@
                 @include('snippet.talent')
                 <br><a href="{{ route('verifyIndex') }}"><span  class="red-edit">{{ __('Referenzen bearbeiten') }}</span></a>
                 @include('snippet.verify')
-                <br><a href="{{ route('postIndex') }}"><span  class="red-edit"> {{ __('Artikel bearbeiten') }}</span></a>
-                @include('snippet.post')
+                @if(Auth::user()->is_activ_profil)
+                    <br><a href="{{ route('postIndex') }}"><span  class="red-edit"> {{ __('Artikel bearbeiten') }}</span></a>
+                    @include('snippet.post')
+                @endif
             @else
                 <br><a href="{{ route('advertIndex') }}"><span  class="red-edit">{{ __('Anzeigen bearbeiten') }}</span></a>
                 @include('snippet.advert')

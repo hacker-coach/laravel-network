@@ -25,9 +25,9 @@
                             @include('form.text', ['title' =>__('Firmen-Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
 @endif
                             @include('form.text', ['title' =>__('Slogan'),'name'=>'slogan','value'=>$user->slogan,'required'=>'required'])
-
+@if(Auth::user()->is_activ_profil)
                             @include('form.upload', ['title' =>__('Quadrat-Image'),'name'=>'image'])
-
+@endif
                             @include('form.text', ['title' =>__('Xing'),'name'=>'xing','value'=>old('xing', $user->xing),'required'=>''])
                             @include('form.text', ['title' =>__('Linkedin'),'name'=>'linkedin','value'=>old('linkedin', $user->linkedin),'required'=>''])
                             @include('form.text', ['title' =>__('www'),'name'=>'www','value'=> old('www', $user->www),'required'=>''])
