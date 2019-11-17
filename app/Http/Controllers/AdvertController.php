@@ -85,7 +85,7 @@ class AdvertController extends BasePrivatController
         }
 
 
-        return redirect()->route('advertIndex');
+        return redirect()->route('advertShow', $advert->id);
     }
 
     /**
@@ -133,7 +133,7 @@ class AdvertController extends BasePrivatController
         if(!is_null($advert)){
             $this->setRequestToModel($request,$advert);
         }
-        return redirect()->route('advertIndex');
+        return redirect()->route('advertShow', $advert->id);
     }
     /**
      * Show the form for editing the specified resource.

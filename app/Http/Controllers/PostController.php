@@ -96,7 +96,7 @@ class PostController extends BasePrivatController
             $this->setRequestToModel($request,$post);
         }
 
-        return redirect()->route('postIndex');
+        return redirect()->route('postShow', $post->id);
     }
 
     /**
@@ -145,7 +145,7 @@ class PostController extends BasePrivatController
         if(!is_null($post)){
             $this->setRequestToModel($request,$post);
         }
-        return redirect()->route('postIndex');
+        return redirect()->route('postShow', $post->id);
     }
     /**
      * Show the form for editing the specified resource.
