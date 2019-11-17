@@ -7,12 +7,7 @@
                 <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
                     {{$post->teaser}}
                 </p>
-                <p class="lead mb-0">
-                    {!! $post->getMarkdownText() !!}
-                </p>
-                <div style="font-weight:bolder;">
-                    {!! $post->getMarkdownLinks() !!}
-                </div>
+                <a href="{{ route('postShow', $post->id) }}">...mehr</a>
             </div>
         @endif
     @endforeach

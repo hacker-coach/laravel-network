@@ -7,21 +7,9 @@
 
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
                          {{$advert->teaser}}
-
-
                         </p>
 
-                        <p class="lead mb-0">
-                            @if (isset($advert->image))
-                                <div class="card float-right" style="width: 50%; margin-bottom: 5px;margin-top: 5px; margin-left:5px;">
-                                  <img class="card-img-top" src="/uploads/advert{{$advert->image}}">
-                                </div>
-                            @endif
-                            {!! $advert->getMarkdownText() !!}
-                        </p>
-                        <p style="font-weight:bold">
-                             {{$advert->link}}
-                        </p>
+                        <a href="{{ route('advertShow', $advert->id) }}">...mehr</a>
             </div>
         @endif
     @endforeach
