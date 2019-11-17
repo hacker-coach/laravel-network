@@ -120,20 +120,23 @@ class VerifyController extends BasePrivatController
      */
     public function createedit($user_id)
     {
-        $verify = Verify::where('user_id', (int)$user_id)
-            ->where('user_id_from',  Auth::user()->getAuthIdentifier())
-            ->first();
-        if(!is_null($verify) && !Auth::user()->is_company){
-            return view('model.verify.edit', [
-                'verify' => $verify
-            ]);
-        }else{
-            $verify = new Verify();
-            $verify->user_id = (int)$user_id;
-            return view('model.verify.create', [
-                'verify' => $verify
-            ]);
+        if(!Auth::user()->is_company && Auth::user()->is_activ_member === 1){
+                $verify = Verify::where('user_id', (int)$user_id)
+                    ->where('user_id_from',  Auth::user()->getAuthIdentifier())
+                    ->first();
+                if(!is_null($verify) && !Auth::user()->is_company){
+                    return view('model.verify.edit', [
+                        'verify' => $verify
+                    ]);
+                }else{
+                    $verify = new Verify();
+                    $verify->user_id = (int)$user_id;
+                    return view('model.verify.create', [
+                        'verify' => $verify
+                    ]);
+                }
         }
+        return redirect()->route('home');
     }
 
     /**
@@ -160,7 +163,7 @@ class VerifyController extends BasePrivatController
         $verify = Verify::where('user_id', (int)$request->input('user_id'))
             ->where('user_id_from',Auth::user()->getAuthIdentifier())
             ->get()->first();
-        if(is_null($verify) && !Auth::user()->is_company){
+        if(is_null($verify) && !Auth::user()->is_company && Auth::user()->is_activ_member === 1){
             $verify = new Verify();
             $verify = $verify->create();
             $verify->text = $request->input('text');
