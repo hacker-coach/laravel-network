@@ -28,7 +28,7 @@
                         <a class="nav-link" href="{{ route('company') }}"><strong>{{ __('Firmen') }}</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('userProfil') }}">{{ __('Profil') }}</a>
+                       <a class="nav-link btn btn-success" style="color:white; margin-left:5px;margin-right:5px;" href="{{ route('userProfil') }}">{{ __('Dein Profil') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
