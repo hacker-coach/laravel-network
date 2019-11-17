@@ -2,7 +2,7 @@
 
 @section('content')
 
-@include('snippet.sectionheader', ['title' =>'Mitglieder'])
+@include('snippet.sectionheader', ['title' =>'Firmen'])
 
 <div class="container" style="padding-top: 2rem !important;  padding-bottom: 2rem;">
     <div class="row">
