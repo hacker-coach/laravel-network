@@ -99,7 +99,8 @@ class AdvertController extends BasePrivatController
         $advert = Advert::where('id',$id)->get()->first();
         return view('model.advert.show', [
             'advert' => $advert,
-            'user' => $advert->user
+            'user' => $advert->user,
+            'isList' => true
         ]);
     }
 

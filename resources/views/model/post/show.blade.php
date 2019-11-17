@@ -7,7 +7,7 @@
         <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
             <div class="row">
                 <div class="col-md-3">
-                    @include('snippet.cardcompany')
+                    @include('snippet.card')
                 </div>
                 <div class="col-md-9">
                 <h3 class="black-box">{{$post->title}}</h3>
