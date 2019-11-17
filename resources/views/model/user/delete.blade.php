@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card"  style="margin-top:50px;margin-bottom: 50px;">
-                    <div class="card-header">Account löschen</div>
+                    <div class="card-header">Account {{$user->name}} [{{$user->email}}] löschen</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('userDestroy') }}" >
