@@ -41,7 +41,7 @@
                 <a class="btn  btn-primary float-left" href="{{ route('userShow', $user->id) }}" >
                     {{ __('Profil') }}
                 </a>
-                @if (Auth::user()->id != $user->id)
+                @if (Auth::user()->id != $user->id && !Auth::user()->is_company )
                     <a class="btn btn-danger float-right" href="{{ route('verifyCreateedit', $user->id) }}" >
                         {{ __('Referenz') }}
                     </a>
