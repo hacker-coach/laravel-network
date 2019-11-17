@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\User;
+use App\Post;
+use App\Advert;
+use App\Verify;
 
 class UserController extends BasePrivatController
 {
@@ -180,6 +183,27 @@ class UserController extends BasePrivatController
     {
         $user = Auth::user();
         $this->uploadDelete($user->image,'uploads-user');
+
+        $verifies =  Verify::where('user_id_from',$user->id)->get();
+        foreach($verifies as $verify){
+            $verify->delete();
+        }
+        $verifies =  Verify::where('user_id',$user->id)->get();
+        foreach($verifies as $verify){
+            $verify->delete();
+        }
+        $posts =  Post::where('user_id',$user->id)->get();
+        foreach($posts as $post){
+            $this->uploadDelete($post->image1,'uploads-post');
+            $this->uploadDelete($post->image2,'uploads-post');
+            $this->uploadDelete($post->image3,'uploads-post');
+            $post->delete();
+        }
+        $adverts =  Advert::where('user_id',$user->id)->get();
+        foreach($adverts as $advert){
+            $this->uploadDelete($advert->image1,'uploads-advert');
+            $advert->delete();
+        }
         $user->delete();
         Auth::logout();
         return redirect()->route('welcome');
