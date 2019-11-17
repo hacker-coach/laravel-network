@@ -14,9 +14,9 @@
                 <p class="lead mb-0">
                     {!! $post->getMarkdownText() !!}
                 </p>
-                <p style="font-weight:bold">
+                <div style="font-weight:bolder;">
                     {!! $post->getMarkdownLinks() !!}
-                </p>
+                </div>
             </div>
 
         </div>
