@@ -110,8 +110,7 @@ class PostController extends BasePrivatController
         $post = Post::where('id',$id)->get()->first();
         return view('model.post.show', [
             'post' => $post,
-            'user' => $post->user,
-            'isList' => true
+            'user' => $post->user
         ]);
     }
 

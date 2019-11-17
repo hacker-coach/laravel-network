@@ -7,6 +7,10 @@
         <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
             <div class="row">
                 <div class="col-md-3">
+                    <a class="btn  btn-primary float-left" href="{{ route('userShow', $user->id) }}" >
+                        {{ __('zurück') }}
+                    </a>
+                    <br><br>
                     @include('snippet.card')
                 </div>
                 <div class="col-md-9">
