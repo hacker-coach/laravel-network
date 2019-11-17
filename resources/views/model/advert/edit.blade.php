@@ -20,7 +20,7 @@
                             @include('form.textarea', ['name' =>'teaser','title'=>__('Teaser'),'value'=>$advert->teaser,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$advert->text,'required'=>''])
                             @include('form.text', ['name' =>'link','title'=>__('Link'),'value'=>$advert->link,'required'=>''])
-                            @include('form.upload', ['title' =>__('Image'),'name'=>'image'])
+                            @include('form.upload', ['title' =>__('Image'),'name'=>'image','value'=>'/uploads/advert'.$advert->image])
 
                             <div class="form-group">
                                     <button type="submit" class="btn btn-primary">

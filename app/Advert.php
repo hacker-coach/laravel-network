@@ -33,7 +33,7 @@ class Advert extends Model
     }
 
     private function parseContent($text){
-           return Markdown::convertToHtml($text);
+           return Markdown::convertToHtml((string)$text);
     }
     /**
      * The attributes that should be cast to native types.
