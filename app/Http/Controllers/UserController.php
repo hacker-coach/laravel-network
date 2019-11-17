@@ -79,6 +79,20 @@ class UserController extends BasePrivatController
 
     /**
      * Display the specified resource.
+     * @param  integer  $user_id
+     * @return \Illuminate\Http\Response
+     */
+    public function showCompany($user_id)
+    {
+        $user = User::where('id', (int)$user_id)->where('is_company', true)->first();
+        return view('model.user.showcompany', [
+            'user' => $user
+        ]);
+    }
+
+
+    /**
+     * Display the specified resource.
      *
      * @return \Illuminate\Http\Response
      */

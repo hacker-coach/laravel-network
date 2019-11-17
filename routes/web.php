@@ -26,6 +26,7 @@ Route::get('/user/edit/talent', 'UserController@editTalent')->name('userEditTale
 Route::post('/user/update/talent', 'UserController@updateTalent')->name('userUpdateTalent');
 Route::post('/user/update', 'UserController@update')->name('userUpdate');
 Route::get('/user/show/{user_id}', 'UserController@show')->name('userShow');
+Route::get('/user/show/company/{user_id}', 'UserController@showCompany')->name('userShowCompany');
 Route::get('/user/profil', 'UserController@profil')->name('userProfil');
 Route::get('/user/delete', 'UserController@delete')->name('userDelete');
 Route::post('/user/destroy', 'UserController@destroy')->name('userDestroy');

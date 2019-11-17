@@ -38,14 +38,9 @@
         @endif
         @if (Auth::user() && isset($isList))
             <div class="card-text text-black-50" style="padding:15px 0px 5px 0px;">
-                <a class="btn  btn-primary float-left" href="{{ route('userShow', $user->id) }}" >
+                <a class="btn  btn-primary float-left" href="{{ route('userShowCompany', $user->id) }}" >
                     {{ __('Profil') }}
                 </a>
-                @if (Auth::user()->id != $user->id)
-                    <a class="btn btn-danger float-right" href="{{ route('verifyCreateedit', $user->id) }}" >
-                        {{ __('Referenz') }}
-                    </a>
-                @endif
             </div>
         @endif
     </div>
