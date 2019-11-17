@@ -1,4 +1,4 @@
-<section class="text-white text-center"  style="background-color:#FD5F00; height: 360px;background-image: linear-gradient(120deg, #FD5F00, #49fb35); height: 100px;">
+<section class="text-white text-center"  style="background-color: #f82249; height: 100px;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

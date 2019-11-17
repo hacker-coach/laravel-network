@@ -2,7 +2,7 @@
 
 @include('snippet.nav')
 
-<header class="header-col3  text-white " style="background-color:#FD5F00; background-image: linear-gradient(120deg, #FD5F00, #49fb35);" >
+<header class="header-col3  text-white " style="background-color: #f82249;" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 ">
