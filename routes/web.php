@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/', 'Controller@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/company', 'CompanyController@index')->name('company');
-Route::get('/verification/{id}', 'VerificationController@index')->name('indexVerification');
+Route::get('/verification/{id}', 'VerificationController@verification')->name('verificationVerification');
 // USER
 Route::get('/user/edit', 'UserController@edit')->name('userEdit');
 Route::get('/user/edit/talent', 'UserController@editTalent')->name('userEditTalent');

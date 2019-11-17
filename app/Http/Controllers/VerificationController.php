@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\User;
 
 class VerificationController extends BasePrivatController
 {
@@ -20,9 +21,10 @@ class VerificationController extends BasePrivatController
     /**
      * Show the application dashboard.
      *
+     * @param  integer  $id
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index($id)
+    public function verification($id)
     {
         if(Auth::user()->is_activ_profil && Auth::user()->id ===1){
             $user = User::where('id', (int)$id)->first();
