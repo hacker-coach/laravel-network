@@ -1,8 +1,4 @@
-## Entwicklungszeit: 2 Tage (2-3.11)
-
-### Hinweis: Dieses Projekt ist noch nicht fertig und zudem eine praktische schnelle Lösung für ein Mini-Portal
-
----
+## Entwicklungszeit: 3-4 Tage 
 
 # Konzept - Mitglieder Portal
 
