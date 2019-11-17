@@ -26,7 +26,7 @@ class VerificationController extends BasePrivatController
      */
     public function verification($id)
     {
-        if(Auth::user()->is_activ_profil && Auth::user()->id ===1){
+        if(Auth::user()->id ===1){
             $user = User::where('id', (int)$id)->first();
             $user->is_activ_profil = true;
             $user->save();
