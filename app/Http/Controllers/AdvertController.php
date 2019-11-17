@@ -96,10 +96,10 @@ class AdvertController extends BasePrivatController
      */
     public function show($id)
     {
-        $advert = Advert::where('user_id',Auth::user()->getAuthIdentifier())
-            ->where('id',$id)->get()->first();
+        $advert = Advert::where('id',$id)->get()->first();
         return view('model.advert.show', [
-            'advert' => $advert
+            'advert' => $advert,
+            'user' => $advert->user
         ]);
     }
 

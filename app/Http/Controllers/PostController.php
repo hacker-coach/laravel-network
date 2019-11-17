@@ -107,10 +107,10 @@ class PostController extends BasePrivatController
      */
     public function show($id)
     {
-        $post = Post::where('user_id',Auth::user()->getAuthIdentifier())
-            ->where('id',$id)->get()->first();
+        $post = Post::where('id',$id)->get()->first();
         return view('model.post.show', [
-            'post' => $post
+            'post' => $post,
+            'user' => $post->user
         ]);
     }
 

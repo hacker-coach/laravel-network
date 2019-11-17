@@ -4,9 +4,13 @@
 
     @include('snippet.sectionheader', ['title' =>'Artikel'])
 
+
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-        <div class="row justify-content-center">
-                <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-3">
+                @include('snippet.cardcompany')
+            </div>
+            <div class="col-md-9">
                     <h3 class="black-box">{{$advert->title}}</h3>
                     <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
                         {{$advert->teaser}}
@@ -22,7 +26,8 @@
                     <p style="font-weight:bold">
                          {{$advert->link}}
                     </p>
-                </div>
+            </div>
         </div>
     </div>
+
 @endsection
