@@ -123,7 +123,7 @@ class VerifyController extends BasePrivatController
         $verify = Verify::where('user_id', (int)$user_id)
             ->where('user_id_from',  Auth::user()->getAuthIdentifier())
             ->first();
-        if(!is_null($verify)){
+        if(!is_null($verify) && !Auth::user()->is_company){
             return view('model.verify.edit', [
                 'verify' => $verify
             ]);
@@ -160,7 +160,7 @@ class VerifyController extends BasePrivatController
         $verify = Verify::where('user_id', (int)$request->input('user_id'))
             ->where('user_id_from',Auth::user()->getAuthIdentifier())
             ->get()->first();
-        if(is_null($verify)){
+        if(is_null($verify) && !Auth::user()->is_company){
             $verify = new Verify();
             $verify = $verify->create();
             $verify->text = $request->input('text');
@@ -200,7 +200,7 @@ class VerifyController extends BasePrivatController
             ->where('user_id_from',  Auth::user()->getAuthIdentifier())
             ->get()->first();
 
-        if(!is_null($verify)){
+        if(!is_null($verify)  && !Auth::user()->is_company){
             $this->setRequestToModelCheckBoxHas($request,$verify);
             $verify->text = $request->input('text');
             $verify->save();
@@ -220,7 +220,7 @@ class VerifyController extends BasePrivatController
             ->where('user_id',  Auth::user()->getAuthIdentifier())
             ->get()->first();
 
-        if(!is_null($verify)){
+        if(!is_null($verify) && !Auth::user()->is_company){
             $this->setRequestToModelCheckBoxShow($request,$verify);
             $verify->answer_of_user = $request->input('answer_of_user');
             $verify->save();
