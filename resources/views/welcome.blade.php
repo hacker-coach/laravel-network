@@ -9,10 +9,11 @@
             </div>
             <div class="col-md-8 header-col3-banner">
                 <h2 class="display-4 ">Öffentliche Mitglieder</h2>
-
-                <div style="padding-top:15px;padding-right:25px;padding-bottom:5px;">
-                <a class="btn btn-dark btn-xl" style="text-transform: lowercase;font-family: monospace;border-radius: 10rem; border: 5px solid #343a40;"  href="{{ route('register') }}">
-                 Experten suchen u. kostenlose Anzeigen schalten  </a> </div>
+                @guest
+                    <div style="padding-top:15px;padding-right:25px;padding-bottom:5px;">
+                    <a class="btn btn-dark btn-xl" style="text-transform: lowercase;font-family: monospace;border-radius: 10rem; border: 5px solid #343a40;"  href="{{ route('register') }}">
+                     Experten suchen u. kostenlose Anzeigen schalten  </a> </div>
+                 @endguest
             </div>
             <div class="col-md-2 ">
             </div>
