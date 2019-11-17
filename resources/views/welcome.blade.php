@@ -27,7 +27,7 @@
         @if (true)
             @guest
                 <div class="alert alert-warning" role="alert">
-                    Sie müssen registrieren Sie sich sich!
+                    Sie müssen sich registrieren, damit Sie auf öffentlichen Mitglieder zugreifen können!
                 </div>
             @else
                 <div class="alert alert-warning" role="alert">
