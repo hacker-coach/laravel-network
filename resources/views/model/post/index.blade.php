@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <a class="btn btn-primary" href="{{ route('postCreate') }}" >
                     {{ __('neuen Artikel') }}
-                </a>
+                </a><br><br>
                 @if (count($posts))
                     <table class="table mt-3">
                         <thead>

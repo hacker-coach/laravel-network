@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <a class="btn btn-primary" href="{{ route('advertCreate') }}" >
                     {{ __('neue Anzeige') }}
-                </a>
+                </a><br><br>
                 @if (count($adverts))
                     <table class="table mt-3">
                         <thead>
