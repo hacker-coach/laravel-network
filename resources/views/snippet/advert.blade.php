@@ -13,7 +13,7 @@
 
                         <p class="lead mb-0">
                             @if (isset($advert->image))
-                                <div class="card float-right" style="width: 50%; margin-bottom: 5px;margin-top: 5px; ">
+                                <div class="card float-right" style="width: 50%; margin-bottom: 5px;margin-top: 5px; margin-left:5px;">
                                   <img class="card-img-top" src="/uploads/advert{{$advert->image}}">
                                 </div>
                             @endif
