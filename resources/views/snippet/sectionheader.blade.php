@@ -1,4 +1,4 @@
-<header class="header-col3  text-white " style="background-color:#21c87a;min-height: 100px;" >
+<header class="header-col3  text-white " style="background-color:#FD5F00; background-image: linear-gradient(120deg, #FD5F00, #49fb35); min-height: 100px;" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 ">

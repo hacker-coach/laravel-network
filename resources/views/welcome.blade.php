@@ -2,16 +2,17 @@
 
 @include('snippet.nav')
 
-<header class="header-col3  text-white " style="background-color:#21c87a;" >
+<header class="header-col3  text-white " style="background-color:#FD5F00; background-image: linear-gradient(120deg, #FD5F00, #49fb35);" >
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 ">
             </div>
             <div class="col-md-8 header-col3-banner">
                 <h2 class="display-4 ">Öffentliche Mitglieder</h2>
+
                 <div style="padding-top:15px;padding-right:25px;padding-bottom:5px;">
-                    <a class="btn btn-dark btn-xl"   style="border-radius: 10rem; background-color:#f0ad4e; border: 5px solid #f0ad4e;"  href="{{ route('register') }}">Experten suchen im Mitglieder-Bereich und kostenlose Anzeigen schalten</a>
-                </div>
+                <a class="btn btn-dark btn-xl" style="text-transform: lowercase;font-family: monospace;border-radius: 10rem; border: 5px solid #343a40;"  href="{{ route('register') }}">
+                 Experten suchen u. kostenlose Anzeigen schalten  </a> </div>
             </div>
             <div class="col-md-2 ">
             </div>
