@@ -75,6 +75,19 @@
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                         </div>
 
+                        <div class="form-group ">
+                            <label for="code" >{{ __('Access-Code') }}</label>
+
+                            <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" name="code" value="{{ old('code') }}" required autocomplete="code">
+
+                            @error('code')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+
+                        </div>
+
                         <!-- Text input-->
                         <div class="form-group">
                             <label class="control-label" for="dgsvo" required>Datenschutz</label>

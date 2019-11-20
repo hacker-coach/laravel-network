@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Mail\VerificationMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
+use App\Rules\AccessCode;
 
 class RegisterController extends Controller
 {
@@ -43,6 +45,8 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
+    protected $code = 'dc802028aa03d5c38e9dfd903b0ba15e7fe19be00c5b0757b477ded512178f53611feddcc7e9af77976438bfdf156d2f86fbdb19670d399ee41ff8535be4c661';
+
     /**
      * Create a new controller instance.
      *
@@ -63,6 +67,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'code' => ['required', new AccessCode($this->code)],
             'dgsvo' => 'accepted',
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
@@ -77,16 +82,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $user = User::create([
-            'name' => $data['name'],
-            'is_company' => (boolean)$data['is_company'],
-            'dgsvo' => (boolean)$data['dgsvo'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        if($data['code']===$this->code){
+                $user = User::create([
+                    'name' => $data['name'],
+                    'is_company' => (boolean)$data['is_company'],
+                    'dgsvo' => (boolean)$data['dgsvo'],
+                    'email' => $data['email'],
+                    'password' => Hash::make($data['password']),
+                ]);
 
-        Mail::to('log@problemsolvernetwork.org')->send(new VerificationMail($user,'RegisterController::create'));
-
-        return $user;
+                Mail::to('log@problemsolvernetwork.org')->send(new VerificationMail($user,'RegisterController::create'));
+                return $user;
+        }
+        Auth::logout();
+        header("HTTP/1.0 404 Not Found"); exit;
     }
 }
