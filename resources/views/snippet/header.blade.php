@@ -17,7 +17,7 @@
     <link href="/theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="/theme/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
     <!-- Custom styles for this template -->
     <link href="/theme/style.css" rel="stylesheet">
 </head>
