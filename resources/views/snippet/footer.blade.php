@@ -27,7 +27,7 @@
                     </li>
                     <li class="list-inline-item">&sdot;</li>
                     <li class="list-inline-item">
-                        <a href="http://problemsolvernetwork.org/de/kontakt/">Kontakt</a>
+                        <a href="http://buntvogel.de/kontakt/">Kontakt</a>
                     </li>
                 </ul>
                 <p class="text-muted small mb-4 mb-lg-0">&copy; Micha Barthel 2019. All Rights Reserved.</p>
