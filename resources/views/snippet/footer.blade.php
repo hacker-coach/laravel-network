@@ -27,10 +27,10 @@
                     </li>
                     <li class="list-inline-item">&sdot;</li>
                     <li class="list-inline-item">
-                        <a href="http://buntvogel.de/kontakt/">Kontakt</a>
+                        <a href="http://problemsolvernetwork.org/kontakt/">Kontakt</a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; Micha Barthel 2019. All Rights Reserved.</p>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; 2019. All Rights Reserved.</p>
             </div>
             <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                 <ul class="list-inline mb-0">
