@@ -35,7 +35,7 @@
             <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
-                        <a href="https://twitter.com/" target="_blank" style="text-decoration: none;">
+                        <a href="https://twitter.com/psnTalent" target="_blank" style="text-decoration: none;">
                             <span class="fab fa-twitter fa-2x fa-fw"  style="color:rgba(0,0,0,.5);"></span>
                         </a>
                     </li>
