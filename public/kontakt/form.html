@@ -1,0 +1,98 @@
+###message###
+<style>
+.control-label{
+   font-weight: bold;
+}
+</style>
+<h2 class="black-box">Anfrage</h2>
+<form class="form-horizontal" action="###domain###/kontakt/index.php" method="post" autocomplete="off" >
+
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="mail">E-Mail</label>
+                    <div class="">
+                        <input id="mail" name="mail" type="email" value="###mail###" placeholder="" class="form-control input-md" required>
+                    </div>
+            </div>
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="phone">Telefon</label>
+                    <div class="">
+                        <input id="phone" name="phone" type="text"  value="###phone###" placeholder="" class="form-control input-md" required>
+                    </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="name">Name</label>
+                    <div class="">
+                        <input id="name" name="name" type="text"  value="###name###" placeholder="" class="form-control input-md" required>
+                    </div>
+            </div>
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="firma">Firma</label>
+                    <div class="">
+                        <input id="firma" name="firma"  value="###firma###" class="form-control input-md" required>
+                    </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="mitarbeiter">Anzahl Ihrer Mitarbeiter</label>
+                        <select id="mitarbeiter" name="mitarbeiter"  class="form-control input-md" required>
+                            <option value="">Bitte auswählen</option>
+                            <option value="weniger als 25 Mitarbeiter">weniger als 25 Mitarbeiter</option>
+                            <option value="weniger als 50 Mitarbeiter">weniger als 50 Mitarbeiter</option>
+                            <option value="weniger als 100 Mitarbeiter">weniger als 100 Mitarbeiter</option>
+                            <option value="weniger als 250 Mitarbeiter">weniger als 250 Mitarbeiter</option>
+                            <option value="weniger als 500 Mitarbeiter">weniger als 500 Mitarbeiter</option>
+                            <option value="weniger als 1000 Mitarbeiter">weniger als 1000 Mitarbeiter</option>
+                            <option value="weniger als 2500 Mitarbeiter">weniger als 2500 Mitarbeiter</option>
+                            <option value="weniger als 10000 Mitarbeiter">weniger als 10000 Mitarbeiter</option>
+                            <option value="mehr als 10000 Mitarbeiter">mehr als 10000 Mitarbeiter</option>
+                        </select>
+            </div>
+            <div class="form-group col-md-6">
+                    <label class="control-label" for="art">Angebot</label>
+                        <select id="art" name="art" type="text" placeholder="" class="form-control input-md" required>
+                            <option value="">Bitte auswählen</option>
+                            <option value="problem solver network"># problem solver network - PSN</option>
+                            <option value="crack-brained-consulting"># crack-brained-consulting - [ B ]</option>
+                        </select>
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <label class="control-label" for="problem" required>Problem</label>
+            <div class="">
+                <textarea class="form-control" id="problem" name="problem" rows="5" >###problem###</textarea>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="control-label" for="send" required>Datenschutz</label>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="send" name="send" required>
+                Ich habe den <a href="/de/datenschutz/" target="_blank">Datenschutzhinweis</a> zur Kenntnis genommen u.
+                erkläre mich mit der Speicherung u. Verarbeitung meiner Daten durch diese Website einverstanden.
+            </div>
+        </div>
+
+
+        <!-- Button -->
+        <div class="form-group">
+            <div >
+                <button id="submit" name="submit" class="btn btn-primary">Anfrage senden</button>
+            </div>
+        </div>
+
+
+
+
+</form>
+
