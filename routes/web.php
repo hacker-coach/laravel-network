@@ -16,8 +16,15 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::redirect('/', '/de',301);
+#Route::get('/', 'Controller@index')->name('index');
 
-Route::get('/', 'Controller@index')->name('welcome');
+Route::get('/de', 'Controller@indexDe')->name('indexDe');
+Route::get('/de/club', 'Controller@clubDe')->name('clubDe');
+Route::get('/de/impressum', 'Controller@impressumDe')->name('impressumDe');
+Route::get('/de/datenschutz', 'Controller@datenschutzDe')->name('datenschutzDe');
+Route::get('/de/mitglieder', 'Controller@memberDe')->name('memberDe');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/company', 'CompanyController@index')->name('company');
 Route::get('/verification/{id}', 'VerificationController@verification')->name('verificationVerification');

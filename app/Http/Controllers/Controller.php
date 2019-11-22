@@ -17,16 +17,56 @@ class Controller extends BaseController
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function memberDe()
     {
         $users = DB::table('users')
             ->where('show_profil_www', 1)
             ->where('is_activ_profil', 1)
             ->where('is_activ_member', 1)
             ->get();
-        return view('welcome', [
+        return view('de.member', [
             'users' => $users,
             'isList' => true
         ]);
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function indexDe()
+    {
+        return view('de.index');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function impressumDe()
+    {
+        return view('de.impressum');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function datenschutzDe()
+    {
+        return view('de.datenschutz');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function clubDe()
+    {
+        return view('de.club');
     }
 }
