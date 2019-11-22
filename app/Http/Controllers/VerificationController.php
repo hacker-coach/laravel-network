@@ -34,6 +34,6 @@ class VerificationController extends BasePrivatController
                 'user' => $user
             ]);
         }
-        return redirect()->route('welcome');
+        return redirect()->route('memberDe');
     }
 }

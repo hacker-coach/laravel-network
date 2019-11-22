@@ -206,6 +206,6 @@ class UserController extends BasePrivatController
         }
         $user->delete();
         Auth::logout();
-        return redirect()->route('welcome');
+        return redirect()->route('memberDe');
     }
 }

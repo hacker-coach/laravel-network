@@ -1,6 +1,34 @@
-@include('snippet.header', ['title' => 'Netzwerk für professionelle "outside the box" - Denker'])
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Netzwerk für professionelle 'outside the box' - Denker">
+<meta name="author" content="Micha Barthel">
+<meta name="date" content="2019-11-22T19:53:33+01:00" />
+
+<meta name="image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-netzwerk.jpg" alt="Problemlöser Netzwerk">
+<meta property="og:title" content="Problemlöser Netzwerk" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://problemsolvernetwork.org/de/" />
+<meta property="og:image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-netzwerk.jpg" />
+<meta property="og:image:alt" content="Problemlöser Netzwerk" />
+<meta property="og:description" content="Problemlöser Netzwerk" />
+<meta property="og:site_name" content="problemsolvernetwork" />
+
+<title>Netzwerk für professionelle "outside the box" - Denker</title>
+
+@include('de.css')
+
+</head>
+
+<body>
 
 @include('de.nav')
+
 
 <header class="header-col3  text-white " style="background-color: #f82249;" >
     <div class="container-fluid">
@@ -102,5 +130,8 @@
     </div>
 </section>
 
-
 @include('de.footer')
+@include('de.js')
+</body>
+
+</html>
