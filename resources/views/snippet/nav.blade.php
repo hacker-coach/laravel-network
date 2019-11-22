@@ -42,9 +42,6 @@
 
                 @endguest
                 <li class="nav-item">
-                    <a class="nav-link" href="/de/club" >Club</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/kontakt/" >Kontakt</a>
                 </li>
                 <li class="nav-item">

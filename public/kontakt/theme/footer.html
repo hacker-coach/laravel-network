@@ -13,6 +13,10 @@
                     </li>
                     <li class="list-inline-item">&sdot;</li>
                     <li class="list-inline-item">
+                        <a href="/de/club/">Club</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
                         <a href="/kontakt/">Kontakt</a>
                     </li>
                 </ul>
