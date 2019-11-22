@@ -10,18 +10,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/de/mitglieder" >Mitglieder</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Netzwerke</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a target="_blank" class="dropdown-item" href="https://www.crack-brained.de/" ><strong># crack brained consultants [ B ]</strong> <br> network of highly creative thinkers</a>
-                        <a target="_blank" class="dropdown-item" href="http://problemsolvernetwork.org/" ><strong># problem solver network</strong>
-                            <br> Netzwerk für professionelle <br>"outside the box" - Denker
-                            <br> und Menschen mit Spezialbegabung</a>
-                        <a class="dropdown-item" href="/de/club" ><strong># club der langzeit-denker</strong></a>
-                    </div>
+				<li class="nav-item">
+                    <a class="nav-link" href="/de/club" >Club</a>
                 </li>
-
-
                 <li class="nav-item">
                     <a class="nav-link" href="/kontakt/" >Kontakt</a>
                 </li>

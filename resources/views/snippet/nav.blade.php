@@ -41,7 +41,24 @@
                     </li>
 
                 @endguest
-
+                <li class="nav-item">
+                    <a class="nav-link" href="/de/club" >Club</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kontakt/" >Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    &nbsp;&nbsp;
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/psnTalent"  style="text-decoration: none;">
+                        <span class="fab fa-twitter fa-2x fa-fw"  style="color:rgba(0,0,0,.5);"></span>
+                    </a>
+                    <a target="_blank" href="https://www.crack-brained.de/"  style="text-decoration: none; color:rgba(0,0,0,.5);" ><strong>[ B ]</strong></a>
+                </li>
+                <li class="nav-item">
+                    &nbsp;&nbsp;
+                </li>
             </ul>
         </div>
     </div>
