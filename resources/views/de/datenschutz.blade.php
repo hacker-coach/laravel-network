@@ -10,7 +10,7 @@
     <meta name="author" content="Micha Barthel">
     <meta name="date" content="2019-11-22T19:52:57+01:00" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>DATENSCHUTZ | Micha Barthel</title>
+    <title>DATENSCHUTZ</title>
 
 
 @include('de.css')

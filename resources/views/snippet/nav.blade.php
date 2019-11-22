@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
             <ul class="navbar-nav  ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('memberDe') }}">{{ __('Super-Problemlöser') }}</a>
+                    <a class="nav-link" href="{{ route('memberDe') }}">{{ __('Mitglieder') }}</a>
                 </li>
                 @guest
                     @if (Route::has('register'))
@@ -22,7 +22,7 @@
 
                 @else
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Mitglieder') }}</strong></a>
+                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Alle Mitglieder') }}</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('company') }}"><strong>{{ __('Firmen') }}</strong></a>

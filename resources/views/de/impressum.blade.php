@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 
@@ -7,21 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Micha Barthel">
+    <meta name="author" content="">
     <meta name="date" content="2019-11-22T19:53:18+01:00" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>MB - IMPRESSUM</title>
+    <title>IMPRESSUM</title>
 
-    <!-- Bootstrap core CSS -->
-<link href="/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom fonts for this template -->
-<link href="/theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="/theme/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-<!-- Custom styles for this template -->
-<link href="/theme/style.css" rel="stylesheet">
+@include('de.css')
 
 
 </head>
@@ -65,6 +55,7 @@ von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
         </div>
     </div>
 </section>
+
 <section class="text-white text-center"  style="background-color:#f0ad4e; height: 100px;">
     <div class="overlay"></div>
     <div class="container">
