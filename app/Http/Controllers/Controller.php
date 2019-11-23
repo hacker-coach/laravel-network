@@ -69,4 +69,24 @@ class Controller extends BaseController
     {
         return view('de.club');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function preiseDe()
+    {
+        return view('de.preise');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function agbDe()
+    {
+        return view('de.agb');
+    }
 }
