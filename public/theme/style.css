@@ -44,16 +44,23 @@ label{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 370px;
+  height: 360px;
 }
 .carousel-caption{
   padding-top: 15rem;
   padding-bottom: 9rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .carousel-item{
-      xheight: 80vh;
+       xmin-height: 100px;
+        xheight: 100px;
+    }
+}
+@media (min-width: 350px) {
+    .carousel-item{
+        xmin-height: 80px;
+        xheight: 300px;
     }
 }
 .list-inline-item a{
@@ -264,9 +271,6 @@ footer.footer {
   .display-4 header-block-carousel{
        padding-top: 90px !important;
 
-  }
-  .carousel-item {
-   height: 450px !important;
   }
 }
 .black-box{

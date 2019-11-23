@@ -25,7 +25,7 @@
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-color:#f0ad4e; height: 360px;">
+            <div class="carousel-item active" style="background-color:#f82249;">
                 <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
                     <h2 class="display-4 header-block-carousel">Impressum</h2>
                 </div>
@@ -56,7 +56,7 @@ von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
     </div>
 </section>
 
-<section class="text-white text-center"  style="background-color:#f0ad4e; height: 100px;">
+<section class="text-white text-center"  style="background-color:#f82249; height: 100px;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
