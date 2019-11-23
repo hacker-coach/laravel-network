@@ -21,7 +21,7 @@
                                 <label>
                                     [Firmen]<br>
                                     <input type="radio" name="is_company" id="is_company" value="1" checked/>
-                                     Experten suchen im Mitglieder-Bereich und kostenlose Anzeigen schalten
+                                     Kostenlose Anzeigen schalten
                                 </label>
                             </div>
                             <div class="col-md-6">
@@ -29,7 +29,7 @@
                                 <label>
                                     [Mitglieder]<br>
                                     <input type="radio" name="is_company" id="is_company" value="0" />
-                                     Problemlöser werden und Herausforderungen finden
+                                     Problemlöser werden
                                 </label>
                             </div>
                         </div>
