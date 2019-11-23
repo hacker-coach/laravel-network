@@ -7,9 +7,7 @@
 
         <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
             <ul class="navbar-nav  ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('memberDe') }}">{{ __('Mitglieder') }}</a>
-                </li>
+
                 @guest
                     @if (Route::has('register'))
                         <li class="nav-item">
