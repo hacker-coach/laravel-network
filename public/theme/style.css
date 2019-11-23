@@ -37,14 +37,14 @@ label{
 }
 
 .carousel-item {
-  height: 50vh;
-  min-height: 250px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 360px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+    min-height: 250px;
+    height: 360px;
 }
 .carousel-caption{
   padding-top: 15rem;
@@ -243,7 +243,9 @@ footer.footer {
 
 .header-col3{
     background-color:#4a94c7;
+    height: 50vh;
     min-height: 250px;
+    height: 360px;
 }
 .header-col3-banner{
     margin-top: 140px;
