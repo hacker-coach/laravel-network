@@ -26,9 +26,8 @@
 
 @include('de.nav')
 
-
-<header class="header-col3  text-white " >
-    <div class="container-fluid" style="background-color:#2196f3; ">
+<header class="header-col3  text-white " style="background-color:#2196f3; " >
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-md-2 ">
             </div>
