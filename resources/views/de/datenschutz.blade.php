@@ -6,9 +6,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Micha Barthel">
-    <meta name="date" content="2019-11-22T19:52:57+01:00" />
     <meta name="robots" content="noindex,nofollow" />
     <title>DATENSCHUTZ</title>
 
@@ -26,7 +23,7 @@
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-color:#f0ad4e; height: 360px;">
+            <div class="carousel-item active" style="background-color:#f82249; ">
                 <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
                     <h2 class="display-4 header-block-carousel">Datenschutz</h2>
                 </div>
@@ -202,7 +199,7 @@
         </div>
     </div>
 </section>
-<section class="text-white text-center"  style="background-color:#f0ad4e; height: 100px;">
+<section class="text-white text-center"  style="background-color:#f82249; height: 100px;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

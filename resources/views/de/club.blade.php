@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 
@@ -44,7 +43,7 @@
         </div>
     </div>
 </header>
-<!-- Icons Grid -->
+
 <section class="three-col-teaser bg-light ">
     <div class="container">
         <div class="row">

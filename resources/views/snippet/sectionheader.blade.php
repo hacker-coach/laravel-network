@@ -1,12 +1,11 @@
-<header class="header-col3  text-white " style="background-color: #f82249; min-height: 100px;" >
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 ">
-            </div>
-            <div class="col-md-8 header-col3-banner">
-                <h2 class="display-4 ">{{$title}}</h2>
-            </div>
-            <div class="col-md-2 ">
+<header>
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-color:#f82249; ">
+                <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                    <h2 class="display-4 header-block-carousel">{{$title}}</h2>
+                </div>
             </div>
         </div>
     </div>

@@ -5,9 +5,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="date" content="2019-11-22T19:53:18+01:00" />
     <meta name="robots" content="noindex,nofollow" />
     <title>IMPRESSUM</title>
 
