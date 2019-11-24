@@ -243,9 +243,9 @@ footer.footer {
 
 .header-col3{
     background-color:#4a94c7;
-    height: 50vh;
+    xheight: 50vh;
     min-height: 250px;
-    height: 360px;
+    xheight: 375px;
 }
 .header-col3-banner{
     margin-top: 140px;
