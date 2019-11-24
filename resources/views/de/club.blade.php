@@ -7,6 +7,7 @@
 <meta name="description" content="Club der Langzeit-Denker">
 <meta name="author" content="Micha Barthel">
 <meta name="date" content="2019-11-22T19:53:53+01:00" />
+<link rel="icon" href="/theme/media/favicon.ico" type="image/x-icon">
 
 <meta name="image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-club.jpg" alt="Club der Langzeit-Denker">
 <meta property="og:title" content="Club der Langzeit-Denker" />
@@ -95,11 +96,9 @@
             <div class="col-lg-8 my-auto showcase-text" >
                 <h3 class="black-box">Allgemeinen Relativitäts-Theorie</h3>
                 <p class="lead mb-0">
-                    Albert Einstein beschreibt mit seiner allgemeinen Relativitätstheorie mittels
-                    Mathematik die gekrümmte Raum-Zeit. Darüber leitet Einstein ab, das sich Licht
-                    durch den gekrümmten Raum abgelenkt wird. Warum verhält sich das Licht in diesem
-                    Fall wie Materie, wo es doch fast masselos ist und vielleicht sogar eine Welle ist? Oder
-                    ist Licht wirklich ein Korpuskel und eine Welle?
+                    Albert Einstein beschreibt mit seiner allgemeinen Relativitätstheorie mittels Mathematik die gekrümmte Raum-Zeit.
+                    Darüber leitet Einstein ab, dass das Licht durch den gekrümmten Raum abgelenkt wird. Warum verhält sich das Licht in diesem Fall wie Materie,
+                    wo es doch fast masselos ist und vielleicht sogar eine Welle ist? Oder ist Licht wirklich ein Korpuskel und eine Welle?
                 </p>
             </div>
         </div>

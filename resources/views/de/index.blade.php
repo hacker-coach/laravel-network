@@ -9,7 +9,7 @@
 <meta name="description" content="Netzwerk für professionelle 'outside the box' - Denker">
 <meta name="author" content="Micha Barthel">
 <meta name="date" content="2019-11-22T19:53:33+01:00" />
-
+<link rel="icon" href="/theme/media/favicon.ico" type="image/x-icon">
 <meta name="image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-netzwerk.jpg" alt="Problemlöser Netzwerk">
 <meta property="og:title" content="Problemlöser Netzwerk" />
 <meta property="og:type" content="website" />
@@ -97,7 +97,7 @@
                 </i>
                 </p>
 				                <i>Lernen bedeutet für mich denken, verstehen und hinterfragen und nicht das sinnlose Auswendiglernen und Wiedergeben von Informationen.
-                Leider werden wir in unserem Bildungssystem auf gehirnungerechtes Wiedergeben abgerichtet. Wissen ist nutzlos, wenn man nicht versteht, warum wir es verwenden.
+                Leider wird in unserem Bildungssystem das Gehirn auf primitives Wiedergeben abgerichtet. Wissen ist nutzlos, wenn man nicht versteht, warum wir es verwenden.
                 Zum Nachschlagen kann man auch das Internet verwenden.</i>
 				<br>
             </div>
