@@ -69,8 +69,8 @@
                 <h3 class="black-box">Netzwerk für professionelle "outside the box" - Denker<br> und Menschen mit Spezialbegabung</h3>
                 <p class="lead mb-0">
                     Dies ist ein Netzwerk für selbständige Experten, die Top-Profis auf ihrem Gebiet sind.
-                    Physiker, Mathematiker, Autodidakten, kreativen Höchstleister, Informatiker, Theoretiker, Philosophen, Juristen,
-                    Naturwissenschaftler, Psychologen und innovativen Querdenker.
+                    Physiker, Mathematiker, Autodidakten, kreative Höchstleister, Informatiker, Theoretiker, Philosophen, Juristen,
+                    Naturwissenschaftler, Psychologen und innovative Querdenker.
                     Menschen, denen es große Freude macht, Probleme zu abstrahieren und aus verschiedenen Blickwinkeln zu betrachten.
                     Jeder hat einen sehr individuellen beruflichen Werdegang und hat sich zum Experten auf einem Gebiet hochgearbeitet.
                     Als Netzwerk ist es leichter, neue Aufträge in der Wirtschaft zu finden, die eine Herausforderung sind.
