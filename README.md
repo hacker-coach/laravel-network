@@ -1,5 +1,3 @@
-### Entwicklungszeit: 3-4 Tage 
-
 # Konzept - Mitglieder Portal
 
 ## Mitglied werden
