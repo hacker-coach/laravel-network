@@ -47,7 +47,6 @@
             <div class="col-md-4 header-col3-list" style="color:white;">
                 <ul>
                     <li>Hohe Abstraktionsfähigkeit und Problemlösekompetenz</li>
-                    <li>Hohes kognitives Denk- und Durchhaltevermögen</li>
                     <li>Überdurchschnittliche hohe Konzentration</li>
                     <li>Systematische Arbeitsweise und logische Analyse</li>
                     <li>Hochkreative innovative Ideen</li>
