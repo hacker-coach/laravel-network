@@ -86,7 +86,7 @@
                 <p class="lead mb-0">
                     Motiv: <i>
                     In den letzten 10 Jahren habe ich im Schnitt immer 2-3 Monate im Jahr als selbständiger Anwendungsentwickler ohne Ausbildung gearbeitet. Leben konnte ich ganz gut davon.
-                    Ich lerne eine neue Programmiersprache mit Framework in 2-3 Tagen. Danach bin ich praktisch ein Senior-Entwickler auf diesem Gebiet.
+                    Ich lerne eine neue Programmiersprache mit Framework in 2-3 Tagen.
                     Oft halten die Vorgesetzten mich für einen Experten und sind begeistert von meiner Arbeit, weil ich fast nie Fehler mache, meistens
                     das passende Ergebnis liefer und mit Begeisterung jede schwere Aufgabe löse.
                     In Wirklichkeit bin ich aber kein Nerd und in Wirklichkeit habe ich viel mehr Interessensgebiete als Informatik, weil ich geistige Abwechslung auf unterschiedlichen Gebieten brauche.
