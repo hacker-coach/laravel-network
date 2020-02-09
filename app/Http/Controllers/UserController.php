@@ -22,12 +22,17 @@ class UserController extends BasePrivatController
     protected function validator(array $data)
     {
         return Validator::make($data, [
-
             'name' => ['required', 'string', 'max:50'],
             'slogan' => ['required', 'string', 'max:150'],
-            'linkedin' =>  'url|max:500|nullable',
-            'xing' => 'url|max:500|nullable',
+
+            'teaser' =>  'max:500|nullable',
+            'text' =>  'max:500|nullable',
+            'city' =>  'max:500|nullable',
+
             'www' => 'url|max:500|nullable',
+            'xing' => 'url|max:500|nullable',
+            'linkedin' =>  'url|max:500|nullable',
+
             'image'     =>  'image|mimes:jpeg,png,jpg,gif|max:1024|dimensions:ratio=1/1',
         ]);
     }
@@ -59,15 +64,18 @@ class UserController extends BasePrivatController
      */
     protected function setRequestToModel(Request $request,User $user)
     {
-        $user->show_profil = (boolean)$request->input('show_profil');
-        $user->show_profil_www = (boolean)$request->input('show_profil_www');
-        $user->show_profil_for_company = (boolean)$request->input('show_profil_for_company');
+        $user->is_user_www = (boolean)$request->input('is_user_www');
+        $user->is_user_show = (boolean)$request->input('is_user_show');
 
         $user->name = $request->input('name');
         $user->slogan = $request->input('slogan');
 
-        $user->xing = $request->input('xing');
+        $user->teaser = $request->input('teaser');
+        $user->text = $request->input('text');
+        $user->city = $request->input('city');
+
         $user->linkedin = $request->input('linkedin');
+        $user->xing = $request->input('xing');
         $user->www = $request->input('www');
     }
 
@@ -168,6 +176,10 @@ class UserController extends BasePrivatController
         $user->talent_anecdote_2 = $request->input('talent_anecdote_2');
         $user->talent_anecdote_3 = $request->input('talent_anecdote_3');
         $user->talent_special = $request->input('talent_special');
+        $user->talent_anecdote_1_header = $request->input('talent_anecdote_1_header');
+        $user->talent_anecdote_2_header = $request->input('talent_anecdote_2_header');
+        $user->talent_anecdote_3_header = $request->input('talent_anecdote_3_header');
+        $user->talent_special_header = $request->input('talent_special_header');
         $user->save();
         return redirect()->route('userProfil');
     }

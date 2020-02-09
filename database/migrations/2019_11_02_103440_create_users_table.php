@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
 
-            $table->string('name');
+
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -45,17 +45,18 @@ class CreateUsersTable extends Migration
             #$table->boolean('is_company_member_access')->default(false);
             #$table->boolean('is_company_www_advert')->default(false);
 
+            $table->string('name');
+            $table->string('slogan')->nullable();
+
+            $table->string('teaser')->nullable();
+            $table->string('text')->nullable();
+            $table->string('city')->nullable();
+
             $table->string('www')->nullable();
             $table->string('xing')->nullable();
             $table->string('linkedin')->nullable();
-            $table->string('cbc')->nullable();
 
-            $table->string('slogan')->nullable();
             $table->string('image')->nullable();
-            $table->string('teaser')->nullable();
-            $table->string('text')->nullable();
-
-            $table->string('city')->nullable();
 
             $table->string('talent_anecdote_1_header')->nullable();
             $table->string('talent_anecdote_2_header')->nullable();
