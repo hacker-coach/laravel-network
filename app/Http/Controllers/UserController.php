@@ -45,6 +45,10 @@ class UserController extends BasePrivatController
             'talent_anecdote_2' => 'string|max:2500|nullable',
             'talent_anecdote_3' => 'string|max:2500|nullable',
             'talent_special' => 'string|max:2500|nullable',
+            'talent_anecdote_1_header' => 'string|max:2500|nullable',
+            'talent_anecdote_2_header' => 'string|max:2500|nullable',
+            'talent_anecdote_3_header' => 'string|max:2500|nullable',
+            'talent_special_header' => 'string|max:2500|nullable',
         ]);
     }
     /**

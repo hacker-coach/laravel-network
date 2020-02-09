@@ -24,16 +24,26 @@ class CreateUsersTable extends Migration
             $table->boolean('dgsvo')->default(false);
             $table->rememberToken();
 
-            $table->boolean('is_activ_profil')->default(false);
-            $table->boolean('is_activ_member')->default(false);
 
-            $table->boolean('show_profil')->default(false);
-            $table->boolean('show_profil_www')->default(false);
-            $table->boolean('show_profil_for_company')->default(false);
+            $table->boolean('is_user_activ')->default(false);
+            $table->boolean('is_user_www')->default(false);
+            $table->boolean('is_user_show')->default(false);
 
+            $table->boolean('is_ps')->default(false);
             $table->boolean('is_company')->default(false);
-            $table->boolean('is_company_member_access')->default(false);
-            $table->boolean('is_company_www_advert')->default(false);
+            $table->boolean('is_hunter')->default(false);
+            $table->boolean('is_fan')->default(false);
+
+            #$table->boolean('is_activ_profil')->default(false);
+            #$table->boolean('is_activ_member')->default(false);
+
+            #$table->boolean('show_profil')->default(false);
+            #$table->boolean('show_profil_www')->default(false);
+            #$table->boolean('show_profil_for_company')->default(false);
+
+            #$table->boolean('is_company')->default(false);
+            #$table->boolean('is_company_member_access')->default(false);
+            #$table->boolean('is_company_www_advert')->default(false);
 
             $table->string('www')->nullable();
             $table->string('xing')->nullable();
@@ -42,11 +52,20 @@ class CreateUsersTable extends Migration
 
             $table->string('slogan')->nullable();
             $table->string('image')->nullable();
+            $table->string('teaser')->nullable();
+            $table->string('text')->nullable();
+
+            $table->string('city')->nullable();
+
+            $table->string('talent_anecdote_1_header')->nullable();
+            $table->string('talent_anecdote_2_header')->nullable();
+            $table->string('talent_anecdote_3_header')->nullable();
 
             $table->longText('talent_anecdote_1')->nullable();
             $table->longText('talent_anecdote_2')->nullable();
             $table->longText('talent_anecdote_3')->nullable();
 
+            $table->string('talent_special_header')->nullable();
             $table->text('talent_special')->nullable();
         });
     }

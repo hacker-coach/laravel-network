@@ -25,9 +25,9 @@ class CompanyController extends BasePrivatController
     public function index()
     {
         $users = DB::table('users')
-            ->where('show_profil', 1)
-            ->where('is_activ_profil', 1)
             ->where('is_company', 1)
+            ->where('is_user_activ', 1)
+            ->where('is_user_show', 1)
             ->get();
         return view('company', [
             'users' => $users,

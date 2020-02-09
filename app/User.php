@@ -17,13 +17,15 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password','dgsvo',
 
-        'is_activ_profil', 'is_activ_member',
-        'show_profil', 'show_profil_www', 'show_profil_for_company',
-        'is_company', 'is_company_member_access', 'is_company_www_advert',
+        'is_ps', 'is_company','is_hunter', 'is_fan',
+        'is_user_activ', 'is_user_www', 'is_user_show',
 
         'www', 'xing', 'linkedin','cbc',
-        'slogan', 'image',
-        'talent_anecdote_1', 'talent_anecdote_2','talent_anecdote_3', 'talent_special',
+        'slogan', 'image','teaser', 'text', 'city',
+        'talent_anecdote_1', 'talent_anecdote_2','talent_anecdote_3',
+        'talent_anecdote_1_header', 'talent_anecdote_2_header','talent_anecdote_3_header',
+        'talent_special',
+        'talent_special_header'
     ];
 
     /**
