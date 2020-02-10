@@ -15,6 +15,7 @@ class CreateContactsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
 
             $table->boolean('deleted')->default(false);
