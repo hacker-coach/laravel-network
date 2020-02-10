@@ -34,12 +34,12 @@ class CreateUsersTable extends Migration
             $table->boolean('role_hunter')->default(false);
             $table->boolean('role_fan')->default(false);
 
-            #$table->boolean('is_activ_profil')->default(false);
-            #$table->boolean('is_activ_member')->default(false);
+            #$table->boolean('is_user_activ')->default(false);
+            #$table->boolean('is_user_activ')->default(false);
 
-            #$table->boolean('show_profil')->default(false);
-            #$table->boolean('show_profil_www')->default(false);
-            #$table->boolean('show_profil_for_company')->default(false);
+            #$table->boolean('is_user_show')->default(false);
+            #$table->boolean('is_user_www')->default(false);
+            #$table->boolean('is_user_show_for_company')->default(false);
 
             #$table->boolean('role_company')->default(false);
             #$table->boolean('role_company_member_access')->default(false);

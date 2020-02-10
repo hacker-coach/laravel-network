@@ -14,10 +14,10 @@
                         <form method="POST" action="{{ route('userUpdate') }}" enctype="multipart/form-data">
                             @csrf
 
-                            @include('form.checkbox', ['title' =>__('Profil aktivieren für das Netzwerk'),'name'=>'show_profil','value'=> old('show_profil', $user->show_profil)])
-                            @include('form.checkbox', ['title' =>__('Öffentliches Profil im WWW'),'name'=>'show_profil_www','value'=> old('show_profil_www', $user->show_profil_www)])
+                            @include('form.checkbox', ['title' =>__('Profil aktivieren für das Netzwerk'),'name'=>'is_user_show','value'=> old('is_user_show', $user->is_user_show)])
+                            @include('form.checkbox', ['title' =>__('Öffentliches Profil im WWW'),'name'=>'is_user_www','value'=> old('is_user_www', $user->is_user_www)])
 @if ($user->role_company === 0)
-                            @include('form.checkbox', ['title' =>__('Profil für Firmen anzeigen'),'name'=>'show_profil_for_company','value'=>old('show_profil_for_company', $user->show_profil_for_company)])
+                            @include('form.checkbox', ['title' =>__('Profil für Firmen anzeigen'),'name'=>'is_user_show_for_company','value'=>old('is_user_show_for_company', $user->is_user_show_for_company)])
 @endif
 @if ($user->role_company === 0)
                             @include('form.text', ['title' =>__('Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
@@ -25,7 +25,7 @@
                             @include('form.text', ['title' =>__('Firmen-Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
 @endif
                             @include('form.text', ['title' =>__('Slogan'),'name'=>'slogan','value'=>$user->slogan,'required'=>'required'])
-@if(Auth::user()->is_activ_profil)
+@if(Auth::user()->is_user_activ)
                             @include('form.upload', ['title' =>__('Quadrat-Image'),'name'=>'image','value'=>'/uploads/user'.$user->image])
 @endif
                             @include('form.text', ['title' =>__('Xing'),'name'=>'xing','value'=>old('xing', $user->xing),'required'=>''])

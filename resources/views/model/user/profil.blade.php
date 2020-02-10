@@ -8,7 +8,7 @@
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row">
             <div class="col-md-12">
-                @if ($user->is_activ_profil!=true)
+                @if ($user->is_user_activ!=true)
                     <div class="alert alert-warning" role="alert">
                         Ihr Profil muss noch freigeschaltet werden!
                     </div>
@@ -30,7 +30,7 @@
                 @include('snippet.talent')
                 <br><a href="{{ route('verifyIndex') }}"><span  class="red-edit">{{ __('Referenzen bearbeiten') }}</span></a>
                 @include('snippet.verify')
-                @if(Auth::user()->is_activ_profil)
+                @if(Auth::user()->is_user_activ)
                     <br><a href="{{ route('postIndex') }}"><span  class="red-edit"> {{ __('Artikel bearbeiten') }}</span></a>
                     @include('snippet.post')
                 @endif

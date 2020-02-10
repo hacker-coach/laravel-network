@@ -10,7 +10,7 @@
     <div class="card-body text-center">
         <h5 class="card-title mb-0">{{ $user->name }} </h5>
 
-        @if ($user->is_activ_member === 1)
+        @if ($user->is_user_activ === 1)
             <div class="card-text text-black-50" style="padding:15px 0px 5px 0px; ">
                 @if (isset($user->xing))
                     <a href="{{ $user->xing }}" target="_blank" style="text-decoration: none;">

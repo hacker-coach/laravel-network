@@ -5,8 +5,8 @@
 
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-         @if(Auth::user()->is_activ_profil AND
-         ((Auth::user()->role_company  && Auth::user()->role_company_member_access && $user->show_profil_for_company) OR
+         @if(Auth::user()->is_user_activ AND
+         ((Auth::user()->role_company  && Auth::user()->role_company_member_access && $user->is_user_show_for_company) OR
          (!Auth::user()->role_company)))
             <div class="row">
                 <div class="col-md-3">
