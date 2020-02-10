@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('snippet.sectionheader', ['title' =>'Artikel'])
+    @include('snippet.sectionheader', ['title' =>'Kontakt'])
 
         <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
          @if(Auth::user()->is_activ_profil AND
@@ -17,15 +17,15 @@
                         @include('snippet.card')
                     </div>
                     <div class="col-md-9">
-                    <h3 class="black-box">{{$post->title}}</h3>
+                    <h3 class="black-box">{{$contact->title}}</h3>
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
-                            {{$post->teaser}}
+                            {{$contact->teaser}}
                         </p>
                         <p class="lead mb-0">
-                            {!! $post->getMarkdownText() !!}
+                            {!! $contact->getMarkdownText() !!}
                         </p>
                         <div style="font-weight:bolder;">
-                            {!! $post->getMarkdownLinks() !!}
+                            {!! $contact->getMarkdownLinks() !!}
                         </div>
                     </div>
                 </div>

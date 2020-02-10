@@ -2,15 +2,15 @@
 
 @section('content')
 
-    @include('snippet.sectionheader', ['title' =>'Artikel'])
+    @include('snippet.sectionheader', ['title' =>'Kontakt'])
 
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <a class="btn btn-primary" href="{{ route('postCreate') }}" >
-                    {{ __('neuen Artikel') }}
+                <a class="btn btn-primary" href="{{ route('contactCreate') }}" >
+                    {{ __('neuen Kontakt') }}
                 </a><br><br>
-                @if (count($posts))
+                @if (count($contacts))
                     <table class="table mt-3">
                         <thead>
                         <tr>
@@ -21,22 +21,22 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($posts as $post)
+                        @foreach ($contacts as $contact)
                             <tr>
-                                <td>{{ $post->id}}</td>
+                                <td>{{ $contact->id}}</td>
                                 <td>
-                                    @if ($post->show_post==true)
+                                    @if ($contact->show_contact==true)
                                         ja
                                     @else
                                         nein
                                     @endif
                                 </td>
-                                <td>{{ $post->title }}</td>
+                                <td>{{ $contact->title }}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="{{ route('postShow', $post->id) }}" >
+                                    <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
                                         {{ __('anzeigen') }}
                                     </a>
-                                    <a class="btn btn-danger" href="{{ route('postEdit', $post->id) }}" >
+                                    <a class="btn btn-danger" href="{{ route('contactEdit', $contact->id) }}" >
                                         {{ __('edit') }}
                                     </a>
                                 </td>
@@ -46,7 +46,7 @@
                     </table>
                 @else
                                     <div class="alert alert-warning" role="alert">
-                                        Keine Artikel vorhanden!
+                                        Keine Kontakt vorhanden!
                                     </div>
                 @endif
             </div>
