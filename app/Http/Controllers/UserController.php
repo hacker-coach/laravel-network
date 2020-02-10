@@ -99,7 +99,7 @@ class UserController extends BasePrivatController
      */
     public function showCompany($user_id)
     {
-        $user = User::where('id', (int)$user_id)->where('is_company', true)->first();
+        $user = User::where('id', (int)$user_id)->where('role_company', true)->first();
         return view('model.user.showcompany', [
             'user' => $user
         ]);

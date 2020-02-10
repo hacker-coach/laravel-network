@@ -85,7 +85,10 @@ class RegisterController extends Controller
         if($data['code']===$this->code){
                 $user = User::create([
                     'name' => $data['name'],
-                    'is_company' => (boolean)$data['is_company'],
+                    'role_company' => (boolean)$data['role_company'],
+                    'role_ps' => (boolean)$data['role_ps'],
+                    'role_fan' => (boolean)$data['role_fan'],
+                    'role_hunter' => (boolean)$data['role_hunter'],
                     'dgsvo' => (boolean)$data['dgsvo'],
                     'email' => $data['email'],
                     'password' => Hash::make($data['password']),
@@ -96,5 +99,11 @@ class RegisterController extends Controller
         }
         Auth::logout();
         header("HTTP/1.0 404 Not Found"); exit;
+    }
+
+    protected function getUserRole($data){
+        if((boolean)$data['role_fan']){
+            $data['role_fan'] = false;
+        }
     }
 }

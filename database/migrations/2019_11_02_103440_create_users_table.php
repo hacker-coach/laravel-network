@@ -29,10 +29,10 @@ class CreateUsersTable extends Migration
             $table->boolean('is_user_www')->default(false);
             $table->boolean('is_user_show')->default(false);
 
-            $table->boolean('is_ps')->default(false);
-            $table->boolean('is_company')->default(false);
-            $table->boolean('is_hunter')->default(false);
-            $table->boolean('is_fan')->default(false);
+            $table->boolean('role_ps')->default(false);
+            $table->boolean('role_company')->default(false);
+            $table->boolean('role_hunter')->default(false);
+            $table->boolean('role_fan')->default(false);
 
             #$table->boolean('is_activ_profil')->default(false);
             #$table->boolean('is_activ_member')->default(false);
@@ -41,9 +41,9 @@ class CreateUsersTable extends Migration
             #$table->boolean('show_profil_www')->default(false);
             #$table->boolean('show_profil_for_company')->default(false);
 
-            #$table->boolean('is_company')->default(false);
-            #$table->boolean('is_company_member_access')->default(false);
-            #$table->boolean('is_company_www_advert')->default(false);
+            #$table->boolean('role_company')->default(false);
+            #$table->boolean('role_company_member_access')->default(false);
+            #$table->boolean('role_company_www_advert')->default(false);
 
             $table->string('name');
             $table->string('slogan')->nullable();

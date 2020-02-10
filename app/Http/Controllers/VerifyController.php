@@ -120,11 +120,11 @@ class VerifyController extends BasePrivatController
      */
     public function createedit($user_id)
     {
-        if(!Auth::user()->is_company && Auth::user()->is_activ_member === 1){
+        if(Auth::user()->role_ps && Auth::user()->is_user_activ === 1){
                 $verify = Verify::where('user_id', (int)$user_id)
                     ->where('user_id_from',  Auth::user()->getAuthIdentifier())
                     ->first();
-                if(!is_null($verify) && !Auth::user()->is_company){
+                if(!is_null($verify) && Auth::user()->role_ps){
                     return view('model.verify.edit', [
                         'verify' => $verify
                     ]);
@@ -163,7 +163,7 @@ class VerifyController extends BasePrivatController
         $verify = Verify::where('user_id', (int)$request->input('user_id'))
             ->where('user_id_from',Auth::user()->getAuthIdentifier())
             ->get()->first();
-        if(is_null($verify) && !Auth::user()->is_company && Auth::user()->is_activ_member === 1){
+        if(is_null($verify) && Auth::user()->role_ps && Auth::user()->is_user_activ === 1){
             $verify = new Verify();
             $verify = $verify->create();
             $verify->text = $request->input('text');
@@ -203,7 +203,7 @@ class VerifyController extends BasePrivatController
             ->where('user_id_from',  Auth::user()->getAuthIdentifier())
             ->get()->first();
 
-        if(!is_null($verify)  && !Auth::user()->is_company){
+        if(!is_null($verify)  && Auth::user()->role_ps){
             $this->setRequestToModelCheckBoxHas($request,$verify);
             $verify->text = $request->input('text');
             $verify->save();
@@ -223,7 +223,7 @@ class VerifyController extends BasePrivatController
             ->where('user_id',  Auth::user()->getAuthIdentifier())
             ->get()->first();
 
-        if(!is_null($verify) && !Auth::user()->is_company){
+        if(!is_null($verify) && Auth::user()->role_ps){
             $this->setRequestToModelCheckBoxShow($request,$verify);
             $verify->answer_of_user = $request->input('answer_of_user');
             $verify->save();

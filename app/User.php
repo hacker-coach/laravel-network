@@ -17,7 +17,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password','dgsvo',
 
-        'is_ps', 'is_company','is_hunter', 'is_fan',
+        'role_ps', 'role_company','role_hunter', 'role_fan',
         'is_user_activ', 'is_user_www', 'is_user_show',
 
         'www', 'xing', 'linkedin','cbc',

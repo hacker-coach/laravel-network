@@ -24,31 +24,16 @@ class HomeController extends BasePrivatController
      */
     public function index()
     {
-        if(Auth::user()->is_activ_profil){
-            if(Auth::user()->is_company  && Auth::user()->is_company_member_access){
-                $users = DB::table('users')
-                    ->where('show_profil', 1)
-                    ->where('is_activ_profil', 1)
-                    ->where('show_profil_for_company', 1)
-                    ->where('is_company', 0)
-                    ->get();
-                return view('home', [
-                    'users' => $users,
-                    'isList' => true
-                ]);
-            }else if(!Auth::user()->is_company){
-                if(Auth::user()->is_activ_profil){
-                    $users = DB::table('users')
-                        ->where('show_profil', 1)
-                        ->where('is_activ_profil', 1)
-                        ->where('is_company', 0)
-                        ->get();
-                    return view('home', [
-                        'users' => $users,
-                        'isList' => true
-                    ]);
-                }
-            }
+        if(Auth::user()->role_ps){
+            $users = DB::table('users')
+                ->where('role_ps', 1)
+                ->where('is_user_activ', 1)
+                ->where('is_user_show', 1)
+                ->get();
+            return view('home', [
+                'users' => $users,
+                'isList' => true
+            ]);
         }
 
 

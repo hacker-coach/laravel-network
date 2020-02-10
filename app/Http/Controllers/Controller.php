@@ -20,9 +20,8 @@ class Controller extends BaseController
     public function memberDe()
     {
         $users = DB::table('users')
-            ->where('show_profil_www', 1)
-            ->where('is_activ_profil', 1)
-            ->where('is_activ_member', 1)
+            ->where('is_user_show', 1)
+            ->where('is_user_activ', 1)
             ->get();
         return view('de.member', [
             'users' => $users,

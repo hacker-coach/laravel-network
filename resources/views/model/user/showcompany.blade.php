@@ -5,7 +5,7 @@
 
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-         @if(isset($user) && $user->is_company)
+         @if(isset($user) && $user->role_company)
             <div class="row">
                 <div class="col-md-3">
                     @include('snippet.cardcompany')

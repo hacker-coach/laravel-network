@@ -20,7 +20,7 @@
                             <div class="col-md-6">
                                 <label>
                                     [Firmen]<br>
-                                    <input type="radio" name="is_company" id="is_company" value="1" checked/>
+                                    <input type="radio" name="role_company" id="role_company" value="1" checked/>
                                      Kostenlose Anzeigen schalten
                                 </label>
                             </div>
@@ -28,7 +28,7 @@
 
                                 <label>
                                     [Mitglieder]<br>
-                                    <input type="radio" name="is_company" id="is_company" value="0" />
+                                    <input type="radio" name="role_company" id="role_company" value="0" />
                                      Problemlöser werden
                                 </label>
                             </div>

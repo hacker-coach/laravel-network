@@ -16,10 +16,10 @@
 
                             @include('form.checkbox', ['title' =>__('Profil aktivieren für das Netzwerk'),'name'=>'show_profil','value'=> old('show_profil', $user->show_profil)])
                             @include('form.checkbox', ['title' =>__('Öffentliches Profil im WWW'),'name'=>'show_profil_www','value'=> old('show_profil_www', $user->show_profil_www)])
-@if ($user->is_company === 0)
+@if ($user->role_company === 0)
                             @include('form.checkbox', ['title' =>__('Profil für Firmen anzeigen'),'name'=>'show_profil_for_company','value'=>old('show_profil_for_company', $user->show_profil_for_company)])
 @endif
-@if ($user->is_company === 0)
+@if ($user->role_company === 0)
                             @include('form.text', ['title' =>__('Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
 @else
                             @include('form.text', ['title' =>__('Firmen-Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
