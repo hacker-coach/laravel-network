@@ -101,9 +101,5 @@ class RegisterController extends Controller
         header("HTTP/1.0 404 Not Found"); exit;
     }
 
-    protected function getUserRole($data){
-        if((boolean)$data['role_fan']){
-            $data['role_fan'] = false;
-        }
-    }
+
 }
