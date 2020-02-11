@@ -36,18 +36,7 @@ class InformationController extends BasePrivatController
             $information->ps = $request->input('ps');
             $information->save();
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $informations = Information::where('user_id',Auth::user()->getAuthIdentifier())->get();
-        return view('model.information.index', [
-            'informations' => $informations
-        ]);
-    }
+
 
     /**
      * Show the form for creating a new resource.

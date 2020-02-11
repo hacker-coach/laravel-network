@@ -70,3 +70,15 @@ Route::get('/verify/edit/profil/{user_id_from}', 'VerifyController@editProfil')-
 Route::post('/verify/update/profil', 'VerifyController@updateProfil')->name('verifyUpdateProfil');
 Route::get('/verify/delete/profil/{user_id_from}', 'VerifyController@deleteProfil')->name('verifyDeleteProfil');
 Route::post('/verify/destroy/profil', 'VerifyController@destroyProfil')->name('verifyDestroyProfil');
+// CONTACT
+Route::get('/contact/index', 'ContactController@index')->name('contactIndex');
+Route::get('/contact/create', 'ContactController@create')->name('contactCreate');
+Route::post('/contact/store', 'ContactController@store')->name('contactStore');
+Route::get('/contact/edit/{id}', 'ContactController@edit')->name('contactEdit');
+Route::post('/contact/update/{id}', 'ContactController@update')->name('contactUpdate');
+Route::get('/contact/show/{id}', 'ContactController@show')->name('contactShow');
+// INFORMATION
+Route::get('/information/create', 'InformationController@create')->name('informationCreate');
+Route::post('/information/store', 'InformationController@store')->name('informationStore');
+Route::get('/information/edit/{id}', 'InformationController@edit')->name('informationEdit');
+Route::post('/information/update/{id}', 'InformationController@update')->name('informationUpdate');
