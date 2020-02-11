@@ -8,10 +8,10 @@
          @if(Auth::user()->is_user_activ AND Auth::user()->role_ps )
             <div class="row">
                 <div class="col-md-3">
-                    @if ($user->role_ps === 1)
+                    @if ($user->role_ps)
                         @include('snippet.card')
                     @endif
-                    @if ($user->role_company === 1)
+                    @if ($user->role_company)
                         @include('snippet.cardcompany')
                     @endif
                 </div>
@@ -21,7 +21,7 @@
                     @include('snippet.verify')<br>
                     @include('snippet.post')<br>
                 @endif
-                @if ($user->role_company === 1)
+                @if ($user->role_company)
                     @include('snippet.advert')<br>
                 @endif
                 </div>
