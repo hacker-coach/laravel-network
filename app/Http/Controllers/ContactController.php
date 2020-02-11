@@ -40,7 +40,7 @@ class ContactController extends BasePrivatController
             $contact->city = $request->input('city');
             $contact->phone = $request->input('phone');
             $contact->mail = $request->input('mail');
-            $contact->teaser = $request->input('teaser');
+            $contact->text = $request->input('text');
             $contact->links = $request->input('links');
             $contact->save();
     }

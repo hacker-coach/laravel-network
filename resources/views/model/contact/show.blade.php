@@ -8,17 +8,14 @@
          @if(Auth::user()->is_user_activ)
                 <div class="row">
                     <div class="col-md-3">
-                        <a class="btn  btn-primary float-left" href="{{ route('userShow', $user->id) }}" >
+                        <a class="btn  btn-primary float-left" href="{{ route('userShow', null) }}" >
                             {{ __('zurück') }}
                         </a>
                         <br><br>
                         @include('snippet.card')
                     </div>
                     <div class="col-md-9">
-                    <h3 class="black-box">{{$contact->title}}</h3>
-                        <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
-                            {{$contact->teaser}}
-                        </p>
+
                         <p class="lead mb-0">
                             {!! $contact->getMarkdownText() !!}
                         </p>
