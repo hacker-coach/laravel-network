@@ -18,14 +18,15 @@
         <div class="row">
             <div class="col-md-3">
                 <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
-                @if ($user->role_company === 0)
-                @include('snippet.card')
-                @else
-                @include('snippet.cardcompany')
+                @if ($user->role_ps === 1)
+                    @include('snippet.card')
+                @endif
+                @if ($user->role_company === 1)
+                    @include('snippet.cardcompany')
                 @endif
             </div>
             <div class="col-md-9">
-            @if ($user->role_company === 0)
+            @if ($user->role_ps === 1)
                 <a href="{{ route('userEditTalent') }}"><span  class="red-edit">{{ __('Talent bearbeiten') }}</span></a>
                 @include('snippet.talent')
                 <br><a href="{{ route('verifyIndex') }}"><span  class="red-edit">{{ __('Referenzen bearbeiten') }}</span></a>
@@ -34,7 +35,8 @@
                     <br><a href="{{ route('postIndex') }}"><span  class="red-edit"> {{ __('Artikel bearbeiten') }}</span></a>
                     @include('snippet.post')
                 @endif
-            @else
+            @endif
+            @if ($user->role_company === 1)
                 <br><a href="{{ route('advertIndex') }}"><span  class="red-edit">{{ __('Anzeigen bearbeiten') }}</span></a>
                 @include('snippet.advert')
             @endif

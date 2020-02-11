@@ -5,23 +5,23 @@
 
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-         @if(Auth::user()->is_user_activ AND
-         ((Auth::user()->role_company  && Auth::user()->role_company_member_access && $user->is_user_show_for_company) OR
-         (!Auth::user()->role_company)))
+         @if(Auth::user()->is_user_activ AND Auth::user()->role_ps )
             <div class="row">
                 <div class="col-md-3">
-                    @if ($user->role_company === 0)
+                    @if ($user->role_ps === 1)
                         @include('snippet.card')
-                    @else
+                    @endif
+                    @if ($user->role_company === 1)
                         @include('snippet.cardcompany')
                     @endif
                 </div>
                 <div class="col-md-9">
-                @if ($user->role_company === 0)
+                @if ($user->role_ps === 1)
                     @include('snippet.talent')<br>
                     @include('snippet.verify')<br>
                     @include('snippet.post')<br>
-                @else
+                @endif
+                @if ($user->role_company === 1)
                     @include('snippet.advert')<br>
                 @endif
                 </div>
