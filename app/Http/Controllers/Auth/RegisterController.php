@@ -83,17 +83,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         if($data['code']===$this->code){
-                $user = User::create([
-                    'name' => $data['name'],
-                    'role_company' => (boolean)$data['role_company'],
-                    'role_ps' => (boolean)$data['role_ps'],
-                    'role_fan' => (boolean)$data['role_fan'],
-                    'role_hunter' => (boolean)$data['role_hunter'],
-                    'dgsvo' => (boolean)$data['dgsvo'],
-                    'email' => $data['email'],
-                    'password' => Hash::make($data['password']),
-                ]);
-
+                $user = User::create($this->renderData($data));
                 Mail::to('log@problemsolvernetwork.org')->send(new VerificationMail($user,'RegisterController::create'));
                 return $user;
         }
@@ -101,5 +91,26 @@ class RegisterController extends Controller
         header("HTTP/1.0 404 Not Found"); exit;
     }
 
-
+    protected function renderData(array $data){
+        $dataOut = [
+            'name' => $data['name'],
+            'role_company' => false,
+            'role_ps' => false,
+            'role_fan' => false,
+            'role_hunter' => false,
+            'dgsvo' => (boolean)$data['dgsvo'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ];
+        if($data['role']=='role_hunter'){
+            $dataOut['role_hunter'] = true;
+        }else if($data['role']=='role_ps'){
+            $dataOut['role_ps'] = true;
+        }else if($data['role']=='role_company'){
+            $dataOut['role_company'] = true;
+        }else if($data['role']=='role_fan'){
+            $dataOut['role_fan'] = true;
+        }
+        return $dataOut;
+    }
 }

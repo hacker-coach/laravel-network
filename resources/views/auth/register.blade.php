@@ -17,20 +17,19 @@
                         @csrf
 
                         <div class="form-group row">
-                            <div class="col-md-6">
-                                <label>
-                                    [Firmen]<br>
-                                    <input type="radio" name="role_company" id="role_company" value="1" checked/>
-                                     Kostenlose Anzeigen schalten
-                                </label>
-                            </div>
-                            <div class="col-md-6">
 
-                                <label>
-                                    [Mitglieder]<br>
-                                    <input type="radio" name="role_ps" id="role_ps" value="1" />
-                                     Problemlöser werden
-                                </label>
+
+                            <div class="col-md-12">
+
+                                <label class="control-label" for="role">Ihre Rolle</label>
+                                <select id="role" name="role" type="text" placeholder="" class="form-control input-md" required>
+                                    <option value="">Bitte auswählen</option>
+                                    <option value="role_fan">Unterstützer [Sie wollen Ihre Unterstützung der Öffentlichkeit zeigen]</option>
+                                    <option value="role_company">Firma [Sie wollen eine kostenlose Anzeigen schalten]</option>
+                                    <option value="role_ps">Mitglied [Sie sind ein Problemlöser]</option>
+                                    <option value="role_hunter">Vermittler [Sie wollen Diversity Manager werden]</option>
+                                </select>
+
                             </div>
                         </div>
                         <div class="form-group ">
