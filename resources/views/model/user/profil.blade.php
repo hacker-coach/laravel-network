@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-md-3">
                 <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
-                @if ($user->role_ps)
+                @if (!$user->role_company )
                     @include('snippet.card')
                 @endif
                 @if ($user->role_company)

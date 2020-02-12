@@ -5,7 +5,7 @@
 
     <!-- Page Content -->
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-         @if(Auth::user()->is_user_activ AND Auth::user()->role_ps )
+         @if(Auth::user()->is_user_activ AND (Auth::user()->role_ps OR Auth::user()->role_hunter) )
             <div class="row">
                 <div class="col-md-3">
                     @if ($user->role_ps)
@@ -16,7 +16,7 @@
                     @endif
                 </div>
                 <div class="col-md-9">
-                @if ($user->role_ps === 1)
+                @if ($user->role_ps)
                     @include('snippet.talent')<br>
                     @include('snippet.verify')<br>
                     @include('snippet.post')<br>
