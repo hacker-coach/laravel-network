@@ -78,7 +78,7 @@ Route::get('/contact/edit/{id}', 'ContactController@edit')->name('contactEdit');
 Route::post('/contact/update/{id}', 'ContactController@update')->name('contactUpdate');
 Route::get('/contact/show/{id}', 'ContactController@show')->name('contactShow');
 // INFORMATION
-Route::get('/information/create/{contact_id}', 'InformationController@create')->name('informationCreate');
-Route::post('/information/store', 'InformationController@store')->name('informationStore');
-Route::get('/information/edit/{id}', 'InformationController@edit')->name('informationEdit');
-Route::post('/information/update/{id}', 'InformationController@update')->name('informationUpdate');
+Route::get('/info/create/{contact_id}', 'InfoController@create')->name('infoCreate');
+Route::post('/info/store', 'InfoController@store')->name('infoStore');
+Route::get('/info/edit/{id}', 'InfoController@edit')->name('infoEdit');
+Route::post('/info/update/{id}', 'InfoController@update')->name('infoUpdate');

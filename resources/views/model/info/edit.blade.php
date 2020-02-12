@@ -11,18 +11,18 @@
                     <div class="card-header">Information bearbeiten</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('informationUpdate',$information->id) }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('infoUpdate',$info->id) }}" enctype="multipart/form-data">
                             @csrf
-                            @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$information->show_message])
+                            @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$info->show_message])
 
-                            @include('form.textarea', ['name' =>'message','title'=>__('message'),'value'=>$information->message,'required'=>''])
-                            @include('form.textarea', ['name' =>'ps','title'=>__('ps'),'value'=>$information->ps,'required'=>''])
+                            @include('form.textarea', ['name' =>'message','title'=>__('message'),'value'=>$info->message,'required'=>''])
+                            @include('form.textarea', ['name' =>'ps','title'=>__('ps'),'value'=>$info->ps,'required'=>''])
 
                             <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
-                                    <a class="btn btn-danger float-right" href="{{ route('informationDelete',$information->id) }}" >
+                                    <a class="btn btn-danger float-right" href="{{ route('infoDelete',$info->id) }}" >
                                         {{ __('löschen') }}
                                     </a>
                             </div>

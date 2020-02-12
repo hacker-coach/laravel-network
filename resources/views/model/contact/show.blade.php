@@ -10,6 +10,9 @@
                     <div class="col-md-3">
                         <a class="btn  btn-primary float-left" href="{{ route('contactIndex') }}" >
                             {{ __('zurück') }}
+                        </a><br><br>
+                        <a class="btn  btn-primary float-left" href="{{ route('infoCreate',$contact->id) }}" >
+                            {{ __('neue Info') }}
                         </a>
                     </div>
                     <div class="col-md-9">

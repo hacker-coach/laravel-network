@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use GrahamCampbell\Markdown\Facades\Markdown;
-use App\Information;
+use App\Info;
 
-class InformationController extends BasePrivatController
+class InfoController extends BasePrivatController
 {
     /**
      * Get a validator for an incoming registration request.
@@ -27,14 +27,14 @@ class InformationController extends BasePrivatController
      * SET the specified resource in model.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Information  $information
+     * @param  \App\Info  $info
      */
-    protected function setRequestToModel(Request $request,Information $information)
+    protected function setRequestToModel(Request $request, Info $info)
     {
-            $information->show_message = (boolean)$request->input('show_message');
-            $information->message = $request->input('message');
-            $information->ps = $request->input('ps');
-            $information->save();
+            $info->show_message = (boolean)$request->input('show_message');
+            $info->message = $request->input('message');
+            $info->ps = $request->input('ps');
+            $info->save();
     }
 
 
@@ -46,9 +46,9 @@ class InformationController extends BasePrivatController
      */
     public function create($contact_id)
     {
-        $information = new Information();
-        return view('model.information.create', [
-            'information' => $information,
+        $info = new Info();
+        return view('model.info.create', [
+            'info' => $info,
             'contact_id' => $contact_id
         ]);
     }
@@ -61,13 +61,13 @@ class InformationController extends BasePrivatController
      */
     public function store(Request $request)
     {
-        $information = new Information();
-        $information = $information->create();
+        $info = new Info();
+        $info = $info->create();
 
-        if(!is_null($information)){
-            $information->user_id = Auth::user()->getAuthIdentifier();
-            $information->contact_id = (integer)$request->input('contact_id');
-            $this->setRequestToModel($request,$information);
+        if(!is_null($info)){
+            $info->user_id = Auth::user()->getAuthIdentifier();
+            $info->contact_id = (integer)$request->input('contact_id');
+            $this->setRequestToModel($request,$info);
         }
 
         return redirect()->route('contactShow', (integer)$request->input('contact_id'));
@@ -81,9 +81,9 @@ class InformationController extends BasePrivatController
      */
     public function show($id)
     {
-        $information = Information::where('id',$id)->get()->first();
-        return view('model.information.show', [
-            'information' => $information
+        $info = Info::where('id',$id)->get()->first();
+        return view('model.info.show', [
+            'info' => $info
         ]);
     }
 
@@ -96,10 +96,10 @@ class InformationController extends BasePrivatController
      */
     public function edit($id)
     {
-        $information = Information::where('user_id',Auth::user()->getAuthIdentifier())
+        $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
-        return view('model.information.edit', [
-            'information' => $information
+        return view('model.info.edit', [
+            'info' => $info
         ]);
     }
 
@@ -112,13 +112,13 @@ class InformationController extends BasePrivatController
      */
     public function update(Request $request, $id)
     {
-        $information = Information::where('user_id',Auth::user()->getAuthIdentifier())
+        $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
 
-        if(!is_null($information)){
-            $this->setRequestToModel($request,$information);
+        if(!is_null($info)){
+            $this->setRequestToModel($request,$info);
         }
-        return redirect()->route('informationShow', $information->id);
+        return redirect()->route('infoShow', $info->id);
     }
     /**
      * Show the form for editing the specified resource.
@@ -127,10 +127,10 @@ class InformationController extends BasePrivatController
      * @return \Illuminate\Http\Response
      */
     public function delete($id){
-        $information = Information::where('user_id',Auth::user()->getAuthIdentifier())
+        $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
-        return view('model.information.delete', [
-            'information' => $information
+        return view('model.info.delete', [
+            'info' => $info
         ]);
     }
     /**
@@ -141,9 +141,9 @@ class InformationController extends BasePrivatController
      */
     public function destroy($id)
     {
-        $information = Information::where('user_id',Auth::user()->getAuthIdentifier())
+        $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
-        $information->delete();
-        return redirect()->route('informationIndex');
+        $info->delete();
+        return redirect()->route('infoIndex');
     }
 }

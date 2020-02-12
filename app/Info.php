@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
-class Information extends Model
+class Info extends Model
 {
     /**
      * The attributes that are mass assignable.

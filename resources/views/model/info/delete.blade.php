@@ -11,7 +11,7 @@
                     <div class="card-header">Information löschen</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('informationDestroy',$information->id) }}" >
+                        <form method="POST" action="{{ route('infoDestroy',$info->id) }}" >
                             @csrf
 
                             <div class="form-group row mb-0">

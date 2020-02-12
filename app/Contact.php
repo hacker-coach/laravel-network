@@ -38,7 +38,7 @@ class Contact extends Model
     }
 
     public function informations() {
-        return $this->hasMany('App\Information');
+        return $this->hasMany('App\Info');
     }
     /**
      * The attributes that should be cast to native types.
