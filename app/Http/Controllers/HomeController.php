@@ -24,7 +24,7 @@ class HomeController extends BasePrivatController
      */
     public function index()
     {
-        if(Auth::user()->role_ps){
+        if(Auth::user()->role_ps OR Auth::user()->role_hunter){
             $users = DB::table('users')
                 ->where('role_ps', 1)
                 ->where('is_user_activ', 1)
