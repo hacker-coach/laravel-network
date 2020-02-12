@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card"  style="margin-top:50px;margin-bottom: 50px;">
-                    <div class="card-header">Kontakt erstellen</div>
+                    <div class="card-header">Kontakt bearbeiten</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('contactUpdate',$contact->id) }}" enctype="multipart/form-data">
@@ -25,9 +25,6 @@
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
-                                    <a class="btn btn-danger float-right" href="{{ route('contactDelete',$contact->id) }}" >
-                                        {{ __('löschen') }}
-                                    </a>
                             </div>
                         </form>
                     </div>

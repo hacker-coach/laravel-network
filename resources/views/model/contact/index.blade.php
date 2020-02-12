@@ -15,7 +15,7 @@
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Anzeigen</th>
+                            <th scope="col">Ort</th>
                             <th scope="col">Title</th>
                             <th scope="col">Edit</th>
                         </tr>
@@ -24,14 +24,8 @@
                         @foreach ($contacts as $contact)
                             <tr>
                                 <td>{{ $contact->id}}</td>
-                                <td>
-                                    @if ($contact->show_contact==true)
-                                        ja
-                                    @else
-                                        nein
-                                    @endif
-                                </td>
-                                <td>{{ $contact->title }}</td>
+                                <td>{{ $contact->city }}</td>
+                                <td>{{ $contact->text }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
                                         {{ __('anzeigen') }}
