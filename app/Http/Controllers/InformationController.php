@@ -70,7 +70,7 @@ class InformationController extends BasePrivatController
             $this->setRequestToModel($request,$information);
         }
 
-        return redirect()->route('contactShow', $information->contact_id);
+        return redirect()->route('contactShow', (integer)$request->input('contact_id'));
     }
 
     /**
