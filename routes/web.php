@@ -26,6 +26,7 @@ Route::get('/de/datenschutz', 'Controller@datenschutzDe')->name('datenschutzDe')
 Route::get('/de/mitglieder', 'Controller@memberDe')->name('memberDe');
 Route::get('/de/preise', 'Controller@preiseDe')->name('preiseDe');
 Route::get('/de/agb', 'Controller@agbDe')->name('agbDe');
+Route::get('/de/concept', 'Controller@conceptDe')->name('conceptDe');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/company', 'CompanyController@index')->name('company');

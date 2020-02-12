@@ -44,6 +44,16 @@ class Controller extends BaseController
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function conceptDe()
+    {
+        return view('de.concept');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function impressumDe()
     {
         return view('de.impressum');
