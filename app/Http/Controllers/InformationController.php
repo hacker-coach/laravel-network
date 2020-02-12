@@ -41,13 +41,15 @@ class InformationController extends BasePrivatController
     /**
      * Show the form for creating a new resource.
      *
+     * @param  integer  $contact_id
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create($contact_id)
     {
         $information = new Information();
         return view('model.information.create', [
-            'information' => $information
+            'information' => $information,
+            'contact_id' => $contact_id
         ]);
     }
 
@@ -64,10 +66,11 @@ class InformationController extends BasePrivatController
 
         if(!is_null($information)){
             $information->user_id = Auth::user()->getAuthIdentifier();
+            $information->contact_id = (integer)$request->input('contact_id');
             $this->setRequestToModel($request,$information);
         }
 
-        return redirect()->route('informationShow', $information->id);
+        return redirect()->route('contactShow', $information->contact_id);
     }
 
     /**

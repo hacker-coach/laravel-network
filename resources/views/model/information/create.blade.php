@@ -13,6 +13,7 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('informationStore') }}"  enctype="multipart/form-data">
                             @csrf
+                            <input type="hidden" name="contact_id" value="{{$contact_id}}">
                             @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$information->show_message])
 
                             @include('form.textarea', ['name' =>'message','title'=>__('message'),'value'=>$information->message,'required'=>''])
