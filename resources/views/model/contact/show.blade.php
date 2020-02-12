@@ -5,7 +5,7 @@
     @include('snippet.sectionheader', ['title' =>'Kontakt'])
 
         <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-         @if(Auth::user()->is_user_activ)
+         @if(Auth::user()->is_user_activ && Auth::user()->role_hunter)
                 <div class="row">
                     <div class="col-md-3">
                         <a class="btn  btn-primary float-left" href="{{ route('userShow', null) }}" >
