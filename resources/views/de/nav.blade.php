@@ -19,8 +19,13 @@
                     </li>
 
                 @else
+                    @if (Auth::user()->role_hunter)
+                        <li class="nav-item">
+                            <a class="nav-link"  href="{{ route('contactIndex') }}" style="border: 1px solid rgba(0,0,0,.5);">{{ __('K') }}</a>
+                        </li>
+                    @endif
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Alle Mitglieder') }}</strong></a>
+                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Mitglieder') }}</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('company') }}"><strong>{{ __('Firmen') }}</strong></a>
