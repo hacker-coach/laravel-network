@@ -22,6 +22,38 @@
                         </p>
                     </div>
                 </div>
+                <div class="row">
+                    @if (count($infos))
+                        <table class="table mt-3">
+                            <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">message</th>
+                                <th scope="col">ps</th>
+                                <th scope="col">Edit</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach ($infos as $info)
+                                <tr>
+                                    <td>{{ $info->id}}</td>
+                                    <td>{{ $info->message }}</td>
+                                    <td>{{ $info->ps }}</td>
+                                    <td>
+                                        <a class="btn btn-danger" href="{{ route('infoEdit', [$info->id, $contact->id]) }}" >
+                                            {{ __('edit') }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    @else
+                        <div class="alert alert-warning" role="alert">
+                            Keine Informationen vorhanden!
+                        </div>
+                    @endif
+                </div>
             @endif
         </div>
 @endsection

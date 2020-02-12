@@ -80,5 +80,5 @@ Route::get('/contact/show/{id}', 'ContactController@show')->name('contactShow');
 // INFORMATION
 Route::get('/info/create/{contact_id}', 'InfoController@create')->name('infoCreate');
 Route::post('/info/store', 'InfoController@store')->name('infoStore');
-Route::get('/info/edit/{id}', 'InfoController@edit')->name('infoEdit');
+Route::get('/info/edit/{id}/{contact_id}', 'InfoController@edit')->name('infoEdit');
 Route::post('/info/update/{id}', 'InfoController@update')->name('infoUpdate');

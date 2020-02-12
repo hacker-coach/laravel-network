@@ -13,6 +13,7 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('infoUpdate',$info->id) }}" enctype="multipart/form-data">
                             @csrf
+                            <input type="hidden" name="contact_id" value="{{$contact_id}}">
                             @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$info->show_message])
 
                             @include('form.textarea', ['name' =>'message','title'=>__('message'),'value'=>$info->message,'required'=>''])
@@ -22,9 +23,6 @@
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('speichern') }}
                                     </button>
-                                    <a class="btn btn-danger float-right" href="{{ route('infoDelete',$info->id) }}" >
-                                        {{ __('löschen') }}
-                                    </a>
                             </div>
                         </form>
                     </div>

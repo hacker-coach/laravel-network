@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Contact;
+use App\Info;
 
 class ContactController extends BasePrivatController
 {
@@ -98,8 +99,10 @@ class ContactController extends BasePrivatController
     public function show($id)
     {
         $contact = Contact::where('id',$id)->get()->first();
+        $infos = Info::where('contact_id',$id)->get();
         return view('model.contact.show', [
-            'contact' => $contact
+            'contact' => $contact,
+            'infos' => $infos
         ]);
     }
 

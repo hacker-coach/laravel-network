@@ -92,14 +92,16 @@ class InfoController extends BasePrivatController
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
+     * @param  integer  $contact_id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id,$contact_id)
     {
         $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
         return view('model.info.edit', [
-            'info' => $info
+            'info' => $info,
+            'contact_id' => $contact_id
         ]);
     }
 
@@ -118,7 +120,7 @@ class InfoController extends BasePrivatController
         if(!is_null($info)){
             $this->setRequestToModel($request,$info);
         }
-        return redirect()->route('infoShow', $info->id);
+        return redirect()->route('contactShow', (integer)$request->input('contact_id'));
     }
     /**
      * Show the form for editing the specified resource.
