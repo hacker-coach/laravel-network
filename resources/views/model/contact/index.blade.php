@@ -32,9 +32,11 @@
                                     <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
                                         {{ __('anzeigen') }}
                                     </a>
-                                    <a class="btn btn-danger" href="{{ route('contactEdit', $contact->id) }}" >
-                                        {{ __('edit') }}
-                                    </a>
+                                    @if(Auth::user()->id ===  $contact->user_id)
+                                        <a class="btn btn-danger" href="{{ route('contactEdit', $contact->id) }}" >
+                                            {{ __('edit') }}
+                                        </a>
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach

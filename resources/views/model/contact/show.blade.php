@@ -35,16 +35,21 @@
                             </thead>
                             <tbody>
                             @foreach ($infos as $info)
-                                <tr>
-                                    <td>{{ $info->id}}</td>
-                                    <td>{{ $info->message }}</td>
-                                    <td>{{ $info->ps }}</td>
-                                    <td>
-                                        <a class="btn btn-danger" href="{{ route('infoEdit', [$info->id, $contact->id]) }}" >
-                                            {{ __('edit') }}
-                                        </a>
-                                    </td>
-                                </tr>
+                                @if(Auth::user()->id === $info->user_id OR
+                                $info->show_message === 1)
+                                    <tr>
+                                        <td>{{ $info->id}}</td>
+                                        <td>{{ $info->message }}</td>
+                                        <td>{{ $info->ps }}</td>
+                                        <td>
+                                            @if(Auth::user()->id ===  $info->user_id)
+                                                <a class="btn btn-danger" href="{{ route('infoEdit', [$info->id, $contact->id]) }}" >
+                                                    {{ __('edit') }}
+                                                </a>
+                                            @endif
+                                        </td>
+                                    </tr>
+                                @endif
                             @endforeach
                             </tbody>
                         </table>
