@@ -28,8 +28,8 @@
                 <br><h2 class="black-box"> Problem-Solver (PS) werden </h2>
                 <p class="lead mb-0">
                     Alle können PS-Mitglied werden und sich registrieren. Mindestens 10 Voll-PS-Mitglieder müssen
-                    für das neue PS-Mitglied eine persönliche Empfehlung abgeben.
-                    Alle PS-Mitglieder müssen sich untereinander kennen. Alle Voll-PS-Mitglieder müssen mindestens ein Jahr im Netzwerk aktiv tätig gewesen sein.
+                    für das neue PS-Mitglied eine persönliche Empfehlung abgeben, damit dieses auch zu einem Voll-PS-Mitglied wird.
+                    Alle PS-Mitglieder müssen sich untereinander kennen.
                 </p>
                 <h4 class="black-box">Normales PS-Mitglied</h4>
                 <p class="lead mb-0">Ein normales PS-Mitglied kann nur ein Profil im Mitglieder-Bereich erstellen. Kann aber keine Mitglieder des
