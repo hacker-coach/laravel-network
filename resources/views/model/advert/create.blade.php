@@ -15,7 +15,6 @@
                             @csrf
 
                             @include('form.checkbox', ['title' =>__('Anzeige anzeigen'),'name'=>'show_advert','value'=>$advert->show_advert])
-                            @include('form.checkbox', ['title' =>__('Anzeige im WWW anzeigen'),'name'=>'show_advert_on_www','value'=>$advert->show_advert_on_www])
                             @include('form.text', ['name' =>'title','title'=>__('Title'),'value'=>$advert->title,'required'=>''])
                             @include('form.textarea', ['name' =>'teaser','title'=>__('Teaser'),'value'=>$advert->teaser,'required'=>''])
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$advert->text,'required'=>''])
