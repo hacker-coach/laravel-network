@@ -25,7 +25,7 @@
         <h1 class="black-box"> Konzept - Mitglieder Portal</h1>
         <div class="row">
             <div class="col-md-6">
-                <br><h2 class="black-box"> Problemlöser (PS) werden </h2>
+                <br><h2 class="black-box"> Problem-Solver (PS) werden </h2>
                 <p class="lead mb-0">
                     Alle können PS-Mitglied werden und sich registrieren. Mindestens 10 Voll-PS-Mitglieder müssen
                     für das neue PS-Mitglied eine persönliche Empfehlung abgeben.
@@ -44,7 +44,8 @@
                 <h4 class="black-box">Kommunikation der Mitglieder</h4>
                 <p class="lead mb-0">
                     Mitglieder können sich über öffentliche Treffen persönlich kennenlernen.
-                    Über verschlüsselte Messanger können PS-Mitglied kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
+                    Über verschlüsselte Messanger können PS-Mitglieder kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
+                    Jedes Mitglied muss selbst entscheiden, ob er sein Psydonym-Namen einem Vermittler oder PS-Mitglied sagt.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
                 <p class="lead mb-0">Nur ein Voll-Mitglied kann alle Profile sehen und hat Zugriff auf die Vermittler und die Firmenprofile.
