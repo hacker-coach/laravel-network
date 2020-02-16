@@ -35,7 +35,7 @@
                 <p class="lead mb-0">Ein normales PS-Mitglied kann nur ein Profil im Mitglieder-Bereich erstellen. Kann aber keine Mitglieder des
                     Mitglieder-Bereiches sehen.
                 </p>
-                <h3 class="black-box"> Voll-Mitglied</h3>
+                <h4 class="black-box"> Voll-Mitglied</h4>
                 <p class="lead mb-0"> Ein Voll-Mitglied kann alle Profile sehen.
                 </p>
                 <h4 class="black-box">Privatsphäre</h4>
