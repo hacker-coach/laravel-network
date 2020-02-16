@@ -11,14 +11,18 @@
             <div class="col-md-8">
                 <a class="btn btn-primary" href="{{ route('contactCreate') }}" >
                     {{ __('neuen Kontakt') }}
-                </a><br><br>
+                </a>
+                <br><br>
+                <h1 class="black-box">Firmen Kontakte</h1>
+
                 @if (count($contacts))
                     <table class="table mt-3">
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
+                            <th scope="col">Firma</th>
                             <th scope="col">Ort</th>
-                            <th scope="col">Title</th>
+
                             <th scope="col"></th>
                         </tr>
                         </thead>
@@ -26,8 +30,9 @@
                         @foreach ($contacts as $contact)
                             <tr>
                                 <td>{{ $contact->id}}</td>
+                                <td>{{ $contact->company }}</td>
                                 <td>{{ $contact->city }}</td>
-                                <td>{{ $contact->text }}</td>
+
                                 <td>
                                     <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
                                         {{ __('anzeigen') }}

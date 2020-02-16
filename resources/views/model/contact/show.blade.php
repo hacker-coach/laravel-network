@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <h3 class="black-box">Name</h3>
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
-                            {{$contact->text}}
+                            {{$contact->company}}
                         </p>
                         <h3 class="black-box">Ort</h3>
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
