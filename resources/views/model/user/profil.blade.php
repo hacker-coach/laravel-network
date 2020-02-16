@@ -18,8 +18,11 @@
         <div class="row">
             <div class="col-md-3">
                 <a href="{{ route('userEdit') }}"><span  class="red-edit">{{ __('Profil bearbeiten') }}</span></a><br><br>
-                @if (!$user->role_company )
+                @if ($user->role_ps  OR $user->role_hunter)
                     @include('snippet.card')
+                @endif
+                @if ($user->role_ps OR $user->role_hunter)
+                    @include('snippet.cardfan')
                 @endif
                 @if ($user->role_company)
                     @include('snippet.cardcompany')
