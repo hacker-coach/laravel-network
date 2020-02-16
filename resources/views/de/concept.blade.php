@@ -35,9 +35,6 @@
                 <p class="lead mb-0">Ein normales PS-Mitglied kann nur ein Profil im Mitglieder-Bereich erstellen. Kann aber keine Mitglieder des
                     Mitglieder-Bereiches sehen.
                 </p>
-                <h4 class="black-box"> Voll-Mitglied</h4>
-                <p class="lead mb-0"> Ein Voll-Mitglied kann alle Profile sehen.
-                </p>
                 <h4 class="black-box">Privatsphäre</h4>
                 <p class="lead mb-0">
                     Als PS-Mitglied darf man keine Privaten-Daten wie E-Mail und echten Namen im Netzwerk angeben.
@@ -49,6 +46,9 @@
                     Mitglieder können sich über öffentliche Treffen persönlich kennenlernen.
                     Über verschlüsselte Messanger können PS-Mitglied kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
                 </p>
+                <h4 class="black-box">Zugriff</h4>
+                <p class="lead mb-0">Nur ein Voll-Mitglied kann alle Profile sehen und hat Zugriff auf die Vermittler und die Firmenprofile.
+                </p>
             </div>
             <div class="col-md-6">
                 <br><h2 class="black-box">Firmen</h2>
@@ -56,6 +56,9 @@
                     publiziert werden. Die Mitglieder werden darüber informiert.
                     Gegen Bezahlung kann eine Firma die Job-Anzeigen außerhalb des Mitglieder-Bereiches sichtbar machen.
                 </p>
+                <h4 class="black-box">Zugriff</h4>
+                <p class="lead mb-0">
+                    Firmen haben keinen Zugriff auf PS-Profile.
             </div>
         </div>
 
@@ -63,7 +66,7 @@
             <div class="col-md-6">
                  <br><h2 class="black-box">Vermittler</h2>
                 <p class="lead mb-0">
-                    Alle Vermittler müssen Voll-PS-Mitglied sein. Nur Vermittler habe Zugriff auf alle Daten.
+                    Alle Vermittler müssen Voll-PS-Mitglied sein.
                     Als Vermittler hat man Zugriff auf eine Extra-Datenbank mit allen Firmen-Ansprechpartnern.
                     Diesen Zugriff bekommt man nur durch eigene Aktivität im Netzwerk.
                     Um Zugriff zu erlangen muss man zunächst selbst ein Firmen-Kontakt hinzufügen. Um sich diesen Zugriff zu behalten muss man
@@ -77,11 +80,19 @@
                     die nächsten 2 Jahre. Dadurch soll sichergestellt werden, dass man keine Randgruppe wird im Unternehmen und alle Kollegen im Unternehmen
                     Wertgeschätzt werden.
                 </p>
+                <h4 class="black-box">Zugriff</h4>
+                <p class="lead mb-0">
+                    Nur Vermittler habe Zugriff auf alle Daten.
+                </p>
             </div>
             <div class="col-md-6">
                 <br><h2 class="black-box">Fan</h2>
                 <p class="lead mb-0">
                     Als Fan kann man ein öffentliches Profil mit Bild, Slogan und Links erstellen. Ein Fan-Profil ist ein Extra-Account der nicht mit PS-Profil verknüpft ist.
+                </p>
+                <h4 class="black-box">Zugriff</h4>
+                <p class="lead mb-0">
+                    Ein Fan hat keinen Zugriff auf PS-Profile, Firmen oder Vermittler.
                 </p>
             </div>
         </div>
