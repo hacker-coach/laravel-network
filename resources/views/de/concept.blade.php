@@ -27,7 +27,7 @@
             <div class="col-md-6">
                 <br><h2 class="black-box"> Problem-Solver (PS) werden </h2>
                 <p class="lead mb-0">
-                    Alle können PS-Mitglied werden und sich registrieren. Mindestens 10 Voll-PS-Mitglieder müssen
+                    Alle können PS-Mitglied werden und sich registrieren. Mindestens 3 Voll-PS-Mitglieder müssen
                     für das neue PS-Mitglied eine persönliche Empfehlung abgeben, damit dieses auch zu einem Voll-PS-Mitglied wird.
                     Alle PS-Mitglieder müssen sich untereinander kennen.
                 </p>
