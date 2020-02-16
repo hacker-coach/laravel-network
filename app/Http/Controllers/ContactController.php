@@ -52,7 +52,7 @@ class ContactController extends BasePrivatController
      */
     public function index()
     {
-        $contacts = Contact::where('user_id',Auth::user()->getAuthIdentifier())->get();
+        $contacts = Contact::where('deleted',0)->get();
         return view('model.contact.index', [
             'contacts' => $contacts
         ]);
