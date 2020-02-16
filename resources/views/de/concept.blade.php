@@ -59,7 +59,7 @@
                 </p>
                 <h4 class="black-box">Zugriff</h4>
                 <p class="lead mb-0">
-                    Firmen haben keinen Zugriff auf PS-Profile.
+                    Firmen haben keinen Zugriff auf PS-Mitglieder.
             </div>
         </div>
 
