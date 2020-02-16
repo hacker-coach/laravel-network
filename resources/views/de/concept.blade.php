@@ -72,14 +72,14 @@
                     Diesen Zugriff bekommt man nur durch eigene Aktivität im Netzwerk.
                     Um Zugriff zu erlangen muss man zunächst selbst ein Firmen-Kontakt hinzufügen. Um sich diesen Zugriff zu behalten muss man
                     entweder die Informationen über die Telefonate teilen für Andere Vermittler oder einen neuen Kontakt hinzufügen.
-                    Man verliert den Zugriff auf die Kontakte, wenn man innerhalb eines Monats keine neues Informationen zum Netzwerk hinzugefügt hat.
+                    Man verliert den Zugriff auf die Kontakte, wenn man innerhalb eines Monats keine neuen Informationen zum Netzwerk hinzugefügt hat.
                 </p>
                 <h4 class="black-box">Vermittlung</h4>
                 <p class="lead mb-0">
                     Für die Vermittlung eines PS-Mitglieds wird bei der Firma Geld verlangt. 25% dieses Geldes wird in den Ausbau des Netzwerkes investiert.
                     Die Firma verpflichtet sich regelmäßig alle 2 Monate an Coachings für die Viefalt in Unternehmen (Diversity-Management) zu buchen für
-                    die nächsten 2 Jahre. Dadurch soll sichergestellt werden, dass man keine Randgruppe wird im Unternehmen und alle Kollegen im Unternehmen
-                    Wertgeschätzt werden.
+                    die nächsten 2 Jahre. Dadurch soll sichergestellt werden, dass man keine Randgruppe wird im Unternehmen und alle Menschen im Unternehmen
+                    akzeptiert werden.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
                 <p class="lead mb-0">
