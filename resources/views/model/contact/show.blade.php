@@ -71,9 +71,9 @@
                             <thead>
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">message</th>
-                                <th scope="col">ps</th>
-                                <th scope="col">Edit</th>
+                                <th scope="col">Nachricht</th>
+                                <th scope="col">Problemlöser</th>
+                                <th scope="col"></th>
                             </tr>
                             </thead>
                             <tbody>

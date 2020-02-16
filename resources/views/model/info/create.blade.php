@@ -18,8 +18,8 @@
                             <input type="hidden" name="contact_id" value="{{$contact_id}}">
                             @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$info->show_message])
 
-                            @include('form.textarea', ['name' =>'message','title'=>__('message'),'value'=>$info->message,'required'=>''])
-                            @include('form.textarea', ['name' =>'ps','title'=>__('ps'),'value'=>$info->ps,'required'=>''])
+                            @include('form.textarea', ['name' =>'message','title'=>__('Nachricht'),'value'=>$info->message,'required'=>''])
+                            @include('form.textarea', ['name' =>'ps','title'=>__('Problemlöser'),'value'=>$info->ps,'required'=>''])
 
                             <div class="form-group">
                                     <button type="submit" class="btn btn-primary">
