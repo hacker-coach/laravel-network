@@ -28,7 +28,8 @@ Route::get('/de/preise', 'Controller@preiseDe')->name('preiseDe');
 Route::get('/de/agb', 'Controller@agbDe')->name('agbDe');
 Route::get('/de/concept', 'Controller@conceptDe')->name('conceptDe');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/member', 'MemberController@index')->name('member');
+Route::get('/fan', 'FanController@index')->name('fan');
 Route::get('/company', 'CompanyController@index')->name('company');
 Route::get('/verification/{id}', 'VerificationController@verification')->name('verificationVerification');
 // USER
