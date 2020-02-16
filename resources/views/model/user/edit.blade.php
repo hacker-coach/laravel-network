@@ -25,8 +25,10 @@
 @else
     @include('form.text', ['title' =>__('Firmen-Name'),'name'=>'name','value'=>$user->name,'required'=>'required'])
 @endif
+
     @include('form.text', ['title' =>__('Slogan'),'name'=>'slogan','value'=>$user->slogan,'required'=>'required'])
-@if(Auth::user()->is_user_activ && !$user->role_ps)
+
+@if(Auth::user()->is_user_activ && ($user->role_fan OR $user->role_company))
     @include('form.upload', ['title' =>__('Quadrat-Image'),'name'=>'image','value'=>'/uploads/user'.$user->image])
 @endif
 
