@@ -44,7 +44,7 @@
                 <h4 class="black-box">Kommunikation der Mitglieder</h4>
                 <p class="lead mb-0">
                     Mitglieder können sich über öffentliche Treffen persönlich kennenlernen.
-                    Über verschlüsselte Messanger können PS-Mitglieder kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
+                    Über verschlüsselte Messanger können Voll-PS-Mitglieder kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
                     Jedes Mitglied muss selbst entscheiden, ob er sein Psydonym-Namen einem Vermittler oder PS-Mitglied sagt.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
