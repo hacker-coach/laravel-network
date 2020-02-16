@@ -4,6 +4,8 @@
 
     @include('snippet.sectionheader', ['title' =>'Kontakt erstellen'])
 
+    @if(Auth::user()->is_user_activ AND Auth::user()->role_hunter )
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -34,4 +36,6 @@
             </div>
         </div>
     </div>
+
+    @endif
 @endsection

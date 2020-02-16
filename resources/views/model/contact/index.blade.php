@@ -4,6 +4,8 @@
 
     @include('snippet.sectionheader', ['title' =>'Kontakt'])
 
+    @if(Auth::user()->is_user_activ AND Auth::user()->role_hunter )
+
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -46,4 +48,6 @@
             </div>
         </div>
     </div>
+
+    @endif
 @endsection
