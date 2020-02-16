@@ -19,7 +19,7 @@
                             <th scope="col">ID</th>
                             <th scope="col">Ort</th>
                             <th scope="col">Title</th>
-                            <th scope="col">Edit</th>
+                            <th scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -32,11 +32,6 @@
                                     <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
                                         {{ __('anzeigen') }}
                                     </a>
-                                    @if(Auth::user()->id ===  $contact->user_id)
-                                        <a class="btn btn-danger" href="{{ route('contactEdit', $contact->id) }}" >
-                                            {{ __('edit') }}
-                                        </a>
-                                    @endif
                                 </td>
                             </tr>
                         @endforeach

@@ -15,10 +15,10 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('contactUpdate',$contact->id) }}" enctype="multipart/form-data">
                             @csrf
-                            @include('form.text', ['name' =>'company','title'=>__('company'),'value'=>$contact->company,'required'=>''])
-                            @include('form.text', ['name' =>'city','title'=>__('city'),'value'=>$contact->city,'required'=>''])
-                            @include('form.text', ['name' =>'phone','title'=>__('phone'),'value'=>$contact->phone,'required'=>''])
-                            @include('form.text', ['name' =>'mail','title'=>__('mail'),'value'=>$contact->mail,'required'=>''])
+                            @include('form.text', ['name' =>'company','title'=>__('Firma'),'value'=>$contact->company,'required'=>''])
+                            @include('form.text', ['name' =>'city','title'=>__('Ort'),'value'=>$contact->city,'required'=>''])
+                            @include('form.text', ['name' =>'phone','title'=>__('Telephone'),'value'=>$contact->phone,'required'=>''])
+                            @include('form.text', ['name' =>'mail','title'=>__('E-mail'),'value'=>$contact->mail,'required'=>''])
 
                             @include('form.textarea', ['name' =>'text','title'=>__('Text'),'value'=>$contact->text,'required'=>''])
                             @include('form.textarea', ['name' =>'links','title'=>__('Links'),'value'=>$contact->links,'required'=>''])
