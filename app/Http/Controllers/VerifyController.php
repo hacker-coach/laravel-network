@@ -172,7 +172,7 @@ class VerifyController extends BasePrivatController
             $this->setRequestToModelCheckBoxHas($request,$verify);
             $verify->save();
         }
-        return redirect()->route('home');
+        return redirect()->route('member');
     }
 
     /**
@@ -208,7 +208,7 @@ class VerifyController extends BasePrivatController
             $verify->text = $request->input('text');
             $verify->save();
         }
-        return redirect()->route('home');
+        return redirect()->route('member');
     }
     /**
      * Update the specified resource in storage.
@@ -255,7 +255,7 @@ class VerifyController extends BasePrivatController
             ->where('user_id_from',  Auth::user()->getAuthIdentifier())
             ->get()->first();
         $verify->delete();
-        return redirect()->route('home');
+        return redirect()->route('member');
     }
     /**
      * Show the form for editing the specified resource.

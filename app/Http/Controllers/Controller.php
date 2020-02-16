@@ -29,6 +29,7 @@ class Controller extends BaseController
         ]);
     }
 
+
     /**
      * Show the application dashboard.
      *

@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+#Route::get('/', function () {
+    #return view('welcome');
+#});
 
 Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 Route::redirect('/', '/de',301);
 #Route::get('/', 'Controller@index')->name('index');
 
@@ -27,6 +28,8 @@ Route::get('/de/mitglieder', 'Controller@memberDe')->name('memberDe');
 Route::get('/de/preise', 'Controller@preiseDe')->name('preiseDe');
 Route::get('/de/agb', 'Controller@agbDe')->name('agbDe');
 Route::get('/de/concept', 'Controller@conceptDe')->name('conceptDe');
+
+
 
 Route::get('/member', 'MemberController@index')->name('member');
 Route::get('/fan', 'FanController@index')->name('fan');

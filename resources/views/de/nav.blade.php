@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
             <ul class="navbar-nav  ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('fan') }}"><strong>{{ __('Fans') }}</strong></a>
+                    <a class="nav-link" href="{{ route('fan') }}"><strong>{{ __('Talents') }}</strong></a>
                 </li>
                 @guest
                     @if (Route::has('register'))
