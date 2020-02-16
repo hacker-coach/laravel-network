@@ -7,7 +7,9 @@
 
         <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
             <ul class="navbar-nav  ml-auto">
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('fan') }}"><strong>{{ __('Fans') }}</strong></a>
+                </li>
                 @guest
                     @if (Route::has('register'))
                         <li class="nav-item">
@@ -24,15 +26,19 @@
                             <a class="nav-link"  href="{{ route('contactIndex') }}" style="border: 1px solid rgba(0,0,0,.5);">{{ __('K') }}</a>
                         </li>
                     @endif
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}"><strong>{{ __('Mitglieder') }}</strong></a>
-                    </li>
+                    @if (Auth::user()->role_ps)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('member') }}"><strong>{{ __('Mitglieder') }}</strong></a>
+                        </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('company') }}"><strong>{{ __('Firmen') }}</strong></a>
                     </li>
+
                     <li class="nav-item">
-                       <a class="nav-link btn btn-success" style="color:white; margin-left:5px;margin-right:5px;" href="{{ route('userProfil') }}">{{ __('Dein Profil') }}</a>
+                        <a class="nav-link btn btn-success" style="color:white; margin-left:5px;margin-right:5px;" href="{{ route('userProfil') }}">{{ __('Dein Profil') }}</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
