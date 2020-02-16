@@ -14,7 +14,7 @@ class FanController extends BasePrivatController
      */
     public function __construct()
     {
-        $this->middleware('auth');
+       # $this->middleware('auth');
     }
 
     /**
