@@ -21,7 +21,7 @@
                 @if ($user->role_ps  OR $user->role_hunter)
                     @include('snippet.card')
                 @endif
-                @if ($user->role_ps OR $user->role_hunter)
+                @if ($user->role_fan )
                     @include('snippet.cardfan')
                 @endif
                 @if ($user->role_company)
