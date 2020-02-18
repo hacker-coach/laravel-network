@@ -15,7 +15,7 @@ class Info extends Model
     protected $fillable = [
         'user_id',
         'contact_id',
-        'show_message', 'message','ps'
+        'show', 'message','ps'
     ];
 
 

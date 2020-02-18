@@ -15,6 +15,7 @@ class Contact extends Model
      */
     protected $fillable = [
         'deleted',
+        'show',
         'company', 'city', 'phone', 'mail','text', 'links',
     ];
 

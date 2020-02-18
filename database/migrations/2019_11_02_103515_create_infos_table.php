@@ -21,7 +21,7 @@ class CreateInfosTable extends Migration
             $table->unsignedBigInteger('contact_id')->nullable();
             #$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
-            $table->boolean('show_message')->default(false);
+            $table->boolean('show')->default(false);
 
             $table->longText('message')->nullable();
             $table->longText('ps')->nullable();

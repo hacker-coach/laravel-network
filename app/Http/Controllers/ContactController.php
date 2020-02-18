@@ -79,6 +79,7 @@ class ContactController extends BasePrivatController
      */
     public function store(Request $request)
     {
+        $this->validator($request->all())->validate();
         $contact = new Contact();
         $contact = $contact->create();
 
@@ -131,6 +132,7 @@ class ContactController extends BasePrivatController
      */
     public function update(Request $request, $id)
     {
+        $this->validator($request->all())->validate();
         $contact = Contact::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
 

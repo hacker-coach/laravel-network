@@ -61,10 +61,10 @@
                         <h3 class="black-box">Links</h3>
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
                             {{$contact->links}}
-                        </p>
+                       c
                     </div>
                 </div>
-                <div class="row">
+                <p class="row">
                     <h1 class="black-box">Informationen</h1>
                     @if (count($infos))
                         <table class="table mt-3">
@@ -78,8 +78,7 @@
                             </thead>
                             <tbody>
                             @foreach ($infos as $info)
-                                @if(Auth::user()->id === $info->user_id OR
-                                $info->show_message === 1)
+                                @if(Auth::user()->id === $info->user_id OR $info->show === 1)
                                     <tr>
                                         <td>{{ $info->id}}</td>
                                         <td>{{ $info->message }}</td>
@@ -97,9 +96,11 @@
                             </tbody>
                         </table>
                     @else
-                        <div class="alert alert-warning" role="alert">
-                            Keine Informationen vorhanden!
-                        </div>
+                        <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
+                            <div class="alert alert-warning" role="alert"  style="display: block  !important;">
+                               Keine Informationen vorhanden!
+                            </div>
+                        </p>
                     @endif
                 </div>
         </div>

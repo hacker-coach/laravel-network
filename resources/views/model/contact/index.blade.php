@@ -28,17 +28,19 @@
                         </thead>
                         <tbody>
                         @foreach ($contacts as $contact)
-                            <tr>
-                                <td>{{ $contact->id}}</td>
-                                <td>{{ $contact->company }}</td>
-                                <td>{{ $contact->city }}</td>
+                            @if(Auth::user()->id === $contact->user_id OR $contact->show === 1)
+                                <tr>
+                                    <td>{{ $contact->id}}</td>
+                                    <td>{{ $contact->company }}</td>
+                                    <td>{{ $contact->city }}</td>
 
-                                <td>
-                                    <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
-                                        {{ __('anzeigen') }}
-                                    </a>
-                                </td>
-                            </tr>
+                                    <td>
+                                        <a class="btn btn-primary" href="{{ route('contactShow', $contact->id) }}" >
+                                            {{ __('anzeigen') }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endif
                         @endforeach
                         </tbody>
                     </table>

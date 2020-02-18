@@ -19,7 +19,7 @@ class InfoController extends BasePrivatController
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'message' => 'string|max:1500|nullable',
+            'message' =>['required', 'string', 'max:50'],
             'ps' => 'string|max:1500|nullable'
         ]);
     }
@@ -61,6 +61,7 @@ class InfoController extends BasePrivatController
      */
     public function store(Request $request)
     {
+        $this->validator($request->all())->validate();
         $info = new Info();
         $info = $info->create();
 
@@ -114,6 +115,7 @@ class InfoController extends BasePrivatController
      */
     public function update(Request $request, $id)
     {
+        $this->validator($request->all())->validate();
         $info = Info::where('user_id',Auth::user()->getAuthIdentifier())
             ->where('id',$id)->get()->first();
 

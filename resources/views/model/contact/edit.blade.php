@@ -15,6 +15,7 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('contactUpdate',$contact->id) }}" enctype="multipart/form-data">
                             @csrf
+                            @include('form.checkbox', ['title' =>__('Kontakt anzeigen'),'name'=>'show','value'=>$contact->show])
                             @include('form.text', ['name' =>'company','title'=>__('Firma'),'value'=>$contact->company,'required'=>''])
                             @include('form.text', ['name' =>'city','title'=>__('Ort'),'value'=>$contact->city,'required'=>''])
                             @include('form.text', ['name' =>'phone','title'=>__('Telephone'),'value'=>$contact->phone,'required'=>''])

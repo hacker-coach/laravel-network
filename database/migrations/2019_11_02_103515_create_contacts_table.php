@@ -19,6 +19,7 @@ class CreateContactsTable extends Migration
             $table->timestamps();
 
             $table->boolean('deleted')->default(false);
+            $table->boolean('show')->default(false);
 
             $table->string('company')->nullable();
             $table->string('city')->nullable();

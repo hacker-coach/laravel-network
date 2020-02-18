@@ -16,7 +16,7 @@
                         <form method="POST" action="{{ route('infoStore') }}"  enctype="multipart/form-data">
                             @csrf
                             <input type="hidden" name="contact_id" value="{{$contact_id}}">
-                            @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show_message','value'=>$info->show_message])
+                            @include('form.checkbox', ['title' =>__('Information anzeigen'),'name'=>'show','value'=>$info->show])
 
                             @include('form.textarea', ['name' =>'message','title'=>__('Nachricht'),'value'=>$info->message,'required'=>''])
                             @include('form.textarea', ['name' =>'ps','title'=>__('Problemlöser'),'value'=>$info->ps,'required'=>''])
