@@ -32,28 +32,31 @@
                     Alle PS-Mitglieder müssen sich untereinander kennen.
                 </p>
                 <h4 class="black-box">Normales PS-Mitglied</h4>
-                <p class="lead mb-0">Ein normales PS-Mitglied kann nur ein Profil im Mitglieder-Bereich erstellen. Kann aber keine Mitglieder des
+                <p class="lead mb-0">
+                    Ein normales PS-Mitglied kann nur ein Profil im Mitglieder-Bereich erstellen. Kann aber keine Mitglieder des
                     Mitglieder-Bereiches sehen.
                 </p>
                 <h4 class="black-box">Privatsphäre</h4>
                 <p class="lead mb-0">
                     Als PS-Mitglied darf man keine Privaten-Daten wie E-Mail und echten Namen im Netzwerk angeben.
-                    Das Ziel ist es, dass sich jedes PS-Mitglied mit seinen wahren inividuellen Talenten öffnet und
+                    Das Ziel ist es, dass sich jedes PS-Mitglied mit seinen wahren individuellen Talenten öffnet und
                     sich durch den Markt in keine Rolle gedrängt wird.
                 </p>
                 <h4 class="black-box">Kommunikation der Mitglieder</h4>
                 <p class="lead mb-0">
                     Mitglieder können sich über öffentliche Treffen persönlich kennenlernen.
                     Über verschlüsselte Messanger können Voll-PS-Mitglieder kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
-                    Jedes Mitglied muss selbst entscheiden, ob er sein Psydonym-Namen einem Vermittler oder PS-Mitglied sagt.
+                    Jedes Mitglied muss selbst entscheiden, ob er sein Psydonym-Name einem Vermittler oder PS-Mitglied sagt.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
-                <p class="lead mb-0">Nur ein Voll-Mitglied kann alle Profile sehen und hat Zugriff auf die Vermittler und die Firmenprofile.
+                <p class="lead mb-0">
+                    Nur ein Voll-Mitglied kann alle Profile sehen und hat Zugriff auf die Vermittler und die Firmenprofile.
                 </p>
             </div>
             <div class="col-md-6">
                 <br><h2 class="black-box">Firmen</h2>
-                <p class="lead mb-0">Firmen können 3 kostenlose Job-Anzeigen schalten. Gegen Bezahlung kann ein Problem im Mitglieder-Bereich
+                <p class="lead mb-0">
+                    Firmen können 3 kostenlose Job-Anzeigen schalten. Gegen Bezahlung kann ein Problem im Mitglieder-Bereich
                     publiziert werden. Die Mitglieder werden darüber informiert.
                     Gegen Bezahlung kann eine Firma die Job-Anzeigen außerhalb des Mitglieder-Bereiches sichtbar machen.
                 </p>
@@ -70,14 +73,14 @@
                     Alle Vermittler müssen Voll-PS-Mitglied sein.
                     Als Vermittler hat man Zugriff auf eine Extra-Datenbank mit allen Firmen-Ansprechpartnern.
                     Diesen Zugriff bekommt man nur durch eigene Aktivität im Netzwerk.
-                    Um Zugriff zu erlangen muss man zunächst selbst ein Firmen-Kontakt hinzufügen. Um sich diesen Zugriff zu behalten muss man
-                    entweder die Informationen über die Telefonate teilen für Andere Vermittler oder einen neuen Kontakt hinzufügen.
+                    Um Zugriff zu erlangen, muss man zunächst selbst ein Firmen-Kontakt hinzufügen. Um sich diesen Zugriff zu behalten, muss man
+                    entweder die Informationen über die Telefonate teilen für andere Vermittler oder einen neuen Kontakt hinzufügen.
                     Man verliert den Zugriff auf die Kontakte, wenn man innerhalb eines Monats keine neuen Informationen zum Netzwerk hinzugefügt hat.
                 </p>
                 <h4 class="black-box">Vermittlung</h4>
                 <p class="lead mb-0">
-                    Für die Vermittlung eines PS-Mitglieds wird bei der Firma Geld verlangt. 25% dieses Geldes wird in den Ausbau des Netzwerkes investiert.
-                    Die Firma verpflichtet sich regelmäßig alle 2 Monate an Coachings für die Viefalt in Unternehmen (Diversity-Management) zu buchen für
+                    Für die Vermittlung eines PS-Mitglieds wird bei der Firma Geld verlangt. 25 % dieses Geldes wird in den Ausbau des Netzwerkes investiert.
+                    Die Firma verpflichtet sich regelmäßig alle 2 Monate an Coachings für die Vielfalt in Unternehmen (Diversity-Management) zu buchen für
                     die nächsten 2 Jahre. Dadurch soll sichergestellt werden, dass man keine Randgruppe wird im Unternehmen und alle Menschen im Unternehmen
                     akzeptiert werden.
                 </p>
@@ -89,7 +92,7 @@
             <div class="col-md-6">
                 <br><h2 class="black-box">Fan</h2>
                 <p class="lead mb-0">
-                    Als Fan kann man ein öffentliches Profil mit Bild, Slogan und Links erstellen. Ein Fan-Profil ist ein Extra-Account der nicht mit PS-Profil verknüpft ist.
+                    Als Fan kann man ein öffentliches Profil mit Bild, Slogan und Links erstellen. Ein Fan-Profil ist ein Extra-Account, der nicht mit PS-Profil verknüpft ist.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
                 <p class="lead mb-0">
