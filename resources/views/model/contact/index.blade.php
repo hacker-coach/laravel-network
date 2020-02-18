@@ -15,7 +15,7 @@
                 <br><br>
                 <h1 class="black-box">Firmen Kontakte</h1>
 
-                @if (count($contacts))
+                @if (!is_null($contacts) AND count($contacts))
                     <table class="table mt-3">
                         <thead>
                         <tr>
