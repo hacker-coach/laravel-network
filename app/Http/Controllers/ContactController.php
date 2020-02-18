@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use GrahamCampbell\Markdown\Facades\Markdown;
+use Carbon\Carbon;
 use App\Contact;
 use App\Info;
 
@@ -43,6 +44,7 @@ class ContactController extends BasePrivatController
             $contact->mail = $request->input('mail');
             $contact->text = $request->input('text');
             $contact->links = $request->input('links');
+            $contact->show = (boolean)$request->input('show');
             $contact->save();
     }
     /**
@@ -53,7 +55,17 @@ class ContactController extends BasePrivatController
     public function index()
     {
         $contacts = null;
-        #$contacts = Contact::where('deleted',0)->get();
+        $contactsUser = Contact::whereDate('created_at', '>=', Carbon::now()->subMonth())->where('deleted',0)
+            ->where('show',1)
+            ->where('user_id',Auth::user()->getAuthIdentifier())
+            ->get();
+        $infosUser = Info::whereDate('created_at', '>=', Carbon::now()->subMonth())
+            ->where('show',1)
+            ->where('user_id',Auth::user()->getAuthIdentifier())
+            ->get();
+        if(count($contactsUser) OR count($infosUser)){
+            $contacts = Contact::where('deleted',0)->get();
+        }
         return view('model.contact.index', [
             'contacts' => $contacts
         ]);

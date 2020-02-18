@@ -31,7 +31,7 @@ class InfoController extends BasePrivatController
      */
     protected function setRequestToModel(Request $request, Info $info)
     {
-            $info->show_message = (boolean)$request->input('show_message');
+            $info->show = (boolean)$request->input('show');
             $info->message = $request->input('message');
             $info->ps = $request->input('ps');
             $info->save();
