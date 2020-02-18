@@ -65,6 +65,8 @@ class ContactController extends BasePrivatController
             ->get();
         if(count($contactsUser) OR count($infosUser)){
             $contacts = Contact::where('deleted',0)->get();
+        }else{
+            $contacts = Contact::where('deleted',0)->where('user_id',Auth::user()->getAuthIdentifier())->get();
         }
         return view('model.contact.index', [
             'contacts' => $contacts
