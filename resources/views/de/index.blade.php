@@ -49,7 +49,7 @@
                     <li>Hohe Abstraktionsfähigkeit und Problemlösekompetenz</li>
                     <li>Überdurchschnittliche hohe Konzentration</li>
                     <li>Systematische Arbeitsweise und logische Analyse</li>
-                    <li>Hochkreative innovative Ideen</li>
+                    <li>Hochkreative Ideen</li>
                     <li>Extrem hohes Auffassungsvermögen</li>
                     <li>Vorausschauendes Denken und hohe Qualität</li>
                 </ul>
