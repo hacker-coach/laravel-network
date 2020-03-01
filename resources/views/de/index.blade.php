@@ -107,8 +107,8 @@
 
                 <h3 class="black-box">Können wir jedes Problem lösen?</h3>
                 <p class="lead mb-0">
-                    Natürlich können wir nie wissen, ob wir Ihr Problem wirklich lösen können. Allerdings trauen wir uns zu jedes Problem zu lösen. Egal wie schwer.
-                    Wir sind ein starkes Team an Denkern und als Autodidakten und Top-Experten haben wir schon viele verrückte unbekannte Probleme gelöst.
+                    Natürlich können wir nie wissen, ob wir Ihr Problem wirklich lösen können. Allerdings trauen wir uns zu jedes Problem lösen zu können. Egal wie schwer.
+                    Wir sind ein starkes Team an Denkern. Als Autodidakten und Top-Experten haben wir schon viele verrückte unbekannte Probleme gelöst.
                 </p>
 
             </div>
