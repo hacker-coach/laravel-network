@@ -108,7 +108,8 @@
                 <h3 class="black-box">Können wir jedes Problem lösen?</h3>
                 <p class="lead mb-0">
                     Natürlich können wir nie wissen, ob wir Ihr Problem wirklich lösen können. Allerdings trauen wir uns zu, dass wir jedes Problem lösen können. Egal wie schwer.
-                    Wir sind ein starkes Team an Denkern. Als Autodidakten und Top-Experten haben wir schon viele verrückte Probleme gelöst.
+                    Wir sind ein starkes Team an Denkern. Als Autodidakten und Top-Experten haben wir schon viele komplizierte Probleme gelöst.
+                    Wir sind die verrückten Macher, die keine Angst haben vor unlösbaren Aufgaben.
                 </p>
 
             </div>
