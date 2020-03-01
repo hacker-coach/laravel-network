@@ -105,6 +105,11 @@
                 <h3 class="black-box">Von Nichts kommt Nichts</h3>
                 <p class="lead mb-0">Ganz nach diesem Motto ist dies ein Netzwerk von neugierigen, innovativen Experten mit Freude am Denken. Experten, die Top-Profies auf ihrem Gebiet sind. Dadurch lösen wir zusammen die kniffligsten Aufgaben.</p>
 
+                <h3 class="black-box">Können wir jedes Problem lösen?</h3>
+                <p class="lead mb-0">
+                    Natürlich können wir nie wissen, ob wir Ihr Problem wirklich lösen können. Allerdings trauen wir uns zu jedes Problem zu lösen. Egal wie schwer.
+                    Wir sind ein starkes Team an Denkern und als Autodidakten und Top-Experten haben wir schon viele verrückte unbekannte Probleme gelöst.
+                </p>
 
             </div>
             <div class="col-lg-2">
