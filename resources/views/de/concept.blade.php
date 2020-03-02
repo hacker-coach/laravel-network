@@ -45,7 +45,7 @@
                 <h4 class="black-box">Kommunikation der Mitglieder</h4>
                 <p class="lead mb-0">
                     Mitglieder können sich über öffentliche Treffen persönlich kennenlernen.
-                    Über verschlüsselte Messanger können Voll-PS-Mitglieder kommunizieren. Aus Sicherheitsgründen läuft diese Kommunikation nicht über diese Plattform.
+                    Über verschlüsselte Messanger können Voll-PS-Mitglieder kommunizieren. Aus Datenschutzgründen läuft diese Kommunikation nicht über diese Plattform.
                     Jedes Mitglied muss selbst entscheiden, ob er sein Psydonym-Name einem Vermittler oder PS-Mitglied sagt.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
@@ -90,9 +90,9 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <br><h2 class="black-box">Fan</h2>
+                <br><h2 class="black-box">Talent</h2>
                 <p class="lead mb-0">
-                    Als Fan kann man ein öffentliches Profil mit Bild, Slogan und Links erstellen. Ein Fan-Profil ist ein Extra-Account, der nicht mit PS-Profil verknüpft ist.
+                    Als Mitglied kann man ein öffentliches Profil mit Bild, Slogan und Links erstellen. Ein Talent-Profil ist ein Extra-Account, der nicht mit PS-Profil verknüpft ist.
                 </p>
                 <h4 class="black-box">Zugriff</h4>
                 <p class="lead mb-0">
