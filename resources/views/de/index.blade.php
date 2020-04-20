@@ -22,118 +22,71 @@
 <title>Netzwerk für professionelle "outside the box" - Denker</title>
 
 @include('de.css')
+<style>
 
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #ecb807!important;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+.masthead h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+  .masthead h3 {
+    font-size: 2rem;
+  }
+}
+</style>
 </head>
 
 <body>
 
 @include('de.nav')
 
+<header class="masthead d-flex "  >
+    <div class="container text-center my-auto">
+        <br><h1 class="mb-1">[Problemlöser Netzwerk]</h1>
+        <h3 class="mb-5">
+            <strong>
+            PROBLEME LÖSEN DURCH DENKEN
+            </strong>
 
-<header class="header-col3  text-white " style="background-color: #f82249;" >
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 ">
-            </div>
-            <div class="col-md-5 header-col3-banner" style="color:white;">
-                <h2 class="display-4 " style="text-transform: lowercase;font-family: serif;">Problemlöser Netzwerk</h2>
-                <p>
-                    Wir suchen Probleme, die schwerer sind als schwer. Probleme an denen Ihre Experten scheitern.
-                </p>
-                <div style="padding-top:15px;padding-right:25px;padding-bottom:5px;">
-                    <a class="btn btn-dark btn-xl"   style="text-transform: lowercase;font-family: monospace;border-radius: 10rem; border: 5px solid #343a40;"  href="/kontakt/"> Kontakt </a>
+        </h3>
+                <div style="padding-top:5px;padding-right:25px;padding-bottom:25px;">
+                    <a class="btn btn-dark btn-xl"   style="text-transform: lowercase;font-family: monospace; border: 5px solid #343a40;"  href="/kontakt/"> Kontakt </a>
                 </div>
-            </div>
-            <div class="col-md-4 header-col3-list" style="color:white;">
-                <ul>
-                    <li>Hohe Abstraktionsfähigkeit und Problemlösekompetenz</li>
-                    <li>Überdurchschnittliche hohe Konzentration</li>
-                    <li>Systematische Arbeitsweise und logische Analyse</li>
-                    <li>Hochkreative Ideen</li>
-                    <li>Extrem hohes Auffassungsvermögen</li>
-                    <li>Vorausschauendes Denken und hohe Qualität</li>
-                </ul>
-            </div>
-            <div class="col-md-1 ">
-            </div>
-        </div>
     </div>
-</header>
-<!-- Icons Grid -->
-<section class="three-col-teaser bg-light ">
-
-    <div class="container" >
-        <div class="row">
-            <div class="col-lg-12">
-
-                <h3 class="black-box">Netzwerk für professionelle "outside the box" - Denker<br> und Menschen mit Spezialbegabung</h3>
-                <p class="lead mb-0">
-                    Dies ist ein Netzwerk für Experten, die Top-Profis auf ihrem Gebiet sind.
-                    Physiker, Mathematiker, Autodidakten, kreative Höchstleister, Informatiker, Theoretiker, Philosophen, Juristen,
-                    Naturwissenschaftler, Psychologen und innovative Querdenker.
-                    Menschen, denen es große Freude macht, Probleme zu abstrahieren und aus verschiedenen Blickwinkeln zu betrachten.
-                    Jeder hat einen sehr individuellen beruflichen Werdegang und hat sich zum Experten auf einem Gebiet hochgearbeitet.
-                    Als Netzwerk ist es leichter, neue Aufträge oder Jobs in der Wirtschaft zu finden, die eine Herausforderung sind.
-                </p>
-
-<br><br>
-            </div>
-        </div>
-
-        <div class="row" id="motiv">
-            <div class="col-lg-8">
-                <h3 class="black-box">Warum dieses Netzwerk?</h3>
-                <p class="lead mb-0">
-                    Motiv: <i>
-                    In den letzten 10 Jahren habe ich im Schnitt immer 2-3 Monate im Jahr als selbständiger Anwendungsentwickler ohne Ausbildung gearbeitet. Leben konnte ich ganz gut davon.
-                    Ich lerne eine neue Programmiersprache mit Framework in 2-3 Tagen.
-                    Oft halten die Vorgesetzten mich für einen Experten und sind begeistert von meiner Arbeit, weil ich fast nie Fehler mache, meistens
-                    das passende Ergebnis liefer und mit Begeisterung jede schwere Aufgabe löse.
-                    In Wirklichkeit bin ich aber kein Nerd und in Wirklichkeit habe ich viel mehr Interessensgebiete als Informatik, weil ich geistige Abwechslung auf unterschiedlichen Gebieten brauche.
-                    <br>
-                    <u>Meine größte Leidenschaft ist das Lernen und Denken.</u> Das kann ich sehr gut. Komplizierte Bücher über Informatik, Psychologie, Neurowissenschaften und Physik zu lesen macht mir Spaß, weil ich dabei tausende neue Ideen bekomme.
-                    Aus diesem Grund suche ich Jobs, von denen ich keine Ahnung habe. Ich suche Herausforderungen. Ich brauche Probleme ohne Anleitung, damit ich mich konzentrieren kann.
-                    Ich suche immer den sinnvollsten und einfachsten Weg. Ich bin Pragmatiker und kreativer Denker.
-                </i>
-                </p>
-				                <i>Lernen bedeutet für mich denken, verstehen und hinterfragen und nicht das sinnlose Auswendiglernen und Wiedergeben von Informationen.
-                Leider wird in unserem Bildungssystem das Gehirn auf primitives Wiedergeben abgerichtet. Wissen ist nutzlos, wenn man nicht versteht, warum wir es verwenden.
-                Zum Nachschlagen kann man auch das Internet verwenden.</i>
-				<br>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="black-box">Von Nichts kommt Nichts</h3>
-                <p class="lead mb-0">Ganz nach diesem Motto ist dies ein Netzwerk von neugierigen, innovativen Experten mit Freude am Denken. Experten, die Top-Profies auf ihrem Gebiet sind. Dadurch lösen wir zusammen die kniffligsten Aufgaben.</p>
-
-                <h3 class="black-box">Können wir jedes Problem lösen?</h3>
-                <p class="lead mb-0">
-                    Natürlich können wir nicht wissen, ob wir Ihr Problem wirklich lösen können. Allerdings trauen wir uns zu komplizierte Problem zu lösen. Egal wie schwer.
-                    Wir sind ein starkes Team an Denkern und Machern. Vor anspruchsvollen unlösbaren Aufgaben haben wir keine Angst.
-                </p>
-
-            </div>
-            <div class="col-lg-2">
-            </div>
-        </div>
-    </div>
-
-
-
-</section>
-
-<section class="text-white text-center"  style="background-color:#f82249; height: 100px;">
     <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-9 mx-auto">
-                <h2 class="mb-4"></h2>
-            </div>
-            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+</header>
 
-            </div>
-        </div>
-    </div>
-</section>
+
+
+
+
 
 @include('de.footer')
 @include('de.js')

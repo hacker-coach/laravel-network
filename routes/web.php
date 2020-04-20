@@ -28,7 +28,7 @@ Route::get('/de/mitglieder', 'Controller@memberDe')->name('memberDe');
 Route::get('/de/preise', 'Controller@preiseDe')->name('preiseDe');
 Route::get('/de/agb', 'Controller@agbDe')->name('agbDe');
 Route::get('/de/concept', 'Controller@conceptDe')->name('conceptDe');
-
+Route::get('/de/why', 'Controller@whyDe')->name('whyDe');
 
 
 Route::get('/member', 'MemberController@index')->name('member');
