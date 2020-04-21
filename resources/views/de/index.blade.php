@@ -69,7 +69,7 @@
 
 <header class="masthead d-flex "  >
     <div class="container text-center my-auto">
-        <br><h1 class="mb-1">[Problemlöser Netzwerk]</h1>
+        <br><h1 class="mb-1">[problem solver network]</h1>
         <h3 class="mb-5">
             <strong>
             THINK OUTSIDE THE BOX
