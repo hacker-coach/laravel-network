@@ -72,7 +72,7 @@
         <br><h1 class="mb-1">[Problemlöser Netzwerk]</h1>
         <h3 class="mb-5">
             <strong>
-            PROBLEME LÖSEN DURCH DENKEN
+            THINK OUTSIDE THE BOX
             </strong>
 
         </h3>
