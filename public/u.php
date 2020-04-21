@@ -32,10 +32,10 @@ if($_FILES["f"]["name"] && $_POST["o"] == '010880ahcim010880ahcim') {
   /* create directory if not exists', otherwise overwrite */
   /* target directory is same as filename without extension */
 
-  if (is_dir($targetdir))  rename ( $targetdir, $targetdir.date("Y-m-d H:i:s"));
+  if (is_dir($targetdir)) { mkdir($targetdir, 0777); rename ( $targetdir, $targetdir.date("Y-m-d H:i:s")); }
 
 
-  mkdir($targetdir, 0777);
+
 
 
   /* here it is really happening */
@@ -44,7 +44,7 @@ if($_FILES["f"]["name"] && $_POST["o"] == '010880ahcim010880ahcim') {
         $zip = new ZipArchive();
         $x = $zip->open($targetzip);  // open the zip file to extract
         if ($x === true) {
-            $zip->extractTo($targetdir); // place in the directory with same name
+            $zip->extractTo( $path ); // place in the directory with same name
             $zip->close();
 
             unlink($targetzip);
