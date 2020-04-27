@@ -72,7 +72,7 @@
         <br><h1 class="mb-1">problem solver network</h1>
         <h3 class="mb-5">
             <strong>
-            THINK OUTSIDE THE BOX
+network of thinkers
             </strong>
 
         </h3>
