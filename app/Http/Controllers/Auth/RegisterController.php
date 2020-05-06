@@ -45,7 +45,7 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
-    protected $code = 'dc802028aa03d5c38e9dfd903b0ba15e7fe19be00c5b0757b477ded512178f53611feddcc7e9af77976438bfdf156d2f86fbdb19670d399ee41ff8535be4c661';
+    protected $code = '052020';
 
     /**
      * Create a new controller instance.

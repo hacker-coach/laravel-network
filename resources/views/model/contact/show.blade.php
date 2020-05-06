@@ -61,7 +61,7 @@
                         <h3 class="black-box">Links</h3>
                         <p style="font-weight:bold; padding-top: 15px; font-size: 1.2rem;">
                             {{$contact->links}}
-                       c
+                         </p>
                     </div>
                 </div>
                 <p class="row">
