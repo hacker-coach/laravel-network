@@ -1,6 +1,6 @@
 @include('snippet.header', ['title' => 'Netzwerk für professionelle "outside the box" - Denker'])
 
-@include('snippet.nav')
+@include('de.nav')
 
 @include('snippet.sectionheader', ['title' =>'Mitglieder'])
 
