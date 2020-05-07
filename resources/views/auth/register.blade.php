@@ -27,7 +27,7 @@
                                     <option value="role_fan">Unterstützer [Sie wollen Ihre Unterstützung der Öffentlichkeit zeigen]</option>
                                     <option value="role_company">Firma [Sie wollen eine kostenlose Anzeigen schalten]</option>
                                     <option value="role_ps">Mitglied [Sie sind ein Problemlöser]</option>
-                                    <option value="role_hunter">Vermittler [Sie wollen Diversity Manager werden]</option>
+                                    <option value="role_hunter" selected>Vermittler [Sie wollen Diversity Manager werden]</option>
                                 </select>
 
                             </div>
