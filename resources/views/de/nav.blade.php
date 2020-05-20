@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarMain">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/" style="font-weight: 370;">problem solver network</a>
+        <a class="navbar-brand js-scroll-trigger" href="/" style="font-weight: 370;">INNOVATIV HACKERS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,9 +57,7 @@
                     &nbsp;&nbsp;
                 </li>
                 <li>
-                    <a target="_blank" href="https://twitter.com/psnTalent"  style="text-decoration: none;">
-                        <span class="fab fa-twitter fa-2x fa-fw"  style="color:rgba(0,0,0,.5);"></span>
-                    </a>
+
                     <a target="_blank" href="https://www.crack-brained.de/"  style="text-decoration: none; color:rgba(0,0,0,.5);" ><strong>[ B ]</strong></a>
                 </li>
                 <li class="nav-item">

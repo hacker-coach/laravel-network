@@ -29,7 +29,7 @@
             <div class="col-lg-12">
 
 <h1 class="black-box"><a id="Datenschutzerklrung_0"></a>Datenschutz-Erklärung</h1>
-<p>Die nachfolgende Datenschutzerklärung gilt für die Nutzung unseres Online-Angebots *[<a href="http://problemsolvernetwork.org">www.problemsolvernetwork.org</a>] *(nachfolgend „Website“).</p>
+<p>Die nachfolgende Datenschutzerklärung gilt für die Nutzung unseres Online-Angebots *[<a href="https://innovativ-hackers.org">innovativ-hackers.org</a>] *(nachfolgend „Website“).</p>
 <p>Wir messen dem Datenschutz große Bedeutung bei. Die Erhebung und Verarbeitung Ihrer personenbezogenen Daten geschieht unter Beachtung der geltenden datenschutzrechtlichen Vorschriften, insbesondere der Datenschutzgrundverordnung (DSGVO).</p>
 <h3><a id="Verantwortlicher_6"></a>Verantwortlicher</h3>
 <p>Verantwortlicher für die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten im Sinne von Art. 4 Nr. 7 DSGVO ist</p>

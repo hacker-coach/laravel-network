@@ -21,14 +21,12 @@ Route::redirect('/', '/de',301);
 #Route::get('/', 'Controller@index')->name('index');
 
 Route::get('/de', 'Controller@indexDe')->name('indexDe');
-Route::get('/de/club', 'Controller@clubDe')->name('clubDe');
 Route::get('/de/impressum', 'Controller@impressumDe')->name('impressumDe');
 Route::get('/de/datenschutz', 'Controller@datenschutzDe')->name('datenschutzDe');
 Route::get('/de/mitglieder', 'Controller@memberDe')->name('memberDe');
 Route::get('/de/preise', 'Controller@preiseDe')->name('preiseDe');
 Route::get('/de/agb', 'Controller@agbDe')->name('agbDe');
 Route::get('/de/concept', 'Controller@conceptDe')->name('conceptDe');
-Route::get('/de/why', 'Controller@whyDe')->name('whyDe');
 
 
 Route::get('/member', 'MemberController@index')->name('member');

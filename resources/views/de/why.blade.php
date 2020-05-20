@@ -3,23 +3,13 @@
 
 <head>
 
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Netzwerk für professionelle 'outside the box' - Denker">
-<meta name="author" content="Micha Barthel">
-<meta name="date" content="2019-11-22T19:53:33+01:00" />
-<link rel="icon" href="/theme/media/favicon.ico" type="image/x-icon">
-<meta name="image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-netzwerk.jpg" alt="Problemlöser Netzwerk">
-<meta property="og:title" content="Problemlöser Netzwerk" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://problemsolvernetwork.org/de/" />
-<meta property="og:image" content="http://problemsolvernetwork.org/theme/media/micha-barthel-netzwerk.jpg" />
-<meta property="og:image:alt" content="Problemlöser Netzwerk" />
-<meta property="og:description" content="Problemlöser Netzwerk" />
-<meta property="og:site_name" content="problemsolvernetwork" />
-
-<title>Netzwerk für professionelle "outside the box" - Denker</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="INNOVATIV HACKERS | Wissen neu verknüpfen">
+  <meta name="author" content="">
+  <title>INNOVATIV HACKERS | Wissen neu verknüpfen</title>
+  <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
 @include('de.css')
 
