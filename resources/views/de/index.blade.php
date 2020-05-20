@@ -126,7 +126,7 @@ a:hover, a:focus, a:active {
             </strong>
 
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" style="color: black !important;" href="/kontakt.html#contact">Kontakt</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" style="color: black !important;" href="/kontakt/">Kontakt</a>
     </div>
     <div class="overlay"></div>
 </header>
