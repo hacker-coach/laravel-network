@@ -122,7 +122,7 @@ a:hover, a:focus, a:active {
     <div class="container text-center my-auto">
         <br><h1 class="mb-1">[INNOVATIV HACKERS]</h1>
         <h3 class="mb-5">
-            <strong>Wissen neu verknüpfen
+            <strong>network of thinkers
             </strong>
 
         </h3>
