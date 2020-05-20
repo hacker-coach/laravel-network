@@ -92,7 +92,7 @@
                             <label class="control-label" for="dgsvo" required>Datenschutz</label>
                             <div class="form-group form-check">
                                 <input class="form-check-input" type="checkbox" id="dgsvo" name="dgsvo" value="1" required>
-                                Ich habe den <a href="http://problemsolvernetwork.org/de/datenschutz" target="_blank">Datenschutzhinweis</a> zur Kenntnis genommen u.
+                                Ich habe den <a href="http://innovativ-hackers.org/de/datenschutz" target="_blank">Datenschutzhinweis</a> zur Kenntnis genommen u.
                                 erkläre mich mit der Speicherung u. Verarbeitung meiner Daten durch diese Website einverstanden.
                             </div>
                         </div>

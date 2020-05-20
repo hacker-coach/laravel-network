@@ -5,7 +5,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="/theme/media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
     <title>{{ $title }}</title>
 
