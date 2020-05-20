@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="INNOVATIV HACKERS | Wissen neu verknüpfen">
+  <meta name="description" content="INNOVATIV HACKERS | think outside the box">
   <meta name="author" content="">
-  <title>INNOVATIV HACKERS | Wissen neu verknüpfen</title>
+  <title>INNOVATIV HACKERS | think outside the box</title>
   <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
 @include('de.css')

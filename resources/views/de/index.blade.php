@@ -6,19 +6,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="INNOVATIV HACKERS | Wissen neu verknüpfen">
+  <meta name="description" content="INNOVATIV HACKERS | think outside the box">
   <meta name="author" content="">
-  <title>INNOVATIV HACKERS | Wissen neu verknüpfen</title>
+  <title>INNOVATIV HACKERS | think outside the box</title>
   <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
-  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | Wissen neu verknüpfen">
-  <meta property="og:title" content="INNOVATIV HACKERS | Wissen neu verknüpfen" />
+  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | think outside the box">
+  <meta property="og:title" content="INNOVATIV HACKERS | think outside the box" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://innovativ-hackers.org/de" />
   <meta property="og:image" content="https://innovativ-hackers.org/share.jpg" />
-  <meta property="og:image:alt" content="INNOVATIV HACKERS | Wissen neu verknüpfen" />
-  <meta property="og:description" content="INNOVATIV HACKERS | Wissen neu verknüpfen" />
-  <meta property="og:site_name" content="INNOVATIV HACKERS | Wissen neu verknüpfen" />
+  <meta property="og:image:alt" content="INNOVATIV HACKERS | think outside the box" />
+  <meta property="og:description" content="INNOVATIV HACKERS | think outside the box" />
+  <meta property="og:site_name" content="INNOVATIV HACKERS | think outside the box" />
 
 
 
@@ -122,7 +122,7 @@ a:hover, a:focus, a:active {
     <div class="container text-center my-auto">
         <br><h1 class="mb-1">[INNOVATIV HACKERS]</h1>
         <h3 class="mb-5">
-            <strong>network of thinkers
+            <strong>think outside the box
             </strong>
 
         </h3>
