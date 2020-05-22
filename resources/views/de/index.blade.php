@@ -124,13 +124,33 @@ a:hover, a:focus, a:active {
         <h3 class="mb-5">
             <strong>Club der Denker
             </strong>
-
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" style="color: black !important;" href="/kontakt/">Kontakt</a>
+
     </div>
     <div class="overlay"></div>
 </header>
+<!-- Header -->
+<header class="masthead d-flex "  >
+    <div class="container text-center my-auto">
 
+        <blockquote class="blockquote">
+          <p class="mb-0">„Sie dürfen nicht alles glauben, was Sie denken!“</p>
+          <footer class="blockquote-footer">Heinz Erhardt</footer>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          <p class="mb-0">„Entweder alles anzweifeln oder alles glauben, das sind zwei gleich bequeme Lösungen; die eine wie die andere erspart uns das Denken.“</p>
+          <footer class="blockquote-footer">Henri Poincare</footer>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          <p class="mb-0">„Es ist bequem mit dem Einstein. Jedes Jahr widerruft er, was er das vorige Jahr geschrieben hat“</p>
+          <footer class="blockquote-footer">Albert Einstein</footer>
+        </blockquote>
+    </div>
+    <div class="overlay"></div>
+</header>
 
 
 
