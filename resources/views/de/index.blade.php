@@ -6,19 +6,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="INNOVATIV HACKERS | think outside the box">
+  <meta name="description" content="INNOVATIV HACKERS | Club der Denker">
   <meta name="author" content="">
-  <title>INNOVATIV HACKERS | think outside the box</title>
+  <title>INNOVATIV HACKERS | Club der Denker</title>
   <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
-  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | think outside the box">
-  <meta property="og:title" content="INNOVATIV HACKERS | think outside the box" />
+  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | Club der Denker">
+  <meta property="og:title" content="INNOVATIV HACKERS | Club der Denker" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://innovativ-hackers.org/de" />
   <meta property="og:image" content="https://innovativ-hackers.org/share.jpg" />
-  <meta property="og:image:alt" content="INNOVATIV HACKERS | think outside the box" />
-  <meta property="og:description" content="INNOVATIV HACKERS | think outside the box" />
-  <meta property="og:site_name" content="INNOVATIV HACKERS | think outside the box" />
+  <meta property="og:image:alt" content="INNOVATIV HACKERS | Club der Denker" />
+  <meta property="og:description" content="INNOVATIV HACKERS | Club der Denker" />
+  <meta property="og:site_name" content="INNOVATIV HACKERS | Club der Denker" />
 
 
 
@@ -120,9 +120,9 @@ a:hover, a:focus, a:active {
 <!-- Header -->
 <header class="masthead d-flex "  >
     <div class="container text-center my-auto">
-        <br><h1 class="mb-1">[INNOVATIV HACKERS]</h1>
+        <br><h1 class="mb-1 text-center">INNOVATIV HACKERS</h1>
         <h3 class="mb-5">
-            <strong>think outside the box
+            <strong>Club der Denker
             </strong>
 
         </h3>

@@ -1,4 +1,4 @@
-@include('snippet.header', ['title' => 'INNOVATIV HACKERS | think outside the box'])
+@include('snippet.header', ['title' => 'INNOVATIV HACKERS | Club der Denker'])
 
 @include('de.nav')
 
