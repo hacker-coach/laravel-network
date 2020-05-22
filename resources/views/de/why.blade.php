@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="INNOVATIV HACKERS | Club der Denker">
+  <meta name="description" content="INNOVATIV HACKERS | Club der Denker & Macher">
   <meta name="author" content="">
-  <title>INNOVATIV HACKERS | Club der Denker</title>
+  <title>INNOVATIV HACKERS | Club der Denker & Macher</title>
   <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
 @include('de.css')

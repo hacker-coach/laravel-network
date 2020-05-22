@@ -6,19 +6,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="INNOVATIV HACKERS | Club der Denker">
+  <meta name="description" content="INNOVATIV HACKERS | Club der Denker & Macher">
   <meta name="author" content="">
-  <title>INNOVATIV HACKERS | Club der Denker</title>
+  <title>INNOVATIV HACKERS | Club der Denker & Macher</title>
   <link rel="icon" href="https://innovativ-hackers.org/favicon.ico" type="image/x-icon">
 
-  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | Club der Denker">
-  <meta property="og:title" content="INNOVATIV HACKERS | Club der Denker" />
+  <meta name="image" content="https://innovativ-hackers.org/share.jpg" alt="INNOVATIV HACKERS | Club der Denker & Macher">
+  <meta property="og:title" content="INNOVATIV HACKERS | Club der Denker & Macher" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://innovativ-hackers.org/de" />
   <meta property="og:image" content="https://innovativ-hackers.org/share.jpg" />
-  <meta property="og:image:alt" content="INNOVATIV HACKERS | Club der Denker" />
-  <meta property="og:description" content="INNOVATIV HACKERS | Club der Denker" />
-  <meta property="og:site_name" content="INNOVATIV HACKERS | Club der Denker" />
+  <meta property="og:image:alt" content="INNOVATIV HACKERS | Club der Denker & Macher" />
+  <meta property="og:description" content="INNOVATIV HACKERS | Club der Denker & Macher" />
+  <meta property="og:site_name" content="INNOVATIV HACKERS | Club der Denker & Macher" />
 
 
 
@@ -122,7 +122,7 @@ a:hover, a:focus, a:active {
     <div class="container text-center my-auto">
         <br><h1 class="mb-1 text-center">INNOVATIV HACKERS</h1>
         <h3 class="mb-5">
-            <strong>Club der Denker
+            <strong>Club der Denker & Macher
             </strong>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" style="color: black !important;" href="/kontakt/">Kontakt</a>
