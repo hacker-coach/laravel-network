@@ -135,11 +135,6 @@ a:hover, a:focus, a:active {
     <div class="container text-center my-auto">
 
         <blockquote class="blockquote">
-          <p class="mb-0">„Sie dürfen nicht alles glauben, was Sie denken!“</p>
-          <footer class="blockquote-footer">Heinz Erhardt</footer>
-        </blockquote>
-
-        <blockquote class="blockquote">
           <p class="mb-0">„Entweder alles anzweifeln oder alles glauben, das sind zwei gleich bequeme Lösungen; die eine wie die andere erspart uns das Denken.“</p>
           <footer class="blockquote-footer">Henri Poincare</footer>
         </blockquote>
