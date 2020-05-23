@@ -56,10 +56,7 @@
                 <li class="nav-item">
                     &nbsp;&nbsp;
                 </li>
-                <li>
 
-                    <a target="_blank" href="https://www.crack-brained.de/"  style="text-decoration: none; color:rgba(0,0,0,.5);" ><strong>[ B ]</strong></a>
-                </li>
                 <li class="nav-item">
                     &nbsp;&nbsp;
                 </li>

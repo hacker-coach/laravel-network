@@ -130,22 +130,6 @@ a:hover, a:focus, a:active {
     </div>
     <div class="overlay"></div>
 </header>
-<!-- Header -->
-<header class="masthead d-flex "  >
-    <div class="container text-center my-auto">
-
-        <blockquote class="blockquote">
-          <p class="mb-0">„Entweder alles anzweifeln oder alles glauben, das sind zwei gleich bequeme Lösungen; die eine wie die andere erspart uns das Denken.“</p>
-          <footer class="blockquote-footer">Henri Poincare</footer>
-        </blockquote>
-
-        <blockquote class="blockquote">
-          <p class="mb-0">„Es ist bequem mit dem Einstein. Jedes Jahr widerruft er, was er das vorige Jahr geschrieben hat“</p>
-          <footer class="blockquote-footer">Albert Einstein</footer>
-        </blockquote>
-    </div>
-    <div class="overlay"></div>
-</header>
 
 
 
