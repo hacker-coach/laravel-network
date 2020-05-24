@@ -136,7 +136,7 @@ a:hover, a:focus, a:active {
     <div class="container text-center my-auto">
 
         <blockquote class="blockquote">
-          <p class="mb-0">„Es geht um den Inhalt und nicht um Worte!“</p>
+          <p class="mb-0">„Es geht um Inhalt und nicht um Worte!“</p>
           <footer class="blockquote-footer">INNOVATIV HACKER</footer>
         </blockquote>
     </div>
