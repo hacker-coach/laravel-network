@@ -45,7 +45,7 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
-    protected $code = '052020';
+    protected $code = 'innovativ-hackers';
 
     /**
      * Create a new controller instance.
