@@ -9,11 +9,19 @@
     <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
         <div class="row justify-content-center">
             <div class="col-md-8">
+				@if ($contactsFetchedCount != $contactsCount)
+					<div class="alert alert-warning" role="alert">
+						Es können nur {{$contactsFetchedCount}}/{{$contactsCount}} Kontakte angezeigt werden. Sie erhalten den Zugriff auf alle Kontakte,
+						wenn Sie innerhalb der letzten 30 Tage neue Informationen hinzugefügt haben.
+					</div>
+                @endif
+
                 <a class="btn btn-primary" href="{{ route('contactCreate') }}" >
                     {{ __('neuen Kontakt') }}
                 </a>
                 <br><br>
                 <h1 class="black-box">Firmen Kontakte</h1>
+
 
                 @if (!is_null($contacts) AND count($contacts))
                     <table class="table mt-3">
@@ -23,7 +31,7 @@
                             <th scope="col">Firma</th>
                             <th scope="col">Ort</th>
 
-                            <th scope="col"></th>
+                            <th scope="col">Anzahl: {{$contactsFetchedCount}}/{{$contactsCount}}</th>
                         </tr>
                         </thead>
                         <tbody>

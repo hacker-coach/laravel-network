@@ -63,13 +63,18 @@ class ContactController extends BasePrivatController
             ->where('show',1)
             ->where('user_id',Auth::user()->getAuthIdentifier())
             ->get();
+        $contactsCount = Contact::where('deleted',0)->count();
         if(count($contactsUser) OR count($infosUser)){
             $contacts = Contact::where('deleted',0)->get();
         }else{
-            $contacts = Contact::where('deleted',0)->where('user_id',Auth::user()->getAuthIdentifier())->get();
+            #$contacts = Contact::where('deleted',0)->where('user_id',Auth::user()->getAuthIdentifier())->get();
+            $contacts = Contact::where('deleted',0)->limit(3)->get();
+
         }
         return view('model.contact.index', [
-            'contacts' => $contacts
+            'contacts' => $contacts,
+            'contactsCount' => $contactsCount,
+			'contactsFetchedCount' => count($contacts)
         ]);
     }
 
